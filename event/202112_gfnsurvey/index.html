@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GFN會員召集令！ 填問卷，好康雙重送！ - GeForece NOW x 台灣大哥大</title>
+    <!--google plus info-->
+    <meta itemprop="name" content="Geforce NOW x 台灣大哥大 - 跳脫設備的束縛，盡情遊戲">
+    <!-- 20200811 請取用img/1200x628 -->
+    <meta itemprop="image" content="[網頁縮圖_1200x628]">
+    <meta name="description" content="由台灣大哥大技術支持的 Geforce NOW，攜手引領5G新時代的來臨！" />
+    <!--FB info-->
+    <meta property="og:title" content="Geforce NOW x 台灣大哥大 - 跳脫設備的束縛，盡情遊戲" />
+    <meta property="og:site_name" content="Geforce NOW x 台灣大哥大" />
+    <meta property="og:url" content="[網頁網址_URL]">
+    <!-- 20200811 請取用img/1200x628 -->
+    <meta property="og:image" content="[網頁縮圖_1200x628]">
+    <meta property="og:description" content="由台灣大哥大技術支持的 Geforce NOW，攜手引領5G新時代的來臨！">
+    <meta property="og:type" content="website" />
+    <!--Favicon-->
+    <link rel="icon" href="https://www.taiwanmobile.com/bp-include/Y19/img/ico/favicon.ico?v=20190613"
+        type="image/x-icon" />
+    <!--CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../../fonts/geforce.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/update.css">
+    <!-- 使用外部圖片在CSS中嵌入，正式機請解開註解 -->
+    <!-- <link rel="stylesheet" href="../../css/imgInsert.css"> -->
+</head>
+<style>
+    #campBanner1.event-format {
+        background-image: url(img/2560x770.jpg);
+    }
+    #campBanner2.event-format {
+        background-image: url(img/2560x770_aw.jpg);
+    }
+    #campBanner3.event-format {
+        background-image: url(img/video-bg-2560x770.png);
+    }
+    #campBanner4.event-format {
+        background-color: black;
+    }
+    #campBanner5 {
+        background-image: url(img/FI_2560x580.jpg);
+        background-position: center;
+        background-color: #000;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 580px;
+    }
+    #campBanner5 .container {
+        height: 100%;
+        max-width: 1290px;
+        margin : 0 auto;
+    }
+    .game-gallery-carousel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .gallery-item {
+        
+        width: 100%;
+        padding: 2rem;
+    }
+    #downloadPath .container {
+        max-width: 1366px;
+    }
+    
+    .dark {
+    --primary: #76B900;
+    --other: hsl(0, 0%, 90%);
+    }
+
+    /* label */
+    label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    margin: 12px 0;
+
+    cursor: pointer;
+    position: relative;
+    }
+
+
+    /* input */
+    input[type="radio"] {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    }
+    
+    .simple-txt-input {
+        background-color: transparent;
+        margin: 0 .8rem;
+        border: 0;
+        border-bottom: 1px solid gray;
+        color: white;
+    }
+
+    .simple-txt-input.lvl {
+        margin: 1rem 0;
+        width: 100%;
+    }
+    .sati-sec, .unsati-sec {
+        display: none;
+    }
+    .interview-time {
+        display: none;
+    }
+
+    /* .design */
+    .design {
+    width: 16px;
+    height: 16px;
+
+    border: 1px solid var(--other);
+    border-radius: 100%;
+    margin-right: 12px;
+
+    position: relative;
+    }
+
+    .design::before,
+    .design::after {
+    content: "";
+    display: block;
+
+    width: inherit;
+    height: inherit;
+
+    border-radius: inherit;
+
+    position: absolute;
+    transform: scale(0);
+    transform-origin:5px 5px;
+    }
+
+    .design:before {
+    background: var(--other);
+    opacity: 0;
+    transition: .3s;
+    }
+
+    .design::after {
+    background: var(--primary);
+    opacity: .4;
+    transition: .6s;
+    }
+
+
+    /* .text */
+    .text {
+    color: var(--other);
+    font-weight: normal;
+    }
+
+
+    /* checked state */
+    input:checked+.design::before {
+    opacity: 1;
+    transform: scale(.6);
+    }
+
+
+    /* other states */
+    input:hover+.design,
+    input:focus+.design {
+    border: 1px solid var(--primary);
+    }
+
+    input:hover+.design:before,
+    input:focus+.design:before {
+    background: var(--primary);
+    }
+
+    input:hover~.text {
+    color: var(--primary);
+    }
+
+    .abs-site-link {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    color: hsla(0, 0%, 0%, .6);
+    background: hsla(0, 0%, 98%, .6);
+    font-size: 16px;
+    }
+    
+    #survey.ev-sec .container{
+        text-align: left;
+    }
+    
+    @media(max-width: 1920px) {
+        #campBanner1.event-format {
+            background-image: url(img/1920x770.jpg);
+        }
+    }
+    @media(max-width: 1500px) {
+        #campBanner1.event-format {
+            background-image: url(img/1500x770.jpg);
+        }
+    }
+    @media(max-width: 1350px) {
+        #campBanner1.event-format {
+            background-image: url(img/1350x770.jpg);
+        }
+    }
+    @media(max-width: 1023px) {
+        #campBanner1 {
+            height: 550px;
+            padding-top: 550px;
+        }
+        #campBanner1.event-format {
+            background-image: url(img/1023x550.jpg);
+        }
+        #campBanner2.event-format {
+            background-image: url(img/1350x770_aw.jpg);
+        }
+        #campBanner3.event-format {
+            background-image: url(img/video-bg-1350x770.png);
+            margin-top: 0;
+        }
+        #campBanner4.event-format {
+            padding-top: 320px;
+        }
+    }
+    @media(max-width: 960px) {
+        #campBanner5.event-format {
+            background-image: url(img/FI_2048x880.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: top;
+            padding-top: calc((880/2048)*100vh);
+        }
+    }
+    @media(max-width: 768px) {
+        #campBanner1.event-format {
+            background-image: url(img/767x550.jpg);
+        }
+        #campBanner2.event-format {
+            background-image: url(img/1024x550_aw.jpg);
+        }
+        #campBanner3.event-format {
+            background-image: url(img/video-bg-1024x550.png);
+        }
+        #campBanner1 {
+            height: 550px;
+            padding-top: 550px;
+        }
+        #campBanner5.event-format {
+            background-image: url(img/FI_1280x880.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: top;
+            padding-top: calc((490/1280)*100vh);
+        }
+    }
+    @media(max-width: 375px) {
+        #campBanner1.event-format {
+            background-image: url(img/375x550.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-color: black;
+            background-position: top;
+
+            height: 68vh;
+            padding-top: 145%;
+        }
+    }
+</style>
+<body>
+    <div id="app">
+        <div id="gt" class="scrollTop">
+            <a href="#!"><i class="fas fa-chevron-up"></i></a>
+          </div>
+        <div class="wrapper">
+            <!-- 主選單 20200605_更新 -->
+            <nav>
+                <!-- logo -->
+                <a href="../../index.html" class="logo-wrap">
+                    <img src="../../img/logo.svg" alt="">
+                </a>
+                <!-- nav-item -->
+                <div class="nav-items-wrap">
+                    <ul class="web-menu">
+                        <a href="#!">
+                            <li id="nav-icon2">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </li>
+                        </a>
+                        <!-- 20200716 -->
+                        <a href="../../news-list.html">
+                            <li class="nav-item">最新消息</li>
+                        </a>
+                        <!-- 20200716 -->
+                        <a href="../../games-list.html">
+                            <li class="nav-item">遊戲列表</li>
+                        </a>
+                        <a href="../../pricing.html">
+                            <li class="nav-item">會員方案</li>
+                        </a>
+                        <a href="../../system-require.html">
+                            <li class="nav-item">系統需求</li>
+                        </a>
+                        <a href="../../qa.html">
+                            <li class="nav-item">常見問題</li>
+                        </a>
+                        <a href="../../quickstart.html">
+                            <li class="nav-item">快速入門</li>
+                        </a>
+                        <a href="../../download.html">
+                            <li class="nav-item">軟體下載</li>
+                        </a>
+                        <!-- 登入前 -->
+                        <a href="#!">
+                            <li class="primary-btn login-btn">
+                                <span>註冊｜登入</span>
+                            </li>
+                        </a>
+                        <!-- 登入後 -->
+                        <!-- <a href="#" tt-to="accountOption" class="account-center-opener-wrap">
+                            <div class="option-wrap">
+                                <li class="primary-btn account-center-opener">
+                                    <div class="ic-wrap">
+                                        <img src="../../img/ic_account_white.svg" alt="">
+                                        <span>UserName</span>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </li>
+                                <ul id="accountOption">
+                                    <a href="../../admin-account.html">
+                                        <li class="option-link nav-item">會員中心</li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="option-link ic-wrap nav-item">
+                                            <i class="fas fa-power-off"></i>
+                                            <span>登出</span>
+                                        </li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </a> -->
+                    </ul>
+                    <ul class="m-menu">
+                        <!-- 20200716 -->
+                        <a href="../../news-list.html">
+                            <li class="nav-item">最新消息</li>
+                        </a>
+                        <!-- 20200716 -->
+                        <a href="../../games-list.html">
+                            <li class="nav-item">遊戲列表</li>
+                        </a>
+                        <a href="../../pricing.html">
+                            <li class="nav-item">會員方案</li>
+                        </a>
+                        <a href="../../system-require.html">
+                            <li class="nav-item">系統需求</li>
+                        </a>
+                        <a href="../../qa.html">
+                            <li class="nav-item">常見問題</li>
+                        </a>
+                        <a href="../../quickstart.html">
+                            <li class="nav-item">快速入門</li>
+                        </a>
+                        <a href="../../download.html">
+                            <li class="nav-item">軟體下載</li>
+                        </a>
+                    </ul>
+                </div>
+            </nav>
+            <!-- 首頻Banner -->
+            <section class="cp-sec01 ev-sec" id="">
+                <div class="container">
+                    <h1 class="center" style="display: none;">GFN會員召集令！ 填問卷，好康雙重送！</h1>
+                    <div class="sec-bn">
+                        <img src="img/1200x630_N.jpg" alt="">
+                    </div>
+                    <div class="section-inner article">
+                        <p>
+                            會員們，回家囉～<br>
+                            無論你是新加入的朋友，或是從一開始就一直陪伴 GeForce NOW 聯盟 Taiwan Mobile 雲端遊戲服務成長的夥伴們，感謝各位會員們對 GeForce NOW 一路上的支持！
+                        </p>
+                        <p>
+                            許願池大開放！讓我們聽到你們的想法吧～即日起，GFN會員們只要於活動期間內填寫問卷即能立即領取問卷好禮，此外還可再參加抽Macbook Air等大獎，幸運得主可能就4NI！
+                        </p>
+                        <p class="sub m">
+                            *一個會員帳號僅限領一組問卷好禮<br>
+                            *每位參加者(限自然人)，僅有機會能獲得一項獎項，不得重複領取<br>
+                            *須遵守本活動條款與細則
+                        </p>
+                        <a href="#newsArticle" class="btn primary-btn anchor" style="margin-top: 0;" target="_blank"><span>立即填寫問卷</span></a><br>
+                    </div>
+                </div>
+            </section>
+            <!-- 專屬包列表 -->
+            <section class="ev-sec priz" id="">
+                <div class="container">
+                    <h1>獎項</h1>
+                    <div class="priz-list">
+                        <ul>
+                            <li> <span class="nv">></span> 13 吋 MacBook Air 256G (價值:NT$30,900) * 1名</li>
+                            <li> <span class="nv">></span> Razer KISHI for iPhone 遊戲控制器 (價值:NT$3,190) * 5名</li>
+                            <li> <span class="nv">></span> Razer KISHI for Android 遊戲控制器 (價值:NT$2,590) * 4名</li>
+                            <li> <span class="nv">></span> realme Buds Air真無線藍芽耳機 (價值:NT$1,799) * 190名</li>
+                            <li> <span class="nv">></span> MyCard點數卡150點*7名</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="priz-img">
+                    <img src="img/2560_580.png" alt="" class="L-prz">
+                    <img src="img/1350_580.png" alt="" class="M-prz">
+                    <img src="img/1024_440.png" alt="" class="S-prz">
+                </div>
+            </section>
+            <!-- 遊戲宣傳片 -->
+            <section class="event-format" id="campBanner3">
+                <div class="container">
+                    <div class="content-table w-50 middle">
+                        <div class="content-cell">
+                            <div class="txt-content">
+                                <h2>透過 GeForce NOW 大肆暢玩遊戲大作</h2><br>
+                                <!-- <a href="#!" class="primary-btn"><span>立即加入</span></a> -->
+                                <a href="#!" class="img-wrap modal-opener" tt-to="hyper-video">
+                                    <img src="img/630x354.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 遊戲宣傳片 -->
+            <section class="event-format" id="campBanner5">
+                <div class="container">
+                    <div class="content-table right w-50">
+                        <div class="content-cell">
+                            <div class="txt-content">
+                                <h2 class="nv en">
+                                    隨時隨地，即開即玩
+                                </h2>
+                                <p>GeForce NOW 白金方案除了提供更長的遊玩時間，和擁有優先排隊權之外，還享有 RTX ON 光線追蹤技術功能，可以盡情享受遊戲中真實光影的視覺衝擊，與身歷其境的遊戲體驗。<br>
+                                <span class="sub m">*光線追蹤技術以遊戲本身可被支援為主</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 文字內容 -->
+            <section class="section" id="newsArticle" style="padding-top: 50px;">
+                <div class="section-inner article">
+                    <div class="section-title">
+                        <span class="en title styled long">
+                            活動說明
+                        </span>
+                    </div>
+                    <div class="section-inner article">
+                        <table>
+                            <tr>
+                                <td><span>活動期間</span></td>
+                                <td>
+                                    <ul>
+                                        <li>2021/12/14 (12:00pm)～2022/1/14 (23:59pm)</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                        <p class="">
+                            <span class="nv">活動方式</span><br>
+                            <span>於活動期間內，至下方 <a href="#survey" class="anchor nv"><span>我要填寫問卷</span></a> 填寫問卷完畢，即能領取相應的問卷好禮並參加抽獎活動。</span>
+                        </p>
+                        <p>
+                            <span class="nv">問卷好禮項目</span><br>
+                            <span>問卷好禮將依照填寫帳號的會員方案身分給予相應的好禮序號。</span>
+                            <ul class="disc">
+                                <li>Basic基本方案會員：GeForce NOW前30天免費優惠碼</li>
+                                <li>Premium白金方案月訂會員：GeForce NOW首年1,790元優惠碼</li>
+                                <li>Premium白金方案年訂會員：GeForce NOW首年1,790元優惠碼</li>
+                            </ul><br>
+                            <ul class="sub m">
+                                <li>*本活動Basic基本方案會員領取之問卷好禮GeForce NOW前30天免費優惠碼啟用截止日至 2022/02/14，限使用乙次，僅適用於「白金方案月訂」</li>
+                                <li>*本活動Premium白金方案月訂會員領取之問卷好禮GeForce NOW首年1,790元優惠碼啟用截止日至 2022/02/28，限使用乙次，僅適用於「白金方案年訂」</li>
+                                <li>*本活動Premium白金方案年訂會員問卷好禮將依會員的年訂方案到期日，於到期前一星期與到期前一天以簡訊自動發送首年1,790元優惠碼</li>
+                            </ul>
+                        </p>
+                        <p>
+                            <span class="nv">GeForce NOW優惠碼使用方式</span>
+                            <table>
+                                <tr>
+                                    <td><span style="white-space: nowrap;">步驟1</span></td>
+                                    <td>
+                                        <ul>
+                                            <li>至 GeForce NOW 官網，「 <a href="https://oauth.taiwanmobile.com/MemberOAuth/twm/login/8a1d319275b8e19c8b6341d1559b302c" target="_blank" rel="noopener noreferrer" class="nv">註冊並登入</a> 」台灣大哥大會員。</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span style="white-space: nowrap;">步驟2</span></td>
+                                    <td>
+                                        <ul>
+                                            <li>至官網「 <a href="https://gfn.taiwanmobile.com/portal/pricing" target="_blank" rel="noopener noreferrer" class="nv">會員方案</a> 」，依相對應方案點選「Premium 白金方案月訂/年訂」</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span style="white-space: nowrap;">步驟3</span></td>
+                                    <td>
+                                        <ul>
+                                            <li>輸入您獲得的 GeForce NOW 優惠碼序號至「優惠碼」區塊</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span style="white-space: nowrap;">步驟4</span></td>
+                                    <td>
+                                        <ul>
+                                            <li>選擇並設定您的付款方式後，即申辦完成。</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
+                        </p>
+                        
+                        <p>快加入 <a href="https://www.facebook.com/GeForce-NOW-Powered-by-Taiwan-Mobile-105324095022275/" target="_blank" rel="noopener noreferrer" class="nv"><span>台灣大哥大 GeForce NOW 臉書粉絲團</span></a> ，掌握最新消息和更多活動資訊！</p>
+
+                        <p>
+                            <span class="nv">獎項發贈</span><br>
+                            <span>
+                                於 2022/01/24 前，由系統隨機抽出得獎名單並公布於下方 <a href="#pList" class="anchor nv"><span>得獎名單</span></a> 處。<br>
+                                於公布後翌日起，四個工作天內，透過得獎者於此活動網頁所報名的電子信箱通知得獎訊息。
+                            </span>
+                        </p>
+                        <div class="ev-sec" id="survey">
+                            <div class="container">
+                                <h1 class="center">我要填寫問卷</h1>
+
+                                <div class="txt-center"><a href="https://gfn.taiwanmobile.com/portal/mc/login" target="_blank" rel="noopener noreferrer" class="primary-btn"><span>請先註冊 / 登入後填寫問卷</span></a></div>
+                                <div class="txt-center">感謝您的參與，請按此領取問卷好禮</div><br>
+                                
+                                <!-- 問卷區塊 -->
+                                <div class="section-panel">
+                                    <div class="secion-panel-container">
+                                        <form action="">
+                                            <div class="dark">
+                                                <span class="red">全部皆為必填</span><br>
+                                                <span>1. 年齡</span>
+                                                <label>
+                                                  <input type="radio" name="age" checked>
+                                                  <span class="design"></span>
+                                                  <span class="text">18以下(不含18歲)</span>
+                                                </label>
+                                                <label>
+                                                  <input type="radio" name="age">
+                                                  <span class="design"></span>
+                                                  <span class="text">18～24</span>
+                                                </label>
+                                                <label>
+                                                  <input type="radio" name="age">
+                                                  <span class="design"></span>
+                                                  <span class="text">25～34</span>
+                                                </label>
+                                                <label>
+                                                    <input type="radio" name="age">
+                                                    <span class="design"></span>
+                                                    <span class="text">35～44</span>
+                                                  </label>
+                                                  <label>
+                                                    <input type="radio" name="age">
+                                                    <span class="design"></span>
+                                                    <span class="text">45～54</span>
+                                                  </label>
+                                                  <label>
+                                                    <input type="radio" name="age">
+                                                    <span class="design"></span>
+                                                    <span class="text">55以上(含55歲)</span>
+                                                  </label>
+
+                                                  <span>2. 性別</span>
+                                                <label>
+                                                  <input type="radio" name="gender" checked>
+                                                  <span class="design"></span>
+                                                  <span class="text">男</span>
+                                                </label>
+                                                <label>
+                                                  <input type="radio" name="gender">
+                                                  <span class="design"></span>
+                                                  <span class="text">女</span>
+                                                </label>
+                                                <label>
+                                                  <input type="radio" name="gender">
+                                                  <span class="design"></span>
+                                                  <span class="text">其他</span>
+                                                </label>
+
+                                                <span>3. 職業</span>
+                                                <label>
+                                                  <input type="radio" name="career" checked>
+                                                  <span class="design"></span>
+                                                  <span class="text">建築營造類</span>
+                                                </label>
+                                                <label>
+                                                  <input type="radio" name="career">
+                                                  <span class="design"></span>
+                                                  <span class="text">電信通訊</span>
+                                                </label>
+                                                <label>
+                                                  <input type="radio" name="career">
+                                                  <span class="design"></span>
+                                                  <span class="text">電子相關</span>
+                                                </label>
+                                                <label>
+                                                    <input type="radio" name="career">
+                                                    <span class="design"></span>
+                                                    <span class="text">會計服務</span>
+                                                  </label>
+                                                  <label>
+                                                    <input type="radio" name="career">
+                                                    <span class="design"></span>
+                                                    <span class="text">保險業</span>
+                                                  </label>
+                                                  <label>
+                                                    <input type="radio" name="career">
+                                                    <span class="design"></span>
+                                                    <span class="text">製造業</span>
+                                                  </label>
+                                                  <label>
+                                                    <input type="radio" name="career">
+                                                    <span class="design"></span>
+                                                    <span class="text">醫療服務</span>
+                                                  </label>
+                                                  <label>
+                                                    <input type="radio" name="career">
+                                                    <span class="design"></span>
+                                                    <span class="text">藝文與影音傳播</span>
+                                                  </label>
+                                                  <label>
+                                                    <input type="radio" name="career">
+                                                    <span class="design"></span>
+                                                    <span class="text">軟體網路、資訊科技</span>
+                                                  </label>
+                                                  <label>
+                                                    <input type="radio" name="career">
+                                                    <span class="design"></span>
+                                                    <span class="text">金融財務類</span>
+                                                  </label>
+                                                  <label>
+                                                    <input type="radio" name="career">
+                                                    <span class="design"></span>
+                                                    <span class="text">行銷與銷售</span>
+                                                  </label>
+                                                  <label>
+                                                    <input type="radio" name="career">
+                                                    <span class="design"></span>
+                                                    <span class="text">政治社福</span>
+                                                  </label>
+                                                  <label>
+                                                    <input type="radio" name="career">
+                                                    <span class="design"></span>
+                                                    <span class="text">教育服務</span>
+                                                  </label>
+                                                  <label>
+                                                    <input type="radio" name="career">
+                                                    <span class="design"></span>
+                                                    <span class="text">休閒與觀光旅遊</span>
+                                                  </label>
+                                                  <label>
+                                                    <input type="radio" name="career">
+                                                    <span class="design"></span>
+                                                    <span class="text">法律服務</span>
+                                                  </label>
+                                                  <label>
+                                                    <input type="radio" name="career">
+                                                    <span class="design"></span>
+                                                    <span class="text">學生</span>
+                                                  </label>
+                                                  <label>
+                                                    <input type="radio" name="career">
+                                                    <span class="design"></span>
+                                                    <span class="text">家管/退休/待業中</span>
+                                                  </label>
+                                                  <label>
+                                                    <input type="radio" name="career" class="opt-other">
+                                                    <span class="design"></span>
+                                                    <span class="text">其他</span>
+                                                    <input type="text" class="simple-txt-input">
+                                                  </label>
+                                                  
+                                                  <span>4. 職務</span>
+                                                    <label>
+                                                    <input type="radio" name="position" checked>
+                                                    <span class="design"></span>
+                                                    <span class="text">負責人/高階層級主管</span>
+                                                    </label>
+                                                    <label>
+                                                    <input type="radio" name="position">
+                                                    <span class="design"></span>
+                                                    <span class="text">中階層級主</span>
+                                                    </label>
+                                                    <label>
+                                                    <input type="radio" name="position">
+                                                    <span class="design"></span>
+                                                    <span class="text">基層管理者</span>
+                                                    </label>
+                                                    <label>
+                                                    <input type="radio" name="position">
+                                                    <span class="design"></span>
+                                                    <span class="text">一般員工</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="radio" name="career" class="opt-other">
+                                                        <span class="design"></span>
+                                                        <span class="text">其他</span>
+                                                        <input type="text" class="simple-txt-input">
+                                                    </label>
+
+                                                    <span>5. 居住地</span>
+                                                    <select class="">
+                                                        <option value="" data-display-text="請選擇">請選擇</option>
+                                                        <option value="A">基隆市</option>
+                                                        <option value="B">台北市</option>
+                                                        <option value="C">新北市</option>
+                                                    </select>
+
+                                                    <span>6. 感情狀態</span>
+                                                    <label>
+                                                    <input type="radio" name="relationship" checked>
+                                                    <span class="design"></span>
+                                                    <span class="text">未婚，有小孩</span>
+                                                    </label>
+                                                    <label>
+                                                    <input type="radio" name="relationship">
+                                                    <span class="design"></span>
+                                                    <span class="text">未婚，沒有小孩</span>
+                                                    </label>
+                                                    <label>
+                                                    <input type="radio" name="relationship">
+                                                    <span class="design"></span>
+                                                    <span class="text">已婚，有小孩</span>
+                                                    </label>
+                                                    <label>
+                                                    <input type="radio" name="relationship">
+                                                    <span class="design"></span>
+                                                    <span class="text">已婚，沒有小孩</span>
+                                                    </label>
+                                                    
+                                                    <span>7. 最常看哪些遊戲類的KOL/網紅/直播主/YouTuber</span>
+                                                    <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-1">萊斯</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-2" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-2">鳥屎</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-3" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-3">國動</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-4" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-4">統神</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-5" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-5">Linzin 阿哲</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-6" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-6">十六</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-7" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-7">Uzra</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-8" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-8">KSP</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-9" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-9">AsSen阿森</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-10" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-10">KYO</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-11" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-11">RHung阿航</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-12" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-12">K7凱琪</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-13" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-13">Jing &Huan</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-14" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-14">XargonTW 殺梗</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-15" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-15">丁特</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-16" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-16">其他<input type="text" class="simple-txt-input"></label>
+
+                                                    <span>8. 最常看哪些非遊戲類的KOL / YouTuber</span><br>
+                                                    <input type="text" class="simple-txt-input lvl"></label><br>
+
+                                                    <span>9. 訂閱其他網路平台服務的習慣方案為何?</span>
+                                                    <input class="styled-checkbox" id="styled-checkbox-17" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-17">基本個人方案</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-18" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-18">雙人方案</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-19" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-19">家庭方案</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-20" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-20">其他<input type="text" class="simple-txt-input"></label>
+
+                                                    <span>10. 從哪裡認識到GeForce NOW這個服務?</span>
+                                                    <input class="styled-checkbox" id="styled-checkbox-21" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-21">GeForce NOW官方網站</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-22" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-22">GeForce NOW Facebook粉絲團</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-23" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-23">台灣大哥大Facebook粉絲團</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-24" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-24">台灣大哥大GeForce NOW Email電子報</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-25" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-25">簡訊</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-26" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-26">廣告</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-27" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-27">親友告知</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-28" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-28">網路搜尋</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-29" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-29">論壇貼文</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-30" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-30">凱擘大寬頻/台灣大寬頻</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-31" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-31">KOL、網紅、直播主</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-32" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-32">台灣大哥大實體門市</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-33" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-33">NVIDIA官網/粉絲團/EDM</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-34" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-34">其他<input type="text" class="simple-txt-input"></label>
+
+                                                    <span>11. 最喜歡的遊戲類型?(複選5項)</span>
+                                                    <input class="styled-checkbox" id="styled-checkbox-35" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-35">射擊</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-36" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-36">恐怖</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-37" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-37">劇情</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-38" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-38">動作</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-39" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-39">冒險</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-40" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-40">休閒</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-41" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-41">角色扮演</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-42" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-42">獨立</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-43" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-43">競速、運動</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-44" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-44">派對</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-45" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-45">多人連線</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-46" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-46">開放世界</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-47" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-47">大逃殺</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-48" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-48">策略、模擬</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-49" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-49">其他<input type="text" class="simple-txt-input"></label>
+
+
+                                                    <span>12. 希望GeForce NOW未來能夠增加的付費方式?</span>
+                                                    <input class="styled-checkbox" id="styled-checkbox-50" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-50">點數卡、禮物卡</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-51" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-51">超商代碼繳費</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-52" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-52">Paypal</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-53" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-53">電子支付(Apple Pay, LINE Pay)</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-54" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-54">簽帳金融卡</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-55" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-55">其他<input type="text" class="simple-txt-input"></label>
+
+                                                    <span>13. 吸引你願意訂閱使用GeForce NOW的原因為? (複選3項)</span>
+                                                    <input class="styled-checkbox" id="styled-checkbox-56" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-56">訂閱價格低廉</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-57" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-57">能夠跨裝置遊玩</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-58" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-58">能夠任意地點暢玩</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-59" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-59">RTX ON光線追蹤技術</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-60" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-60">無須下載遊戲</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-61" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-61">無需耗費較久的時間等待遊戲載入</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-62" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-62">有免費Basic基本方案可使用</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-63" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-63">支援的遊戲陣容</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-64" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-64">不想花大錢購買昂貴設備</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-65" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-65">輕度遊玩，覺得沒有必要額外購買設備</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-66" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-66">其他<input type="text" class="simple-txt-input"></label>
+
+                                                    <span>14. 對於GeForce NOW整體的滿意度?</span>
+                                                    <label>
+                                                    <input type="radio" name="satisfaction" class="anchor sati" href="#sati">
+                                                    <span class="design"></span>
+                                                    <span class="text">滿意，接續15-1題</span>
+                                                    </label>
+                                                    <label>
+                                                    <input type="radio" name="satisfaction">
+                                                    <span class="design"></span>
+                                                    <span class="text">普通</span>
+                                                    </label>
+                                                    <label>
+                                                    <input type="radio" name="satisfaction" class="anchor unsati" href="#unsati"> 
+                                                    <span class="design"></span>
+                                                    <span class="text">不滿意，接續15-2題</span>
+                                                    </label>
+
+                                                    <div class="sati-sec">
+                                                        <span  id="sati">15-1. 對於GeForce NOW覺得滿意的原因為? (複選3項)</span>
+                                                    <input class="styled-checkbox" id="styled-checkbox-67" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-67">訂閱價格</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-68" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-68">服務使用彈性度</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-69" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-69">遊玩體驗</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-70" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-70">服務操作便利度</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-71" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-71">遊戲數量與種類</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-72" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-72">遊戲支援速度</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-73" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-73">支援的裝置種類</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-74" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-74">品牌</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-75" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-75">其他<input type="text" class="simple-txt-input"></label>
+                                                    </div>
+
+                                                    <div class="unsati-sec">
+                                                        <span id="unsati">15-2. 對於GeForce NOW覺得不滿意的原因為? (複選3項，非必填)</span>
+                                                    <input class="styled-checkbox" id="styled-checkbox-67" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-67">訂閱價格</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-68" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-68">服務使用彈性度</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-69" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-69">遊玩體驗</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-70" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-70">服務操作便利度</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-71" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-71">遊戲數量與種類</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-72" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-72">遊戲支援速度</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-73" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-73">支援的裝置種類</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-74" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-74">品牌</label>
+                                                    <input class="styled-checkbox" id="styled-checkbox-75" type="checkbox" value="value1">
+                                                    <label for="styled-checkbox-75">其他<input type="text" class="simple-txt-input"></label>
+                                                    </div>
+
+                                                    <span>16. 許願池大開放！歡迎跟我們說希望GeForce NOW在未來能夠上架的遊戲</span><br>
+                                                    <input type="text" class="simple-txt-input lvl"></label><br>
+
+                                                    <span>17. 還有什麼話想對GeForce NOW說的呢?</span><br>
+                                                    <input type="text" class="simple-txt-input lvl"></label><br>
+
+                                                    <span>18. 請問您願意接受後續相關的電聯訪談嗎?</span>
+                                                    <label>
+                                                    <input type="radio" name="will" class="say-yes">
+                                                    <span class="design"></span>
+                                                    <span class="text">願意</span>
+                                                    </label>
+                                                    <label>
+                                                    <input type="radio" name="will" class="say-no">
+                                                    <span class="design"></span>
+                                                    <span class="text">不願意</span>
+                                                    </label>
+
+                                                    <div class="interview-time">
+                                                        <span>19. 請問方便接受電聯的時間點為?</span>
+                                                    <label>
+                                                    <input type="radio" name="time">
+                                                    <span class="design"></span>
+                                                    <span class="text">平日上午</span>
+                                                    </label>
+                                                    <label>
+                                                    <input type="radio" name="time">
+                                                    <span class="design"></span>
+                                                    <span class="text">平日中午</span>
+                                                    </label>
+                                                    <label>
+                                                    <input type="radio" name="time">
+                                                    <span class="design"></span>
+                                                    <span class="text">平日下午</span>
+                                                    </label>
+                                                    <label>
+                                                    <input type="radio" name="time">
+                                                    <span class="design"></span>
+                                                    <span class="text">假日上午</span>
+                                                    </label>
+                                                    <label>
+                                                    <input type="radio" name="time">
+                                                    <span class="design"></span>
+                                                    <span class="text">假日中午</span>
+                                                    </label>
+                                                    <label>
+                                                    <input type="radio" name="time">
+                                                    <span class="design"></span>
+                                                    <span class="text">假日下午</span>
+                                                    </label>
+                                                    </div>
+                                                    
+                                              </div>
+                                        </form>
+                                        <form action="">
+                                            <div>
+                                                <!-- 電子個人 (兩聯式) -->
+                                                <div id="">
+                                                    <!-- 20200811 新增真實姓名欄位 -->
+                                                    <div class="primary_input-wrap col1">
+                                                        <div class="primary_input-title">
+                                                            <div class="ic-wrap">
+                                                                <span>真實姓名</span>
+                                                                <span>Full Name</span>
+                                                            </div>                                                    
+                                                        </div>
+                                                        <input type="text" placeholder="請輸入您的姓名">
+                                                        <!-- <span class="err-txt">Email格式錯誤</span> -->
+                                                    </div>
+                                                    <!-- 20200811 新增真實姓名欄位 -->
+                                                    <!-- <div class="col1 q-title">
+                                                        <span>您是如何獲得搶先體驗資格：</span>
+                                                    </div>
+                                                    <div class="col1">
+                                                        <select id="q2" name="receiptType" onchange="ShowStr(this.id)">
+                                                            <option value="type1">台灣大哥大5G用戶</option>
+                                                            <option value="type2">透過合作夥伴行銷活動</option>
+                                                        </select> 
+                                                    </div> -->
+                                                    <div class="primary_input-wrap col1">
+                                                        <div class="primary_input-title">
+                                                            <div class="ic-wrap">
+                                                                <span>手機門號</span>
+                                                                <span>Phone Number</span>
+                                                            </div>                                                    
+                                                        </div>
+                                                        <input type="text" placeholder="僅限台灣門號">
+                                                        <!-- <span class="err-txt">地址格式錯誤</span> -->
+                                                    </div>
+                                                    <div class="primary_input-wrap col1">
+                                                        <div class="primary_input-title">
+                                                            <div class="ic-wrap">
+                                                                <span>電子信箱</span>
+                                                                <span>E-mail</span>
+                                                            </div>                                                    
+                                                        </div>
+                                                        <input type="text" placeholder="">
+                                                        <!-- <span class="err-txt">地址格式錯誤</span> -->
+                                                    </div>
+                                                    <div class="col1 ic-wrap">
+                                                        <input class="styled-checkbox" id="styled-checkbox-2" type="checkbox" value="value2">
+                                                        <label for="styled-checkbox-2">本人已確實詳細閱讀並同意 <a href="../../privacy.html" target="_blank" style="margin: 0;"><span class="nv">隱私權政策</span></a> </label>
+                                                    </div>
+                                                    <a href="#!" class="primary-btn btn" style="text-align: center;"><span>送出</span></a>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-title">
+                            <span class="en title styled long">
+                                問卷好禮
+                            </span>
+                        </div>
+                        <div class="txt-center"><a href="https://gfn.taiwanmobile.com/portal/mc/login" target="_blank" rel="noopener noreferrer" class="primary-btn"><span>按此領取問卷好禮</span></a></div>
+                        <!-- 點擊領取後出現 -->
+                        <div class="copy-wrap">
+                            <input type="text" value="XXXX-XXXX-XXXX-XXXX" id="copyInput" class="code" readonly>
+
+                            <div class="copytt">
+                                <button onclick="copyTxt()" onmouseout="outFunc()">
+                                    <span class="tooltiptext" id="myTooltip">點擊複製</span>
+                                    <span>複製</span>
+                                </button>
+                            </div> 
+                        </div>
+
+                        <div class="divi-wide hyper"></div>
+
+                        <div class="ev-sec" id="pList">
+                            <div class="container">
+                                <h1 class="center">得獎名單</h1>
+                                <div class="txt-center">將於2022/01/24前公布</div>
+                                <!-- <ul>
+                                    <li class="heigher-list"><span class="nv">13 吋 MacBook Air 256G (價值:NT$30900)</span><br><span>許 ○ 偉　0912XXXX13</span></li>
+                                    <li class="heigher-list"><span class="nv">Razer KISHI for Android 遊戲控制器 (價值:NT$2590) --- 1組</span><br><span>林 ○ 傑  0931XXXX61</span></li>
+                                    <li class="heigher-list"><span class="nv">Razer KISHI for iPhone 遊戲控制器 (價值:NT$3190) --- 1組</span><br><span>馬 ○ 恩  0958XXXX56</span></li>
+                                    <li class="heigher-list"><span class="nv">Razer Hammerhead True Wireless Pro 主動式降噪藍牙耳機 (價值:NT$5990) --- 1組</span><br><span>林 ○ 夆  0986XXXX15</span></li>
+                                    <li class="heigher-list"><span class="nv">ROG Strix GO 2.4 無線電競耳機 (價值:NT$5490) --- 1組</span><br><span>吳 ○ 誠0903XXXX02</span></li>
+                                    <li class="heigher-list"><span class="nv">《三國群英傳8》繪本典藏包 (價值:NT$1680) --- 4組</span><br><span>邱 ○ 恬 0911XXXX15 , 鄭 ○ 霖 0927XXXX21 , 黃 ○ 丞 0926XXXX45 , 王 ○ 聖 0902XXXX73</span></li>
+                                    <li class="heigher-list"><span class="nv">《電馭叛客 2077》遊戲序號 (價值:NT$1590) --- 2組 / 適用於GOG平台</span><br><span>黃 ○ 郁 0918XXXX72 , 陳 ○ 廷 0907XXXX28</span></li>
+                                    <li class="heigher-list"><span class="nv">《刺客教條：維京紀元》遊戲序號 (價值:NT$1699) --- 3組 / 適用於Ubisoft Connect平台</span><br><span>陳 ○ 嘉 0977XXXX01 , 林 ○ 傳 0955XXXX07 , 吳 ○ 勳 0926XXXX14</span></li>
+                                    <li class="heigher-list"><span class="nv">《芬尼克斯傳說》遊戲序號 (價值:NT$1699) --- 3組 / 適用於Ubisoft Connect平台</span><br><span>張 ○ 哲 0921XXXX72 , 陳 ○ 弘 0916XXXX95 , 王 ○ 智 0988XXXX48</span></li>
+                                    <li class="heigher-list"><span class="nv">《APEX英雄》4350金幣 (價值:NT$1360) --- 3組 /適用於Origin平台</span><br><span>倪 ○ 永 0952XXXX40 , 凃 ○ 勝 0979XXXX63 , 張 ○ 凱 0932XXXX64</span></li>
+                                    <li class="heigher-list"><span class="nv">《看門狗：自由軍團》限量人物公仔 (價值:NT$1980) (約L11*D8*H26.5cm) --- 1組</span><br><span>徐 ○ 笙 0976XXXX31</span></li>
+                                </ul>
+                                <ul class="disc sub sm">
+                                    <li>將透過得獎者於此活動網頁所登記的電子信箱，通知得獎訊息。</li>
+                                    <li>若因個人因素無法確實接收電子郵件得獎通知，恕不補發。</li>
+                                    <li>若於2021/03/31前未收到得獎者的回信或應收到的資料，逾期將視為棄權得獎資格，並不另行再次抽獎。</li>
+                                </ul> -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+            <!-- 下方額外連結 -->
+            <section class="section8" id="preFooter">
+                <div class="container">
+                    <div class="option-item-wrap hyper">
+                        <div class="item wow fadeInUp">
+                            <a href="qa.html" class="ic-wrap hyper-func-item" target="_blank">
+                                <span class="nv">常見問題</span>
+                            </a>
+                        </div>
+                         
+                        <div class="divi-verti"></div>
+                        <div class="item wow fadeInUp">
+                            <a href="terms.html" class="ic-wrap hyper-func-item" target="_blank">
+                                <span class="nv">條款與條件</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="divi-wide hyper"></div>
+                    <div class="option-item-wrap hyper">
+                        <img src="img/shield-gfn.svg" alt="" style="max-width: 120px; width: auto;">
+                        <img src="https://www.nvidia.com/content/dam/en-zz/Solutions/GeForce/campaigns/hyper-scape-bundle/new-creative/geforce-rtx-hyper-scape-footer-gfn-logo-dltp.png" alt="">
+                        <img src="img/shield-gfn.svg" alt="" style="max-width: 120px; width: auto;">
+                    </div>
+                    <div class="copyright hyper">
+                        <p>© 2021 NVIDIA Corporation. All rights reserved. NVIDIA、NVIDIA 標誌和 GeForce RTX 皆為 NVIDIA Corporation 於美國及其他國家的商標和/或註冊商標。其他公司及產品名稱可能為其各自相關公司的商標。</p>
+                    </div>
+                </div>
+                <div class="divi-wide"></div>
+                <div class="multi-item-wrap">
+                    <div class="multi-item wow fadeInRight">
+                        <div class="title">關於 <span class="en">About</span></div>
+                        <div class="divi"></div>
+                        <div class="multi-link-wrap">
+                            <div class="col">
+                                <!-- 20200811 掛載隱私權政策 -->
+                                <a href="../../privacy.html" target="_blank" class="multi-link">隱私權政策</a>
+                                <!-- 20200811 掛載隱私權政策 -->
+                                <a href="../../termsofuse.html" class="multi-link">使用者條款</a>
+                                <a href="#!" class="multi-link">合作洽談</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="multi-item wow fadeInRight">
+                        <div class="title">客戶服務 <span class="en">Service</span></div>
+                        <div class="divi"></div>
+                        <div class="multi-link-wrap">
+                            <div class="col">
+                                <a href="../../qa.html" class="multi-link">常見問答</a>
+                                <a href="../../" class="multi-link">快速入門</a>
+                                <a href="../../download.html" class="multi-link">軟體下載</a>
+                            </div>
+                            <div class="col">
+                                <a href="../../system-require.html" class="multi-link">系統需求</a>
+                                <a href="../../admin-question.html" class="multi-link">我要發問</a>
+                                <a href="../../pricing.html" class="multi-link">會員方案</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 頁尾 -->
+            <footer>
+                <div class="container">
+                    <div class="footer-nav">
+                        <div class="logo-nav wow fadeInLeft">
+                            <a href="../../index.html" class="logo">
+                                <img src="../../img/logo-white.svg" alt="">
+                            </a>
+                            <a href="../../games-list.html" class="footer-link">遊戲列表</a>
+                            <a href="../../pricing.html" class="footer-link">會員方案</a>
+                            <a href="../../system-require.html" class="footer-link">系統需求</a>
+                            <a href="../../qa.html" class="footer-link">常見問題</a>
+                            <a href="../../" class="footer-link">快速入門</a>
+                            <a href="../../download.html" class="footer-link">軟體下載</a>
+                        </div>
+                        <div class="social-media wow fadeInRight">
+                            <a href="../../" class="social-ic">
+                                <img src="../../img/fb.svg" alt="">
+                            </a>
+                            <a href="../../" class="social-ic">
+                                <img src="../../img/twitch.svg" alt="">
+                            </a>
+                            <a href="../../" class="social-ic">
+                                <img src="../../img/twitter.svg" alt="">
+                            </a>
+                            <a href="../../" class="social-ic">
+                                <img src="../../img/youtube.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="divi-wide g60"></div>
+                    <div class="copy-right wow fadeInUp">
+                        <div class="line1">台灣大哥大版權所有© 2020 TaiwanMobile all rights reserved.</div>
+                        <div class="line2">© 2020 NVIDIA Corporation. All rights reserved.</div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- 影片彈窗 20200824 -->
+        <div class="hyper-video modal">
+            <div class="modal-container">
+                <div class="modal-closer"></div>
+                <div class="modal-panel">
+                    <div class="modal-title">
+                    </div>
+                    <div class="modal-body">
+                        <div class="video-frame ratio ratio__16-9">
+                            <iframe src="https://www.youtube.com/embed/X0pXE7EroKs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 影片彈窗 20200824 -->
+    </div>
+    <!--script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@2.4.3/dist/simplebar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="../../js/custom.js"></script>
+
+    <!-- JQ 掛載點 -->
+    <script>
+        $(document).ready(function () {
+            wow = new WOW(
+                      {
+                      boxClass:     'wow',      // default
+                      animateClass: 'fadeInLeftShort', // default
+                      offset:       0,          // default
+                      mobile:       true,       // default
+                      live:         true        // default
+                    }
+                    )
+            new WOW().init();
+            if($(window).width()<500) {
+                $('.step-item-wrap .item').addClass('stop')
+            }
+            $('#nav-icon2').click(function () {
+                $(this).toggleClass('open');
+                // 20200819 更新小版會員中心面板顯示問題
+                $('.account-center-opener').toggleClass('open');
+                $('#accountOption').toggleClass('open');
+            });
+            $('.game-gallery-carousel').owlCarousel({
+                center: true,
+                items: 3,
+                loop: true,
+                autoplay: true,
+                autoplayHoverPause: true,
+                dots: false,
+                responsive : {
+                // breakpoint from 0 up
+                0 : {
+                    items: 1,
+                },
+                // breakpoint from 768 up
+                768 : {
+                    items: 3,
+                },
+                1024 : {
+                    items: 5,
+                }
+            }
+            });
+            $('#nav-icon2').click(function () {
+                $('.m-menu').slideToggle();
+            })
+            $(window).resize(function () {
+                if ($(this).width() > 1024) {
+                    $('.m-menu').slideUp();
+                $('nav .primary-btn').removeClass('open');
+                    $('#nav-icon2').removeClass('open');
+                }
+            })
+            var scrollTop = $(".scrollTop");
+
+            $(window).scroll(function() {
+                var topPos = $(this).scrollTop();
+                if (topPos > 100) {
+                $(scrollTop).css("opacity", "1");
+
+                } else {
+                $(scrollTop).css("opacity", "0");
+                }
+
+            }); 
+
+            //Click event to scroll to top
+            $(scrollTop).click(function() {
+                $('html, body').animate({
+                scrollTop: 0
+                }, 800);
+                return false;
+
+            }); 
+        
+        });
+    </script>
+    <!-- 影片彈窗 20200824 -->
+    <script>
+        $('.hyper-video .modal-closer').click(function(){      
+            $('.hyper-video iframe').attr('src', $('.hyper-video iframe').attr('src'));
+        });
+        $('.sati').click(function(){
+            $('.sati-sec').show();
+            $('.unsati-sec').hide();
+        })
+        $('.unsati').click(function(){
+            $('.sati-sec').hide();
+            $('.unsati-sec').show();
+        })
+        $('.say-yes').click(function(){
+            $('.interview-time').show();
+        })
+        $('.say-no').click(function(){
+            $('.interview-time').hide();
+        })
+    </script>
+    <!-- 影片彈窗 20200824 -->
+
+</body>
+
+</html>

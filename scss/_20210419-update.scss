@@ -1,0 +1,15 @@
+.modal.auto-pop {
+    display: flex;
+    .modal-panel {
+        background-color: $trans;
+        padding: 15px;
+    }
+    .modal-closer_btn {
+        position: absolute;
+        right: -10px;
+        top: 10px;
+    }
+    .popimg {
+        width: 100%;
+    }
+}
