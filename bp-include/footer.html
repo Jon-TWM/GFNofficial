@@ -1,0 +1,123 @@
+		<!-- V2 - Breadcrumb - Start -->
+		<div class="v2-m-breadcrumb">
+		  <div class="container">
+			<div class="v2-m-breadcrumb__list" id="breadcrumb-footer">
+			</div>
+		  </div>
+		</div>
+		<!-- V2 - Breadcrumb - End -->
+	</div>
+<!-- Wrapper End -->
+<footer id="v2-twm-global-footer" class="v2-o-footer">
+	<div v-if="footerData && footerData.banners" class="v2-o-footer__banner">
+	  <div class="v2-o-footer__banner-wrapper">
+		<div class="v2-o-footer__banner-frame">
+		  <div v-for="(banner, key) in footerData.banners.datas" class="v2-o-footer__banner-frame-column">
+			<a class="v2-o-footer__banner-card js-footer-lazy-image" :href="banner.link" :target="banner.target" :data-bg="banner.image" @click="sendGaEvent('網站天地','表尾點擊','表尾廣告_'+banner.name);">
+			  <div class="v2-o-footer__banner-card-text" v-html="banner.name"></div>
+			</a>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<div class="v2-o-footer__main">
+	  <div class="v2-o-footer__main-wrapper">
+		<div class="v2-o-footer__main-frame">
+		  <div v-if="footerData && footerData.informations" class="v2-o-footer__information">
+			<div class="v2-o-footer__information-logo">
+			  <a class="v2-o-footer__information-logo-link" :href="footerData.informations.logoLink">
+				<img class="js-footer-lazy-image" :data-src="footerData.informations.logoImage" :alt="footerData.informations.logoAlt">
+			  </a>
+			</div>
+			<div class="v2-o-footer__information-main">
+			  <div class="v2-o-footer__information-list">
+				<p v-if="footerData.informations.serviceContactText" class="v2-o-footer__information-list-title" v-html="footerData.informations.serviceContactText"></p>
+				<div v-if="footerData.informations.serviceContactDatas" class="v2-o-footer__information-list-items">
+				  <p v-for="text in footerData.informations.serviceContactDatas" class="v2-o-footer__information-list-item" v-html="text"></p>
+				</div>
+				<p v-if="footerData.informations.address" class="v2-o-footer__information-list-address" v-html="footerData.informations.address"></p>
+			  </div>
+			  <div v-if="footerData.informations.socialMedias" class="v2-o-footer__information-socials">
+				<div class="v2-o-footer__information-socials-frame">
+				  <div v-for="social in footerData.informations.socialMedias" class="v2-o-footer__information-socials-column">
+					<a class="v2-o-footer__information-socials-link" :href="social.link" :target="social.target">
+					  <svg>
+						<use :xlink:href="'#' + social.icon"></use>
+					  </svg>
+					</a>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div v-if="footerData && footerData.sitemaps && footerData.sitemaps.datas" class="v2-o-footer__sitemap">
+			<div class="v2-o-footer__sitemap-frame">
+			  <div v-for="data in footerData.sitemaps.datas" class="v2-o-footer__sitemap-column">
+				<p class="v2-o-footer__sitemap-topic" v-html="data.topic"></p>
+				<div v-if="data.children" class="v2-o-footer__sitemap-children">
+				  <a v-for="child in data.children" class="v2-o-footer__sitemap-children-link" :href="child.link" :target="child.target" @click="sendGaEvent('網站天地','表尾點擊','SitemapLink_'+child.name);">
+					<span v-if="child.icon" class="v2-o-footer__sitemap-children-link-icon">
+					  <img class="js-footer-lazy-image" :data-src="child.icon">
+					</span>
+					<span class="v2-o-footer__sitemap-children-link-text" v-html="child.name"></span>
+				  </a>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<div class="v2-o-footer__gradient-line"></div>
+	<div class="v2-o-footer__bottom">
+	  <div class="v2-o-footer__bottom-wrapper">
+		<div v-if="footerData.otherLinks && footerData.otherLinks.datas" class="v2-o-footer__other">
+		  <div class="v2-o-footer__other-frame">
+			<a v-for="other in footerData.otherLinks.datas" class="v2-o-footer__other-link" :class="other.class" :href="other.link" :target="other.target" @click="sendGaEvent('網站天地','表尾點擊','OtherLink_'+other.name);">
+			  <span v-if="other.icon" class="v2-o-footer__other-link-icon">
+				<img :src="other.icon">
+			  </span>
+			  <span class="v2-o-footer__other-link-text" v-html="other.name"></span>
+			</a>
+		  </div>
+		</div>
+		<div class="v2-o-footer__copyright">
+		  <p class="v2-o-footer__copyright-text">
+			<span v-html="footerData.copyright.frontText"></span>
+			<span>&copy;</span>
+			<span v-html="footerData.copyright.backText"></span>
+		  </p>
+		</div>
+	  </div>
+	</div>
+	<transition name="cookie-fade">
+	  <div class="v2-o-footer__cookie" v-if="cookiePolicyPopup" data-nosnippet>
+		<div class="v2-o-footer__cookie-wrap">
+		  <p class="v2-o-footer__cookie-description">為提供您更好的使用體驗，本網站會紀錄您的 cookies 資訊，若您繼續瀏覽本網站，即表示您同意我們使用 cookies。
+		  請參閱我們的 <a class="v2-o-footer__cookie-link" href="https://www.taiwanmobile.com/footer/static-privacy.html">隱私權聲明</a>以獲得更多資訊。</p>
+		  <div class="v2-o-footer__cookie-buttons">
+			<div class="v2-o-footer__cookie-button" @click="setIcsCookie('TWM-ActiveCookiePolicy','false',365);closeCookiePolicyPopup();">我同意</div>
+		  </div>
+		</div>
+	  </div>
+	</transition>
+	<div class="totop" :class="headerClass">
+	  <svg width="40" height="40" fill="none" fill-rule="evenodd">
+		<circle cx="20" cy="20" r="20" fill="#333" fill-rule="nonzero" fill-opacity=".5"></circle>
+		<path stroke="#FFF" stroke-linecap="square" stroke-width="2" d="M20 11.77v17.973M14 16.65L20 11l6 5.649"></path>
+	  </svg>
+	</div>
+	<!--20230701 新增 start-->
+	<!---- PC 小麥 - id Name - littlemyBtn---->
+	<a onclick="sendGaEvent('網站天地','表尾點擊','我要問小麥-PC');" :class="headerClass" class="v2-a-bot-chat" id="littlemyBtn">
+		<p class="v2-a-bot-chat__bubble openpclitmy">我要問小麥</p> 
+		<p class="closeclitmy">收合<br>視窗</p> 
+		<div class="v2-a-bot-chat__photo js-lazy-image entered loaded" style="background-image: url('https://www.taiwanmobile.com/bp-include/Y22/img/public/ms-my-phone.png?v=20230701');" data-ll-status="entered">
+		</div>
+	</a>
+	<div id="littlemy_ChatBox">
+		<div class="chatbox_body" :class="headerClass"><span id="closrif"><svg><use xlink:href="#fail"></use></svg></span></div>
+	</div>
+	<!---- PC 小麥 end ---->
+	<!--20230701 新增 end-->
+</footer>

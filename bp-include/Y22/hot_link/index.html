@@ -1,0 +1,166 @@
+
+
+<template key="quickServiceVersion1" v-if="quickServiceVersion === 1">
+							<div id="navService" class="no-hover" v-if="!isTab && !isVideo && !isMenu && !customerServicePopup" :class="serviceClass+' '+headerClass">
+								<div class="navHead" @click.stop="serviceClick"><span>熱門服務</span><i class="icon-arrow-left"></i></div>
+								<div class="navInfo"><div class="desktop-swiper" v-if="!isXs"><div class="swiper-slide">
+								<a :href="isLg ? 'https://www.taiwanmobile.com/csonline/ssi/webpay/payIndex.html' : 'https://cs.taiwanmobile.com/wap-portal/payBillMenu.action'" onClick="sendGaEvent('熱門連結','按鈕點擊','繳費')">
+									<div class="navInfo__icon"><img src="https://www.taiwanmobile.com/bp-include/Y22/img/icon/service/pay.svg"></div><div class="tip">繳費</div>
+								</a>
+							</div><div class="swiper-slide">
+								<a :href="isLg ? 'https://ebill.taiwanmobile.com/ebill/CBG/Pro011.aspx' : 'https://cs.taiwanmobile.com/wap-portal/queryBillSixPeriodIndex.action'" onClick="sendGaEvent('熱門連結','按鈕點擊','帳單')">
+									<div class="navInfo__icon"><img src="https://www.taiwanmobile.com/bp-include/Y22/img/icon/service/bill.svg"></div><div class="tip">帳單</div>
+								</a>
+							</div><div class="swiper-slide">
+								<a :href="isLg ? 'https://www.taiwanmobile.com/cs/queryContract.htm' : 'https://cs.taiwanmobile.com/wap-portal/smpQueryContract.action'" onClick="sendGaEvent('熱門連結','按鈕點擊','合約')">
+									<div class="navInfo__icon"><img src="https://www.taiwanmobile.com/bp-include/Y22/img/icon/service/index-contract.svg"></div><div class="tip">合約</div>
+								</a>
+							</div><div class="swiper-slide">
+								<a :href="isLg ? 'https://www.taiwanmobile.com/myvip/membership.html' : 'https://www.taiwanmobile.com/myvip/membership.html'" onClick="sendGaEvent('熱門連結','按鈕點擊','VIP')">
+									<div class="navInfo__icon"><img src="https://www.taiwanmobile.com/bp-include/Y22/img/icon/service/index-vip.svg"></div><div class="tip">VIP</div>
+								</a>
+							</div><div class="swiper-slide">
+								<a :href="isLg ? 'https://www.taiwanmobile.com/events/A32/' : 'https://www.taiwanmobile.com/events/A32/'" onClick="sendGaEvent('熱門連結','按鈕點擊','召回公告')">
+									<div class="navInfo__icon"><img src="https://www.taiwanmobile.com/bp-include/Y22/img/icon/service/index-A32.svg"></div><div class="tip">召回公告</div>
+								</a>
+							</div><div class="swiper-slide">
+								<a :href="isLg ? 'https://www.taiwanmobile.com/csonline/plcc/open_possible.html' : 'https://www.taiwanmobile.com/csonline/plcc/open_possible.html'" onClick="sendGaEvent('熱門連結','按鈕點擊','聯名卡')">
+									<div class="navInfo__icon"><img src="https://www.taiwanmobile.com/bp-include/Y22/img/icon/service/index_openpossible_1.svg"></div><div class="tip">聯名卡</div>
+								</a>
+							</div><div class="swiper-slide">
+								<a :href="isLg ? 'https://www.taiwanmobile.com/5G/page/index-ebg.html' : 'https://www.taiwanmobile.com/5G/page/index-ebg.html'" onClick="sendGaEvent('熱門連結','按鈕點擊','企業5G')">
+									<div class="navInfo__icon"><img src="https://www.taiwanmobile.com/bp-include/Y22/img/icon/service/index-EBG.svg"></div><div class="tip">企業5G</div>
+								</a>
+							</div><div class="swiper-slide">
+								<a :href="isLg ? 'https://telecom.taiwanmobile.com/emyfone/action/eBGCampaignSale.do?method=showLogin' : 'https://telecom.taiwanmobile.com/emyfone/action/mobileEBGCampaignSale.do?method=showLogin'" onClick="sendGaEvent('熱門連結','按鈕點擊','企業優惠')">
+									<div class="navInfo__icon"><img src="https://www.taiwanmobile.com/bp-include/Y22/img/icon/service/index-business.svg"></div><div class="tip">企業優惠</div>
+								</a>
+							</div></div><swiper :options="swiperOptionXs" ref="check1" class="mobile-swiper" v-if="isXs">
+					<div class="swiper-button-prev" slot="button-prev"><i class="icon-left"></i></div>
+					<div class="swiper-button-next" slot="button-next">
+						<i class="icon-right"></i></div>
+							<swiper-slide>
+								<a href="https://cs.taiwanmobile.com/wap-portal/payBillMenu.action" onClick="sendGaEvent('熱門連結','按鈕點擊','繳費')">
+									<div class="navInfo__icon"><img src="https://www.taiwanmobile.com/bp-include/Y22/img/icon/service/pay.svg"></div>
+									<div class="tip">繳費</div>
+								</a>
+							</swiper-slide><swiper-slide>
+								<a href="https://cs.taiwanmobile.com/wap-portal/queryBillSixPeriodIndex.action" onClick="sendGaEvent('熱門連結','按鈕點擊','帳單')">
+									<div class="navInfo__icon"><img src="https://www.taiwanmobile.com/bp-include/Y22/img/icon/service/bill.svg"></div>
+									<div class="tip">帳單</div>
+								</a>
+							</swiper-slide><swiper-slide>
+								<a href="https://cs.taiwanmobile.com/wap-portal/smpQueryContract.action" onClick="sendGaEvent('熱門連結','按鈕點擊','合約')">
+									<div class="navInfo__icon"><img src="https://www.taiwanmobile.com/bp-include/Y22/img/icon/service/index-contract.svg"></div>
+									<div class="tip">合約</div>
+								</a>
+							</swiper-slide><swiper-slide>
+								<a href="https://www.taiwanmobile.com/myvip/membership.html" onClick="sendGaEvent('熱門連結','按鈕點擊','VIP')">
+									<div class="navInfo__icon"><img src="https://www.taiwanmobile.com/bp-include/Y22/img/icon/service/index-vip.svg"></div>
+									<div class="tip">VIP</div>
+								</a>
+							</swiper-slide><swiper-slide>
+								<a href="https://www.taiwanmobile.com/events/A32/" onClick="sendGaEvent('熱門連結','按鈕點擊','召回公告')">
+									<div class="navInfo__icon"><img src="https://www.taiwanmobile.com/bp-include/Y22/img/icon/service/index-A32.svg"></div>
+									<div class="tip">召回公告</div>
+								</a>
+							</swiper-slide><swiper-slide>
+								<a href="https://www.taiwanmobile.com/csonline/plcc/open_possible.html" onClick="sendGaEvent('熱門連結','按鈕點擊','聯名卡')">
+									<div class="navInfo__icon"><img src="https://www.taiwanmobile.com/bp-include/Y22/img/icon/service/index_openpossible_1.svg"></div>
+									<div class="tip">聯名卡</div>
+								</a>
+							</swiper-slide><swiper-slide>
+								<a href="https://www.taiwanmobile.com/5G/page/index-ebg.html" onClick="sendGaEvent('熱門連結','按鈕點擊','企業5G')">
+									<div class="navInfo__icon"><img src="https://www.taiwanmobile.com/bp-include/Y22/img/icon/service/index-EBG.svg"></div>
+									<div class="tip">企業5G</div>
+								</a>
+							</swiper-slide><swiper-slide>
+								<a href="https://telecom.taiwanmobile.com/emyfone/action/mobileEBGCampaignSale.do?method=showLogin" onClick="sendGaEvent('熱門連結','按鈕點擊','企業優惠')">
+									<div class="navInfo__icon"><img src="https://www.taiwanmobile.com/bp-include/Y22/img/icon/service/index-business.svg"></div>
+									<div class="tip">企業優惠</div>
+								</a>
+							</swiper-slide>
+					</swiper></div>
+							</div>
+						</template><template key="quickServiceVersion2" v-else><div id="v2-quick-service" class="v2-o-quick-service -v2" :class="[{'-hidden': oQuickService.hidden},{'-mobile-hidden': oQuickService.mobileHidden}]">
+					<div class="v2-o-quick-service__main">
+					  <div class="v2-o-quick-service__switch" @click="oQuickService.hidden = !(oQuickService.hidden)">
+						<p class="v2-o-quick-service__switch-label">快速服務</p>
+						<div class="v2-o-quick-service__switch-icon">
+						  <svg><use xlink:href="#arrow"></use></svg>
+						</div>
+					  </div>
+					  <div class="v2-o-quick-service__swiper swiper-container">
+						<div class="swiper-wrapper">
+						<div class="v2-o-quick-service__slide swiper-slide">
+							<a class="v2-o-quick-service__link" :href="isLg ? 'https://www.taiwanmobile.com/csonline/ssi/webpay/payIndex.html' : 'https://cs.taiwanmobile.com/wap-portal/payBillMenu.action'" onClick="sendGaEvent('熱門連結','按鈕點擊','繳費')">
+							  <div class="v2-o-quick-service__link-icon"><img src="https://www.taiwanmobile.com/bp-include/Y22/img/icon/service/pay.svg" /></div>
+							  <p class="v2-o-quick-service__link-text">繳費</p>
+							</a>
+						</div><div class="v2-o-quick-service__slide swiper-slide">
+							<a class="v2-o-quick-service__link" :href="isLg ? 'https://ebill.taiwanmobile.com/ebill/CBG/Pro011.aspx' : 'https://cs.taiwanmobile.com/wap-portal/queryBillSixPeriodIndex.action'" onClick="sendGaEvent('熱門連結','按鈕點擊','帳單')">
+							  <div class="v2-o-quick-service__link-icon"><img src="https://www.taiwanmobile.com/bp-include/Y22/img/icon/service/bill.svg" /></div>
+							  <p class="v2-o-quick-service__link-text">帳單</p>
+							</a>
+						</div><div class="v2-o-quick-service__slide swiper-slide">
+							<a class="v2-o-quick-service__link" :href="isLg ? 'https://www.taiwanmobile.com/cs/queryContract.htm' : 'https://cs.taiwanmobile.com/wap-portal/smpQueryContract.action'" onClick="sendGaEvent('熱門連結','按鈕點擊','合約')">
+							  <div class="v2-o-quick-service__link-icon"><img src="https://www.taiwanmobile.com/bp-include/Y22/img/icon/service/index-contract.svg" /></div>
+							  <p class="v2-o-quick-service__link-text">合約</p>
+							</a>
+						</div><div class="v2-o-quick-service__slide swiper-slide">
+							<a class="v2-o-quick-service__link" :href="isLg ? 'https://www.taiwanmobile.com/myvip/membership.html' : 'https://www.taiwanmobile.com/myvip/membership.html'" onClick="sendGaEvent('熱門連結','按鈕點擊','VIP')">
+							  <div class="v2-o-quick-service__link-icon"><img src="https://www.taiwanmobile.com/bp-include/Y22/img/icon/service/index-vip.svg" /></div>
+							  <p class="v2-o-quick-service__link-text">VIP</p>
+							</a>
+						</div><div class="v2-o-quick-service__slide swiper-slide">
+							<a class="v2-o-quick-service__link" :href="isLg ? 'https://www.taiwanmobile.com/events/A32/' : 'https://www.taiwanmobile.com/events/A32/'" onClick="sendGaEvent('熱門連結','按鈕點擊','召回公告')">
+							  <div class="v2-o-quick-service__link-icon"><img src="https://www.taiwanmobile.com/bp-include/Y22/img/icon/service/index-A32.svg" /></div>
+							  <p class="v2-o-quick-service__link-text">召回公告</p>
+							</a>
+						</div><div class="v2-o-quick-service__slide swiper-slide">
+							<a class="v2-o-quick-service__link" :href="isLg ? 'https://www.taiwanmobile.com/csonline/plcc/open_possible.html' : 'https://www.taiwanmobile.com/csonline/plcc/open_possible.html'" onClick="sendGaEvent('熱門連結','按鈕點擊','聯名卡')">
+							  <div class="v2-o-quick-service__link-icon"><img src="https://www.taiwanmobile.com/bp-include/Y22/img/icon/service/index_openpossible_1.svg" /></div>
+							  <p class="v2-o-quick-service__link-text">聯名卡</p>
+							</a>
+						</div><div class="v2-o-quick-service__slide swiper-slide">
+							<a class="v2-o-quick-service__link" :href="isLg ? 'https://www.taiwanmobile.com/5G/page/index-ebg.html' : 'https://www.taiwanmobile.com/5G/page/index-ebg.html'" onClick="sendGaEvent('熱門連結','按鈕點擊','企業5G')">
+							  <div class="v2-o-quick-service__link-icon"><img src="https://www.taiwanmobile.com/bp-include/Y22/img/icon/service/index-EBG.svg" /></div>
+							  <p class="v2-o-quick-service__link-text">企業5G</p>
+							</a>
+						</div><div class="v2-o-quick-service__slide swiper-slide">
+							<a class="v2-o-quick-service__link" :href="isLg ? 'https://telecom.taiwanmobile.com/emyfone/action/eBGCampaignSale.do?method=showLogin' : 'https://telecom.taiwanmobile.com/emyfone/action/mobileEBGCampaignSale.do?method=showLogin'" onClick="sendGaEvent('熱門連結','按鈕點擊','企業優惠')">
+							  <div class="v2-o-quick-service__link-icon"><img src="https://www.taiwanmobile.com/bp-include/Y22/img/icon/service/index-business.svg" /></div>
+							  <p class="v2-o-quick-service__link-text">企業優惠</p>
+							</a>
+						</div>
+						</div>
+					  </div>
+					  <div class="v2-o-quick-service__navigation">
+						<div class="v2-o-quick-service__navigation-button swiper-navigation -prev">
+						  <svg><use xlink:href="#left"></use></svg>
+						</div>
+						<div class="v2-o-quick-service__navigation-button swiper-navigation -next">
+						  <svg><use xlink:href="#right"></use></svg>
+						</div>
+					  </div>
+					</div>
+				  </div></template>
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+	
+
+
+

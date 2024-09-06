@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="40px" viewBox="0 0 25 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Key_in" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="icon/top-arrow" transform="translate(2.000000, 2.000000)" fill-rule="nonzero" stroke="#FFFFFF" stroke-width="2">
+            <g id="top-arrow">
+                <path d="M10.5,1.5 L10.5,36.5 M0,11 L10.5,0 L21,11" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
