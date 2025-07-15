@@ -25,7 +25,7 @@
 @import "20220923_ms";
 @import "20230306_globalset";
 @import "20230412_eventsite-updates";
-
+@import "20250715_pricingTitanium";
 section#videoPromo {
     background-color: $black;
     text-align: center;
@@ -38,10 +38,12 @@ section#videoPromo {
         }
     }
 }
+
 .promo-video .modal-container {
     max-height: 100%;
     overflow-y: scroll;
 }
+
 .promo-video .modal-panel {
     background-color: $trans;
     max-width: 1200px;
@@ -52,6 +54,7 @@ section#videoPromo {
     border-radius: 10px;
     overflow: hidden;
 }
+
 video {
     position: absolute;
     top: 0;
@@ -64,6 +67,7 @@ video {
     border-radius: 10px;
     overflow: hidden;
 }
+
 .promo-video iframe {
     position: absolute;
     left: 0;
@@ -80,6 +84,7 @@ video {
     border-radius: 10px;
     overflow: hidden;
 }
+
 .modal-closer_btn {
     position: fixed;
     right: 0.5rem;
@@ -95,14 +100,15 @@ video {
     width: 145px;
     height: 102px;
 }
+
 #downloadPath .container {
     max-width: 1000px;
 }
+
 #preFooter {
     z-index: 1;
     position: relative;
 }
-
 
 .logo-wrap {
     width: 100%;
@@ -110,7 +116,10 @@ video {
 }
 
 .pagination-wrap {
-    a span, a:active span, a:visited span, a:focus span {
+    a span,
+    a:active span,
+    a:visited span,
+    a:focus span {
         white-space: unset;
     }
 }

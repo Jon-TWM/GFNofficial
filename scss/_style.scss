@@ -22,41 +22,40 @@ a:focus {
         white-space: pre-wrap;
     }
 }
+
 .en {
     font-family: $en, $zh;
     font-weight: 700;
 }
+
 .zh {
     font-family: $zh;
 }
+
 .twm {
     color: $twm;
 }
-.logo-wrap img{
+
+.logo-wrap img {
     width: 100%;
 }
+
 .ratio {
     position: relative;
-
     width: 100%;
     height: 0;
-
     overflow: hidden;
     border-radius: 10px;
     overflow: hidden;
-
     &__24-7 {
         padding-top: calc((7 / 24) * 100%);
     }
-
     &__16-9 {
         padding-top: calc((9 / 16) * 100%);
     }
-
     &__1-1 {
         padding-top: calc((1 / 1) * 100%);
     }
-
     img,
     iframe {
         position: absolute;
@@ -64,7 +63,6 @@ a:focus {
         top: 0;
         height: 100%;
         width: 100%;
-
         object-fit: cover;
         object-position: center;
     }
@@ -79,12 +77,12 @@ a:focus {
         color: $gray40 !important;
     }
 }
+
 .title.styled {
     display: inline-block;
     font-size: 30px;
     padding: 22px 90px;
     background: $gray87;
-
     border-left: 5px solid $nv;
     border-right: 5px solid $nv;
     margin-bottom: 2vw;
@@ -95,6 +93,7 @@ a:focus {
         line-height: 1.6;
     }
 }
+
 .sub {
     color: $gray40;
     margin: 0 10px;
@@ -106,6 +105,7 @@ a:focus {
         font-size: 13px;
     }
 }
+
 @keyframes glow {
     0% {
         opacity: 1;
@@ -117,6 +117,7 @@ a:focus {
         opacity: 1;
     }
 }
+
 .state {
     animation-name: glow;
     animation-duration: 1s;
@@ -132,9 +133,11 @@ a:focus {
         color: rgba(0, 0, 0, 0);
     }
 }
+
 .failed {
     color: $red;
 }
+
 .scrollTop {
     position: fixed;
     z-index: 10;
@@ -146,9 +149,9 @@ a:focus {
     transition: all 0.4s ease-in-out 0s;
     font-size: 24px;
     font-weight: 900;
-
     cursor: pointer;
 }
+
 .ic-wrap {
     display: flex;
     align-items: center;
@@ -158,6 +161,7 @@ a:focus {
         margin: 0 7px;
     }
 }
+
 .col1,
 .col2,
 .col2-sp {
@@ -166,14 +170,17 @@ a:focus {
     justify-content: center;
     align-items: center;
 }
+
 .col2 {
     width: 45%;
 }
+
 .col2-sp {
     width: 49%;
     margin: 0 0.4%;
     min-width: 200px;
 }
+
 .primary-block,
 .secondary-block {
     display: inline-flex;
@@ -193,6 +200,7 @@ a:focus {
         outline: none;
     }
 }
+
 .secondary-block {
     border: 1px solid $gray56;
     background-color: rgba(0, 0, 0, 0);
@@ -202,6 +210,7 @@ a:focus {
         margin-right: 10px;
     }
 }
+
 .primary-btn,
 .secondary-btn,
 .twm-btn,
@@ -214,37 +223,29 @@ a:focus {
     position: relative;
     overflow: hidden;
     font-weight: 500;
-
     &.login-btn {
         padding: 0.8rem 1.3rem;
     }
-
     span,
     svg {
         position: relative;
         z-index: 2;
     }
-
     &::before {
         content: "";
         position: absolute;
         height: 100%;
         width: 0px;
-
         right: 0px;
         bottom: 0px;
-
         background: $nv-hover;
         transform-origin: right;
         transition: 0.3s ease-in-out;
-
         z-index: 0;
     }
-
     &:hover::before {
         width: 100%;
     }
-
     &.account-center-opener {
         background-color: rgba(0, 0, 0, 0.8);
         padding: 10px 10px;
@@ -253,29 +254,25 @@ a:focus {
             display: none;
         }
     }
-
     &[disabled] {
         pointer-events: none;
         color: $gray40;
     }
-
     &.full {
         margin: 0;
     }
 }
+
 .secondary-btn {
     border: 1px solid $nv;
     background-color: rgba(0, 0, 0, 0);
     transition: 0.2s;
-
     &:hover {
         background-color: rgba(255, 255, 255, 0.1);
     }
-
     &::before {
         display: none;
     }
-
     &.qs {
         width: calc(100% - 32px);
         margin: 16px auto;
@@ -292,7 +289,6 @@ a:focus {
 .twm-btn {
     background-color: $twm;
     border: none;
-
     &::before {
         background-color: $twm-hover;
     }
@@ -321,12 +317,10 @@ nav {
     justify-content: space-between;
     padding: 0 15px;
     height: 80px;
-
     position: fixed;
     top: 0;
     left: 0;
     z-index: 10;
-
     width: 100%;
 }
 
@@ -356,7 +350,6 @@ nav {
                     width: 100%;
                     transition: 0.3s;
                     line-height: 55px;
-
                     &:hover {
                         background: $gray87;
                     }
@@ -367,7 +360,6 @@ nav {
             display: inline-block;
             font-weight: 500;
             padding: 0 16px;
-
             &.nav-item {
                 transition: 0.3s;
                 line-height: 80px;
@@ -385,6 +377,8 @@ nav {
         }
     }
 }
+
+
 /* Icon 2 */
 
 #nav-icon2 {
@@ -401,7 +395,6 @@ nav {
     -o-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
     cursor: pointer;
-
     display: none;
 }
 
@@ -492,20 +485,19 @@ nav {
     left: calc(50% - 5px);
     top: 14px;
 }
+
 .option-wrap {
     position: relative;
 }
+
 #accountOption {
     display: none;
-
     position: absolute;
     right: 0;
     top: calc(100% + 20px);
-
     background-color: $gray87;
     width: 100%;
     text-align: center;
-
     .nav-item {
         display: inline-block !important;
         width: 100%;
@@ -519,11 +511,13 @@ nav {
     }
 }
 
+
 /*
 -----
 舞台區
 -----
 */
+
 .section {
     width: 100%;
     background: $gray87 url("../img/gfn-overview-kv-bg-mp4-desktop.png");
@@ -535,10 +529,8 @@ nav {
     background-color: $black;
     line-height: 1.5;
     position: relative;
-
     padding: 4.7vw 0;
     z-index: 0;
-
     &#notFound {
         background-image: none;
         background-color: $ef;
@@ -553,7 +545,6 @@ nav {
             display: none;
         }
     }
-
     &#receipt {
         .section-panel {
             text-align: left;
@@ -573,12 +564,10 @@ nav {
             margin: 20px 0;
         }
     }
-
     &.bk {
         background: $black;
         margin: 0;
     }
-
     &#systemRequire {
         background-size: cover;
     }
@@ -586,7 +575,9 @@ nav {
         background-position: center top;
         background-size: contain;
     }
-
+    &#pricingTitanium {
+        background: $black;
+    }
     &#qa {
         background: $black;
     }
@@ -620,7 +611,6 @@ nav {
 
 .section-inner {
     width: 100%;
-
     &.article {
         h1,
         h2,
@@ -706,16 +696,13 @@ nav {
     line-height: 34px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     z-index: 1;
-
     .ic-wrap {
         position: relative;
     }
-
     .crown {
         display: inline-block;
         height: 20px;
     }
-
     .btn {
         width: 100%;
         padding-left: 0;
@@ -723,22 +710,18 @@ nav {
         margin: 12px 0;
         overflow: initial;
     }
-
     .secondary-btn {
         margin: 32px 0;
-
         &:hover {
             .tooltip {
                 display: block;
             }
         }
     }
-
     .em {
         font-weight: 700;
         margin-bottom: 24px;
     }
-
     .visa,
     .mastercard,
     .jcb {
@@ -748,12 +731,10 @@ nav {
     .visa {
         margin-left: 10px;
     }
-
     &.nav {
         padding: 0;
         margin-bottom: 24px;
     }
-
     &.sys:not(#winpc) {
         display: none;
     }
@@ -770,9 +751,7 @@ nav {
     background-color: $gray80;
     text-align: left;
     border-right: 5px solid $nv;
-
     display: none;
-
     p:not(:last-child) {
         margin: 0 0 15px 0;
     }
@@ -852,6 +831,7 @@ nav {
     top: 0px;
     overflow: hidden;
 }
+
 #gfn-video-bg {
     position: relative;
     width: 2560px;
@@ -860,6 +840,7 @@ nav {
     display: block;
     text-align: center;
 }
+
 #gfn-video-loop {
     width: 100vw;
     height: 880px;
@@ -869,22 +850,27 @@ nav {
     text-align: center;
     margin-left: calc(50% - 1280px);
 }
+
 #key-visual-content {
     position: relative;
     width: 100%;
     height: auto;
     left: 0px;
 }
+
+
 /*
 -----
 首頻Slogan
 -----
 */
+
 #key-visual-text {
     position: relative;
     width: 1025px;
     margin: 0 auto;
 }
+
 #the-power-to-play-h1 {
     position: absolute;
     width: 100%;
@@ -903,6 +889,7 @@ nav {
     padding-bottom: 30px;
     user-select: none;
 }
+
 #key-visual-text .button {
     position: absolute;
     font-family: $zh;
@@ -914,26 +901,31 @@ nav {
     /* display: none; */
     white-space: nowrap;
 }
+
 #button-join {
     width: auto;
     top: 480px;
     right: 0;
-
     cursor: pointer;
     z-index: 9;
 }
+
 .tpt-left {
     text-align: left;
 }
+
 .tpt-mid {
     text-align: center;
     font-size: 36px;
 }
+
+
 /*
 ------
 多邊形特區
 ------
 */
+
 #hexagons {
     position: relative;
     width: 1025px;
@@ -942,28 +934,34 @@ nav {
     left: 0px;
     margin: 0 auto;
 }
+
 .hex-lg {
     width: 688px;
     height: 688px;
 }
+
 .hex-m1 {
     width: 448px;
     height: 448px;
 }
+
 .hex-sm {
     width: 352px;
     height: 352px;
 }
+
 .hex-md {
     width: 448px;
     height: 448px;
 }
+
 // 多邊形1
 #hexagon-1 {
     position: absolute;
     top: 310px;
     left: 170px;
 }
+
 #hex-1-shadow {
     position: absolute;
     top: 0px;
@@ -973,6 +971,7 @@ nav {
     background-position: center center;
     background-size: cover;
 }
+
 #gfn-video-clip-1 {
     position: absolute;
     width: 272px;
@@ -982,28 +981,13 @@ nav {
     top: 88px;
     left: 87px;
     opacity: 1;
-    -webkit-clip-path: polygon(
-        204px 18.22px,
-        68px 18.22px,
-        0px 136px,
-        68px 253.78px,
-        204px 253.78px,
-        272px 136px,
-        204px 18.22px
-    );
-    clip-path: polygon(
-        204px 18.22px,
-        68px 18.22px,
-        0px 136px,
-        68px 253.78px,
-        204px 253.78px,
-        272px 136px,
-        204px 18.22px
-    );
+    -webkit-clip-path: polygon( 204px 18.22px, 68px 18.22px, 0px 136px, 68px 253.78px, 204px 253.78px, 272px 136px, 204px 18.22px);
+    clip-path: polygon( 204px 18.22px, 68px 18.22px, 0px 136px, 68px 253.78px, 204px 253.78px, 272px 136px, 204px 18.22px);
     /* clip-path: url(#gfn-video-msk-1-LDU); */
     margin: 0;
     pointer-events: none;
 }
+
 #hex-1-crop {
     position: absolute;
     top: 0px;
@@ -1013,6 +997,7 @@ nav {
     background-position: center center;
     background-size: cover;
 }
+
 #c1 {
     position: absolute;
     top: 88px;
@@ -1023,6 +1008,7 @@ nav {
     z-index: 0;
     visibility: hidden;
 }
+
 #hex-1-stroke-overlay {
     position: absolute;
     top: 0px;
@@ -1033,6 +1019,7 @@ nav {
     background-position: center center;
     background-size: cover;
 }
+
 #hex-1-flares-add {
     position: absolute;
     top: 0px;
@@ -1049,6 +1036,7 @@ nav {
     left: -310px;
     top: 63px;
 }
+
 #hex-2-shadow {
     position: absolute;
     top: 0px;
@@ -1058,6 +1046,7 @@ nav {
     background-position: center center;
     background-size: cover;
 }
+
 #hex-2-crop {
     position: absolute;
     top: 0px;
@@ -1067,6 +1056,7 @@ nav {
     background-position: center center;
     background-size: cover;
 }
+
 #gfn-video-clip-2 {
     position: absolute;
     width: 525px;
@@ -1076,19 +1066,12 @@ nav {
     top: 82px;
     left: 82px;
     opacity: 1;
-    -webkit-clip-path: polygon(
-        393.8px 35.2px,
-        131.2px 35.2px,
-        0px 262.5px,
-        131.2px 489.8px,
-        393.8px 489.8px,
-        525px 262.5px,
-        393.8px 35.2px
-    );
+    -webkit-clip-path: polygon( 393.8px 35.2px, 131.2px 35.2px, 0px 262.5px, 131.2px 489.8px, 393.8px 489.8px, 525px 262.5px, 393.8px 35.2px);
     clip-path: url(#gfn-video-msk-2-LDU);
     margin: 0;
     pointer-events: none;
 }
+
 #c2 {
     position: absolute;
     top: 80px;
@@ -1099,6 +1082,7 @@ nav {
     z-index: 0;
     visibility: hidden;
 }
+
 #hex-2-stroke-overlay {
     position: absolute;
     top: 0px;
@@ -1109,6 +1093,7 @@ nav {
     background-position: center center;
     background-size: cover;
 }
+
 #hex-2-flares-add {
     position: absolute;
     top: 0px;
@@ -1125,6 +1110,7 @@ nav {
     top: 220px;
     left: 400px;
 }
+
 #hex-3-shadow {
     position: absolute;
     top: 0px;
@@ -1134,6 +1120,7 @@ nav {
     background-position: center center;
     background-size: cover;
 }
+
 #hex-3-crop {
     position: absolute;
     top: 0px;
@@ -1143,6 +1130,7 @@ nav {
     background-position: center center;
     background-size: cover;
 }
+
 #gfn-video-clip-3 {
     position: absolute;
     width: 178px;
@@ -1158,6 +1146,7 @@ nav {
     margin: 0;
     pointer-events: none;
 }
+
 #c3 {
     position: absolute;
     top: 87.5px;
@@ -1168,6 +1157,7 @@ nav {
     z-index: 0;
     visibility: hidden;
 }
+
 #hex-3-stroke-overlay {
     position: absolute;
     top: 0px;
@@ -1178,6 +1168,7 @@ nav {
     background-position: center center;
     background-size: cover;
 }
+
 #hex-3-flares-add {
     position: absolute;
     top: 0px;
@@ -1194,6 +1185,7 @@ nav {
     top: 50px;
     left: 170px;
 }
+
 #hex-4-shadow {
     position: absolute;
     top: 0px;
@@ -1203,6 +1195,7 @@ nav {
     background-position: center center;
     background-size: cover;
 }
+
 #hex-4-crop {
     position: absolute;
     top: 0px;
@@ -1214,6 +1207,7 @@ nav {
     background-position: center center;
     background-size: cover;
 }
+
 #gfn-video-clip-4 {
     position: absolute;
     width: 274px;
@@ -1223,28 +1217,13 @@ nav {
     top: 87px;
     left: 87px;
     opacity: 1;
-    -webkit-clip-path: polygon(
-        205.5px 18.36px,
-        68.5px 18.36px,
-        0px 137px,
-        68.5px 255.65px,
-        205.5px 255.65px,
-        274px 137px,
-        205.5px 18.36px
-    );
-    clip-path: polygon(
-        205.5px 18.36px,
-        68.5px 18.36px,
-        0px 137px,
-        68.5px 255.65px,
-        205.5px 255.65px,
-        274px 137px,
-        205.5px 18.36px
-    );
+    -webkit-clip-path: polygon( 205.5px 18.36px, 68.5px 18.36px, 0px 137px, 68.5px 255.65px, 205.5px 255.65px, 274px 137px, 205.5px 18.36px);
+    clip-path: polygon( 205.5px 18.36px, 68.5px 18.36px, 0px 137px, 68.5px 255.65px, 205.5px 255.65px, 274px 137px, 205.5px 18.36px);
     /* clip-path: url(#gfn-video-msk-4-LDU); */
     margin: 0;
     pointer-events: none;
 }
+
 #c4 {
     position: absolute;
     top: 86px;
@@ -1255,6 +1234,7 @@ nav {
     z-index: 0;
     visibility: hidden;
 }
+
 #hex-4-stroke-overlay {
     position: absolute;
     top: 0px;
@@ -1265,6 +1245,7 @@ nav {
     background-position: center center;
     background-size: cover;
 }
+
 #hex-4-flares-add {
     position: absolute;
     top: 0px;
@@ -1275,11 +1256,13 @@ nav {
     background-size: cover;
 }
 
+
 /*
 -----
 跑馬燈
 -----
 */
+
 #captionForGFN {
     position: relative;
     .content {
@@ -1287,13 +1270,12 @@ nav {
         width: 95%;
     }
 }
+
 .carousel-section {
     position: absolute;
     top: -40px;
-
     height: 80px;
     width: 100%;
-
     margin: 0 auto;
 }
 
@@ -1301,19 +1283,15 @@ nav {
     background: $gray87;
     border-left: 5px solid $nv;
     border-right: 5px solid $nv;
-
     width: 95%;
     max-width: 800px;
     height: 80px;
     margin: 0 auto;
-
     .item {
         height: 80px;
-
         display: flex;
         align-items: center;
         justify-content: center;
-
         padding: 0 24px;
     }
     .tt {
@@ -1348,6 +1326,7 @@ nav {
     }
 }
 
+
 /*
 ------
 技術支持敘述
@@ -1358,12 +1337,10 @@ nav {
     background: $black;
     padding: 7vw 0 4vw;
     text-align: center;
-
     h1 {
         font-size: 32px;
         font-weight: 600;
     }
-
     p {
         text-align: center;
         width: 95%;
@@ -1376,28 +1353,31 @@ nav {
     }
     .more {
         color: $nv;
-
         .en {
             font-weight: 700;
         }
     }
 }
 
+
 /*
 ------
 遊戲列表
 ------
 */
+
 @keyframes rollDown {
     50% {
         background-position: 0 1077.5px;
     }
 }
+
 @keyframes rollUp {
     50% {
         background-position: 0 -1077.5px;
     }
 }
+
 #gamesList {
     background: $white;
     position: relative;
@@ -1417,7 +1397,6 @@ nav {
         transform: rotate(-30deg) translateX(-4vw);
         width: 80%;
         height: 100%;
-
         &.image {
             transform: rotate(0);
             left: 0;
@@ -1498,15 +1477,19 @@ nav {
         }
     }
 }
+
+
 /*
 -----
 價格方案
 -----
 */
 
-#mpricingCarousel, #mtimeCarousel {
+#mpricingCarousel,
+#mtimeCarousel {
     display: none;
 }
+
 #pricing {
     background-image: url(../img/gfn-overview-kv-bg-mp4-desktop.png);
     background-repeat: no-repeat;
@@ -1516,9 +1499,11 @@ nav {
     text-align: center;
     position: relative;
 }
+
 #wpricingCarousel .owl-stage {
     display: flex;
 }
+
 .pricing-title,
 .section-title {
     text-align: center;
@@ -1532,23 +1517,21 @@ nav {
         color: $nv;
     }
 }
+
 .pricing-title {
     margin-bottom: 1vw;
 }
+
 .pricing-panel-wrap {
     margin: 0 auto;
-
     .panel-item {
         position: relative;
         display: inline-flex;
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
-
         line-height: 1.6;
-
         border: 1px solid $gray80;
-
         width: 100%;
         max-width: 350px;
         min-width: 300px;
@@ -1558,15 +1541,11 @@ nav {
         // margin: 0 25px;
         vertical-align: middle;
         text-align: center;
-
         box-shadow: 3px 0px 15px rgba(0, 0, 0, 0.5);
-
         transition: 0.2s;
-
         &[disabled] {
             pointer-events: none;
         }
-
         &:hover {
             border-color: $nv;
         }
@@ -1620,7 +1599,6 @@ nav {
             align-items: center;
             justify-content: center;
             font-weight: 300;
-
             margin: 15px 0;
             svg {
                 margin: 0 8px;
@@ -1639,7 +1617,6 @@ nav {
             left: calc(50% - 30px);
             height: 50px;
             width: 60px;
-
             background-image: url(../img/crown.svg);
             background-repeat: no-repeat;
             background-size: contain;
@@ -1647,6 +1624,7 @@ nav {
         }
     }
 }
+
 .pricing-alert {
     font-size: 12px;
     width: 95%;
@@ -1655,11 +1633,14 @@ nav {
     line-height: 2;
     padding: 32px 0;
 }
+
+
 /*
 -----
 公開橫幅
 -----
 */
+
 #bannerGame {
     background-image: url(../img/hero-banner-platform-2560x770-d.jpg);
     background-size: cover;
@@ -1696,16 +1677,20 @@ nav {
         }
     }
 }
+
+
 /*
 -----
 下載通道
 -----
 */
+
 .download-item-wrap .ic-img.adtv {
     background-image: url(../img/androidTV.svg);
     width: 148px;
     height: 102px;
 }
+
 #downloadPath {
     background: $black;
     .container {
@@ -1723,6 +1708,7 @@ nav {
         }
     }
 }
+
 .download-item-wrap {
     display: flex;
     width: 100%;
@@ -1742,19 +1728,16 @@ nav {
         background-position: center;
         &.win {
             background-image: url(../img/win.svg);
-
             width: 168px;
             height: 95px;
         }
         &.mac {
             background-image: url(../img/mac.svg);
-
             width: 145px;
             height: 102px;
         }
         &.android {
             background-image: url(../img/android.svg);
-
             width: 145px;
             height: 100px;
         }
@@ -1765,15 +1748,17 @@ nav {
         margin: 20px 0;
     }
 }
+
+
 /*
 -----
 開始玩遊戲
 -----
 */
+
 #downloadMethod {
     background-image: url(../img/gfn-overview-kv-bg-mp4-desktop.png);
     background-size: cover;
-
     .container {
         width: 95%;
         max-width: 656px;
@@ -1782,6 +1767,7 @@ nav {
         text-align: center;
     }
 }
+
 .step-item-wrap {
     display: flex;
     justify-content: space-between;
@@ -1823,6 +1809,7 @@ nav {
         }
     }
 }
+
 .step-arr {
     background-image: url(../img/step-arr.svg);
     background-repeat: no-repeat;
@@ -1830,32 +1817,33 @@ nav {
     background-position: center;
     width: 121px;
     height: 18px;
-
     position: relative;
     bottom: -30px;
     filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.5));
 }
+
+
 /*
 -----
 底部額外連結
 -----
 */
+
 .divi-wide {
     width: 90%;
     max-width: 1290px;
     margin: 0 auto;
     background: $gray87;
     height: 1px;
-
     &.g60 {
         background: $gray60;
         margin: 50px auto;
     }
-
     &.hyper {
         margin: 100px 0;
     }
 }
+
 #preFooter {
     background: $black;
     .container {
@@ -1865,6 +1853,7 @@ nav {
         padding: 4.7vw 0;
     }
 }
+
 .option-item-wrap {
     display: flex;
     align-items: center;
@@ -1919,6 +1908,7 @@ nav {
         }
     }
 }
+
 .multi-item-wrap {
     display: flex;
     justify-content: center;
@@ -1953,11 +1943,14 @@ nav {
         }
     }
 }
+
+
 /*
 -----
 Footer
 -----
 */
+
 footer {
     background-color: $gray87;
     .container {
@@ -1967,15 +1960,18 @@ footer {
         padding: 50px 0;
     }
 }
+
 .footer-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .logo-nav {
     display: flex;
     align-items: center;
 }
+
 .logo {
     margin-right: 50px;
     height: 45px;
@@ -1983,6 +1979,7 @@ footer {
     object-fit: contain;
     object-position: center;
 }
+
 a.footer-link {
     white-space: nowrap;
     color: $gray60;
@@ -1991,18 +1988,21 @@ a.footer-link {
         filter: brightness(1.1);
     }
 }
+
 .copy-right {
     text-align: center;
     font-weight: 300;
     font-size: 14px;
     line-height: 1.5;
 }
+
 .copyright.hyper {
     font-size: 12px;
     color: $gray60;
     line-height: 1.6;
     text-align: center;
 }
+
 .social-ic {
     margin: 0 5px;
     transition: 0.2s;
@@ -2010,6 +2010,7 @@ a.footer-link {
         filter: brightness(1.1);
     }
 }
+
 
 /*
 --------------
@@ -2065,10 +2066,8 @@ Admin Deck
     max-width: 320px;
     margin: 0 16px;
     background-color: $gray80;
-
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     position: relative;
-
     .ic-wrap {
         display: block;
         width: 100%;
@@ -2088,7 +2087,6 @@ Admin Deck
     width: auto;
     font-size: 18px;
     font-weight: 500;
-
     div {
         position: relative;
         background-color: $nv;
@@ -2096,11 +2094,9 @@ Admin Deck
         width: 9vw;
         min-width: 150px;
         padding: 15px 0px;
-
         display: flex;
         align-items: center;
         justify-content: center;
-
         &::after {
             content: "";
             position: absolute;
@@ -2116,7 +2112,6 @@ Admin Deck
 
 .admin-side-menu-title {
     padding: 20px;
-
     .ic-wrap {
         display: inline-flex;
         justify-content: flex-start;
@@ -2128,17 +2123,14 @@ Admin Deck
     padding: 0px 24px;
     height: 64px;
     border-left: 5px solid rgba(0, 0, 0, 0);
-
     display: flex;
     align-items: center;
-
     &:hover,
     &.active,
     &:active {
         display: flex;
         background-color: $gray87;
     }
-
     &.active {
         border-left: 5px solid $nv;
     }
@@ -2173,26 +2165,21 @@ Admin Deck
         margin: 24px 0px;
         white-space: nowrap;
         line-height: 48px;
-
         &.record {
             margin: 10px 0;
             font-size: 14px;
             line-height: 48px;
             white-space: nowrap;
-
             tr {
                 white-space: nowrap;
             }
-
             th,
             td {
                 padding: 0 20px;
             }
-
             .td {
                 position: relative;
             }
-
             tr:nth-child(even) {
                 td {
                     background-color: $gray73;
@@ -2203,7 +2190,6 @@ Admin Deck
                 text-align: left;
             }
         }
-
         &.qa {
             tr:nth-child(even),
             tr:nth-child(odd) {
@@ -2258,6 +2244,7 @@ Admin Deck
         }
     }
 }
+
 .receipt_popup {
     position: fixed;
     height: auto;
@@ -2268,6 +2255,7 @@ Admin Deck
     left: calc(50% - 13vw);
     display: none;
 }
+
 .edit-btn,
 a.receipt-link {
     color: $nv;
@@ -2276,6 +2264,7 @@ a.receipt-link {
         color: $nv-hover;
     }
 }
+
 a.receipt-link {
     margin: 0;
 }
@@ -2286,7 +2275,6 @@ a.receipt-link {
     display: flex;
     align-items: center;
     justify-content: center;
-
     a {
         height: 32px;
         width: 32px;
@@ -2302,11 +2290,13 @@ a.receipt-link {
     }
 }
 
+
 /*
 ------
 404
 ------
 */
+
 .notfound-kv {
     width: 100%;
     background-image: url(../img/nv-web-404-robot-625-t.png);
@@ -2317,9 +2307,12 @@ a.receipt-link {
     max-width: 625px;
     margin: 0 auto;
 }
+
 .notfound-kv-txt {
     margin: 32px 0;
 }
+
+
 /*
 ------
 Custom Select
@@ -2331,12 +2324,12 @@ $select-color: $ef;
 $select-background: $gray73;
 $select-width: 100%;
 $select-height: 48px;
-
 .select-hidden {
     display: none;
     visibility: hidden;
     padding-right: 10px;
 }
+
 .select {
     cursor: pointer;
     display: inline-block;
@@ -2346,6 +2339,7 @@ $select-height: 48px;
     width: $select-width;
     height: $select-height;
 }
+
 .select-styled {
     position: absolute;
     top: 0;
@@ -2353,12 +2347,9 @@ $select-height: 48px;
     bottom: 0;
     left: 0;
     background-color: $select-background;
-
     display: flex;
     align-items: center;
-
     padding: 0 15px;
-
     &:after {
         content: "";
         width: 0;
@@ -2408,6 +2399,7 @@ $select-height: 48px;
     }
 }
 
+
 /*
 --------
 Custom Checkbox
@@ -2417,15 +2409,13 @@ Custom Checkbox
 .styled-checkbox {
     position: absolute; // take it out of document flow
     opacity: 0; // hide it
-
-    & + label {
+    &+label {
         position: relative;
         cursor: pointer;
         padding: 0;
     }
-
     // Box.
-    & + label:before {
+    &+label:before {
         content: "";
         margin-right: 10px;
         display: inline-block;
@@ -2434,34 +2424,28 @@ Custom Checkbox
         height: 20px;
         background: $gray87;
     }
-
     // Box hover
-    &:hover + label:before {
+    &:hover+label:before {
         background: $black;
     }
-
     // Box focus
-    &:focus + label:before {
+    &:focus+label:before {
         box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
     }
-
     // Box checked
-    &:checked + label:before {
+    &:checked+label:before {
         background: $nv;
     }
-
     // Disabled state label.
-    &:disabled + label {
+    &:disabled+label {
         color: $gray40;
         cursor: auto;
     }
-
     // Disabled box.
-    &:disabled + label:before {
+    &:disabled+label:before {
         box-shadow: none;
         background: $gray40;
     }
-
     // Checkmark. Could be replaced with an image
     // &:checked + label:after {
     //   content: '';
@@ -2510,19 +2494,16 @@ textarea {
     position: relative;
     margin: 15px 3px;
     vertical-align: top;
-
     .comfirm-pic {
         background-color: $nv;
         height: 50px;
         width: 150px;
         margin: 0 20px;
     }
-
     .ic-wrap {
         display: flex;
         align-items: center;
     }
-
     input {
         background-color: $gray80;
         border: 1px solid $gray56;
@@ -2539,7 +2520,6 @@ textarea {
             border-color: $red;
         }
     }
-
     .fa-redo {
         font-size: 32px;
         color: $gray40;
@@ -2586,19 +2566,17 @@ textarea {
 .answer-opener {
     text-align: right;
     position: relative;
-
     .notify-dot {
         position: absolute;
         right: 48px;
         top: 18px;
-
         height: 12px;
         width: 12px;
         border-radius: 100%;
-
         background-color: $red;
     }
 }
+
 .answer-opener-a {
     transform: rotate(-90deg);
     transition: 0.3s;
@@ -2651,11 +2629,13 @@ textarea {
     width: 90%;
     margin: 44px auto 0 auto;
 }
+
 .game-list-container {
     width: 90%;
     max-width: 1366px;
     margin: 0 auto;
 }
+
 .game-list-wrapper {
     display: flex;
     justify-content: space-between;
@@ -2670,10 +2650,12 @@ textarea {
         margin: 15px 20px;
     }
 }
+
 .section-panel-nav {
     display: flex;
     justify-content: center;
 }
+
 .section-panel-nav-tab {
     width: calc(100% / 3);
     max-width: calc(100% / 3);
@@ -2689,9 +2671,11 @@ textarea {
         border-bottom: 3px solid $nv;
     }
 }
+
 .section-panel-title {
     text-align: left;
 }
+
 .section-panel-list {
     text-align: left;
     line-height: 24px;
@@ -2702,28 +2686,32 @@ textarea {
         }
     }
 }
+
 .system-item {
     margin: 10px 0;
     &:first-child {
         margin: 0;
     }
 }
+
 .qa-dsiplay-section {
     text-align: left;
 }
+
 .qa-display-container {
     margin: 0 auto;
     width: 90%;
     max-width: 1290px;
 }
+
 .qa-title {
     font-size: 24px;
     margin: 24px 0;
 }
+
 .qa-item {
     line-height: 2;
     margin: 15px 0;
-
     .q {
         color: $nv;
         font-weight: 500;
@@ -2732,6 +2720,7 @@ textarea {
         font-weight: 300;
     }
 }
+
 .display-section {
     width: calc(100% - 32px);
     max-width: 1000px;
@@ -2739,7 +2728,6 @@ textarea {
     background-color: $gray87;
     border: 1px solid $nv;
     padding: 32px 16px;
-
     &.news-list {
         .ic-wrap {
             justify-content: flex-start;
@@ -2769,6 +2757,7 @@ textarea {
     max-width: 1290px;
     margin: 0 auto;
 }
+
 .section-anchor-nav-tab {
     color: $nv;
     font-weight: 500;
@@ -2779,6 +2768,7 @@ textarea {
         color: $white;
     }
 }
+
 .modal {
     display: none;
     position: fixed;
@@ -2786,12 +2776,12 @@ textarea {
     left: 0;
     height: 100vh;
     width: 100%;
-
     z-index: 100;
     p {
         line-height: 2;
     }
 }
+
 .modal-container {
     position: relative;
     height: 100%;
@@ -2800,6 +2790,7 @@ textarea {
     align-items: center;
     justify-content: center;
 }
+
 .modal-closer {
     position: absolute;
     left: 0;
@@ -2809,6 +2800,7 @@ textarea {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
+
 .modal-panel {
     position: relative;
     padding: 32px;
@@ -2821,17 +2813,21 @@ textarea {
         max-width: 550px;
     }
 }
+
 .hyper-video .modal-panel {
     max-width: 50vw;
     background-color: $trans;
 }
+
 .modal-title {
     font-size: 24px;
     margin-bottom: 24px;
 }
+
 .modal-body {
     width: 100%;
 }
+
 .modal-footer {
     text-align: center;
     margin-top: 10px;
@@ -2860,12 +2856,14 @@ a.at-backer.ic-wrap {
     max-width: 200px;
     text-align: right;
 }
+
 .chart-wrapper {
     width: calc(100% - 32px);
     max-width: 1000px;
     margin: 16px auto;
     text-align: center;
 }
+
 .chart-item {
     clip-path: polygon(0% 0%, 75% 0%, 84% 50%, 75% 100%, 0% 100%);
     width: auto;
@@ -2876,19 +2874,16 @@ a.at-backer.ic-wrap {
     vertical-align: middle;
     transform: 0.5s;
     background: $gray73;
-
     &.result {
         clip-path: none;
         padding: 24px;
     }
-
     &.twm-bg {
         background: $twm;
         &:hover {
             pointer-events: none;
         }
     }
-
     &:first-child {
         background-color: $nv;
         opacity: 1;
@@ -2898,11 +2893,13 @@ a.at-backer.ic-wrap {
     }
 }
 
+
 /*
 ----------
 HyperScape
 ----------
 */
+
 #campBanner1,
 #campBanner2,
 #campBanner3 {
@@ -2925,6 +2922,7 @@ HyperScape
         background-image: url(../event/black-desert/img/geforce-rtx-black-desert-hero-2560x770-d.jpg);
     }
 }
+
 #campBanner2 {
     background-image: url(https://www.nvidia.com/content/dam/en-zz/Solutions/GeForce/campaigns/hyper-scape-bundle/new-creative/geforce-rtx-hyper-scape-pack-2560x770-p.jpg);
     &.bd {
@@ -2932,6 +2930,7 @@ HyperScape
         height: 570px;
     }
 }
+
 #campBanner3 {
     background-image: url(https://www.nvidia.com/content/dam/en-zz/Solutions/GeForce/campaigns/hyper-scape-bundle/geforce-rtx-hyper-scape-video-bg-2560x770-d.jpg);
     text-align: center;
@@ -2959,11 +2958,13 @@ HyperScape
         height: 550px;
     }
 }
+
 .content-cell {
     display: table-cell;
     vertical-align: middle;
     word-wrap: break-word;
 }
+
 .txt-content {
     h1 {
         font-weight: 500;
@@ -2988,7 +2989,6 @@ HyperScape
         padding-left: 24px;
         line-height: 2.5;
     }
-
     .img-wrap {
         display: inline-block;
         position: relative;
@@ -2996,7 +2996,6 @@ HyperScape
         width: 100%;
         max-width: 700px;
         padding-top: 56.25%;
-
         img {
             position: absolute;
             top: 0;
@@ -3008,19 +3007,23 @@ HyperScape
         }
     }
 }
+
 .hyper-methods {
     text-align: left;
     list-style-type: decimal;
     padding-left: 24px;
     line-height: 2;
 }
+
 .hyper-action-section {
     margin: 32px 0;
 }
+
 ol {
     list-style-type: decimal;
     padding-left: 20px;
 }
+
 .special-content-part {
     max-width: 1366px;
     margin: 0 auto;
@@ -3030,6 +3033,7 @@ ol {
         font-weight: 700;
     }
 }
+
 .section-inner.article {
     table.sp {
         th {
@@ -3051,8 +3055,7 @@ ol {
 .title {
     font-weight: 700;
 }
+
 .admin-showing-panel_content-txt {
     text-align: left;
 }
-
-

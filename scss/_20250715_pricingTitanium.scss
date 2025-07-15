@@ -1,0 +1,185 @@
+@mixin md {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media screen and (min-width: 1280px) {
+        @content;
+    }
+}
+
+// @include md {}
+// @include xl {}
+.pricing-title {
+    font-weight: 700;
+}
+
+.ratio {
+    &.square {
+        border-radius: 0;
+    }
+}
+
+.panel-item_for_plans {
+    background-color: #333333;
+    width: 289px;
+    position: relative;
+    cursor: pointer;
+    .ratio {
+        width: 100%;
+    }
+    .title,
+    .content {
+        text-align: left;
+    }
+    .content {
+        color: $gray40;
+    }
+    .plan-name {
+        font-size: 1.5rem;
+    }
+    .item-body {
+        padding: 1.5rem;
+    }
+    .hover-panel {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: rgba(51, 51, 51, .92);
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        padding: 1rem;
+        line-height: 2;
+        .ic-wrap {
+            justify-content: flex-start;
+            text-align: left;
+        }
+        .fa-check {
+            color: $nv;
+        }
+        .detail-check-section {
+            max-height: calc(100% - 100px);
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+    }
+    &:hover {
+        .hover-panel {
+            display: block;
+        }
+    }
+}
+
+.plan-pricingTitanium {
+    padding: 5rem 0;
+    background: url("../img/gfn-pricing-titanium-bg.jpg");
+    background-size: 200%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    @include md {
+        background-size: cover;
+    }
+}
+
+.pricing-panel-wrap {
+    display: block;
+    padding: 24px;
+    @include xl {
+        display: grid;
+        grid-template-columns: 1fr .25fr 3fr;
+        align-items: center;
+    }
+    .panel-wrap {
+        border-radius: 48px;
+        border: 2px solid rgba(93, 104, 74, 0.50);
+        background: rgba(30, 33, 24, 0.50);
+        backdrop-filter: blur(8px);
+        width: 100%;
+        padding: 24px;
+        &.plan-plus {
+            display: grid;
+            gap: 56px;
+            @include md {
+                grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+                gap: 16px;
+            }
+        }
+    }
+    .titanium-item {
+        min-height: auto;
+        display: grid;
+        justify-items: start;
+        .item-header {
+            border-radius: 24px 24px 0 0;
+            background: #3A402D;
+            padding: 24px;
+            position: relative;
+            &::after {
+                content: "";
+                display: block;
+                width: 24px;
+                height: 24px;
+                background: url("../img/gfn-pricing-titanium-title-tail.svg");
+                position: absolute;
+                right: -24px;
+                bottom: 0;
+            }
+        }
+        .item-body {
+            border-radius: 0 24px 24px;
+            background: #3A402D;
+            padding: 8px;
+            text-align: left;
+            width: 100%;
+            display: grid;
+            gap: 32px;
+            .content-wrap {
+                display: grid;
+                gap: 12px;
+                padding: 8px;
+            }
+            .ic-wrap {
+                display: grid;
+                grid-template-columns: 16px 1fr;
+                align-items: start;
+                gap: 4px;
+                &::before {
+                    content: '';
+                    width: 16px;
+                    height: 1.75em;
+                    background: url("../img/icon-hexagon.svg") center no-repeat;
+                }
+            }
+        }
+        .title {
+            font-size: 1.6rem;
+        }
+        .divi {
+            background: #76B900;
+            width: 32px;
+            height: 4px;
+            border-radius: 4px;
+            margin: 0 8px;
+        }
+        .primary-btn {
+            width: 100%;
+            margin: 0;
+            border-radius: 16px;
+        }
+    }
+    .icon-plus {
+        width: auto;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.special-content-part {
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}

@@ -1,12 +1,14 @@
 .pricing-title {
     font-weight: 700;
 }
+
 .ratio {
     &.square {
         border-radius: 0;
     }
 }
-.panel-item_for_plans{
+
+.panel-item_for_plans {
     background-color: #333333;
     width: 289px;
     position: relative;
@@ -14,7 +16,8 @@
     .ratio {
         width: 100%;
     }
-    .title, .content {
+    .title,
+    .content {
         text-align: left;
     }
     .content {
@@ -31,7 +34,7 @@
         position: absolute;
         left: 0;
         top: 0;
-        background-color: rgba(51,51,51,.92);
+        background-color: rgba(51, 51, 51, .92);
         height: 100%;
         width: 100%;
         z-index: 1;
@@ -51,15 +54,18 @@
         }
     }
     &:hover {
-        .hover-panel{
+        .hover-panel {
             display: block;
         }
     }
 }
+
 #wpricingCarousel {
     display: block;
 }
-#pricingCarouselNew,#timeCarouselNew {
+
+#pricingCarouselNew,
+#timeCarouselNew {
     &::before {
         content: "";
         display: block;
@@ -71,13 +77,16 @@
         width: 100%;
         z-index: 0;
     }
-.owl-carousel#prcingCarouselTwo {
-    display: block;}
+    .owl-carousel#prcingCarouselTwo {
+        display: block;
+    }
 }
+
 .plan-section2 {
     padding: 5rem 0;
     background-color: black;
 }
+
 .pricing-panel-wrap {
     display: inline-flex;
     justify-content: flex-start;
@@ -101,7 +110,7 @@
             font-size: 1.6rem;
         }
         .divi {
-            width: 100% ;
+            width: 100%;
         }
         .item-footer {
             .sub.m {
@@ -110,9 +119,10 @@
             }
         }
     }
-} 
+}
+
 .plan-tag-corner {
-    position:absolute;
+    position: absolute;
     top: .5rem;
     left: 0;
     display: inline-flex;
@@ -124,21 +134,25 @@
     z-index: 1;
     border-radius: 0 5px 5px 0;
 }
+
 .pricing-title-wrap {
     padding: 0 2rem;
     line-height: 2;
 }
+
 .plan-sheet {
     white-space: nowrap;
     max-width: 1200px;
     width: 95%;
     margin: 0 auto;
 }
+
 .special-content-part {
     max-width: 100%;
     overflow-x: scroll;
     overflow-y: hidden;
 }
+
 .inbox-menu-item {
     min-width: 350px;
     &.no-content {
@@ -146,10 +160,11 @@
         text-align: center;
     }
 }
+
 .err-txt.type2 {
     float: none;
-    
 }
+
 .section-inner.article .even-case {
     max-width: 500px;
     td:first-child {
