@@ -1,0 +1,27 @@
+::-webkit-file-upload-button {
+     background-color: $gray67;
+     color: white;
+     padding: 5px 10px;
+     margin-right: 10px;
+     border: 0;
+}
+.copy-right {
+     position: relative;
+}
+.corner {
+     position: absolute;
+     right: 0;
+     bottom: 0;
+}
+.divi-wide.full {
+     width: 100%;
+}
+
+@media(max-width: 768px) {
+     .corner {
+          position: relative;
+          right: unset;
+          bottom: unset;
+          margin-top: 2rem;
+     }
+}

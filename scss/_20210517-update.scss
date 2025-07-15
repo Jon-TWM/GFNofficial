@@ -1,7 +1,24 @@
-.section-inner.article ol, .section-inner.article li, ol.decimal, ul.disc {
-    padding: 0;
-    list-style-position: inside;
+// .section-inner.article ol, .section-inner.article li{
+//     padding: 0;
+//     list-style-position: inside;
+// }
+
+.section-inner.article {
+    ol.decimal, ul.disc, ul.styled {
+    padding-left: 1.5rem;
+    list-style-position: outside;
+    }
+    ol.decimal.unstyled, ul.disc.unstyled,ul.unstyled {
+        padding-left: 1rem;
+        list-style-position: inside;
+        }
+    ul.styled {
+        &.square {
+            list-style-type: square;
+        }
+    }
 }
+
 .blockq {
     padding-left: 24px;
     display: inline-block;

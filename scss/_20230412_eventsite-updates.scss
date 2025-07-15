@@ -1,0 +1,30 @@
+.gliter {
+    display: inline-block;
+    width: 15px;
+}
+.step-wrap_inside-table {
+    text-align: left;
+}
+.step-wrap_inside-table_step {
+    border: 1px solid $nv;
+    display: inline-flex;
+    padding: 5px 10px;
+    font-size: 12px;;
+}
+a.momo {
+    color: #ff52ab;
+    &:visited, &:active, &:hover, &:focus {
+        color: #ff52ab;
+    }
+}
+.step-wrap_inside-table_content_item {
+    display: inline-block;
+    white-space: wrap;
+}
+.step-wrap_inside-table_step-wrap {
+    margin: 0 0 1rem 0;
+}
+.admin-q_alert-msg {
+    font-size: 14px;
+    color: $nv;
+}

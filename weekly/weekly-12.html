@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 
 <head>
     <meta charset="UTF-8">
@@ -10,7 +10,7 @@
     <!--google plus info-->
     <meta itemprop="name" content="Geforce NOW x 台灣大哥大 - 跳脫設備的束縛，盡情遊戲">
     <meta itemprop="image" content="https://www.nvidia.com/content/dam/en-zz/Solutions/GeForce/campaigns/hyper-scape-bundle/geforce-hyper-scape-og-image-1200x630.jpg">
-    <meta name="description" content="由台灣大哥大技術支持的 Geforce NOW，攜手引領5G新時代的來臨！" />
+    <meta name="description" content="台灣大哥大支持的 GeForce NOW，為您帶來極致雲端串流遊戲體驗！不需擁有高規格電腦、手機，即可在任何地方、任何裝置上暢玩最新、最熱門的遊戲，體驗未來的遊戲新世界" />
     <!--FB info-->
     <meta property="og:title" content="Geforce NOW x 台灣大哥大 - 跳脫設備的束縛，盡情遊戲" />
     <meta property="og:site_name" content="Geforce NOW x 台灣大哥大" />
@@ -21,7 +21,8 @@
     <meta property="og:description" content="由台灣大哥大技術支持的 Geforce NOW，攜手引領5G新時代的來臨！">
     <meta property="og:type" content="website" />
     <!--Favicon-->
-    <link rel="icon" href="https://www.taiwanmobile.com/bp-include/Y19/img/ico/favicon.ico?v=20190613"
+    <link rel="canonical" href="https://gfn.taiwanmobile.com/portal/[URL]" />
+<link rel="icon" href="https://www.taiwanmobile.com/bp-include/Y19/img/ico/favicon.ico?v=20190613"
         type="image/x-icon" />
     <!--CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
@@ -384,7 +385,7 @@
                     <div class="footer-nav">
                         <div class="logo-nav wow fadeInLeft">
                             <a href="../index.html" class="logo">
-                                <img src="../img/logo-white.svg" alt="">
+                                <img src="../img/logo-gfn.svg" alt="">
                             </a>
                             <a href="../games-list.html" class="footer-link">遊戲列表</a>
                             <a href="../pricing.html" class="footer-link">會員方案</a>
@@ -408,10 +409,14 @@
                             </a>
                         </div>
                     </div>
-                    <div class="divi-wide g60"></div>
+                    <div class="divi-wide g60 full"></div>
                     <div class="copy-right wow fadeInUp">
-                        <div class="line1">台灣大哥大版權所有© 2020 TaiwanMobile all rights reserved.</div>
-                        <div class="line2">© 2020 NVIDIA Corporation. All rights reserved.</div>
+                        <div><div class="line1">台灣大哥大版權所有© 2025 TaiwanMobile all rights reserved.</div>
+                        <div class="line2">© 2025 NVIDIA Corporation. All rights reserved.</div></div>
+                        <div class="corner">
+                        <img src="img/rank18+.png" alt="">
+
+                        </div>
                     </div>
                 </div>
             </footer>
@@ -421,8 +426,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
     <!-- simplebar -->
-    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
-    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@6.2.1/dist/simplebar.css" />
+    <script src="https://unpkg.com/simplebar@6.2.1/dist/simplebar.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="../js/custom.js"></script>
@@ -430,6 +435,7 @@
     <!-- JQ 掛載點 -->
     <script>
         $(document).ready(function () {
+            navUpdate();
             wow = new WOW({
                 boxClass: 'wow', // default
                 animateClass: 'fadeInLeftShort', // default

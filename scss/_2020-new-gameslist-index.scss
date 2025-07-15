@@ -58,7 +58,7 @@
         }
     }
     .card-body {
-        h1 {
+        h2 {
             font-size: 40px;
             font-weight: bolder;
             // white-space: nowrap;
@@ -126,7 +126,7 @@
     padding: 3rem 3rem 3rem 5rem;
     width: 405px;
     min-width: 405px;
-    h1 {
+    .game-card-caption-title {
         font-size: 32px;
         font-weight: bolder;
         color: $white;
@@ -290,7 +290,7 @@
         padding: 10px 20px;
     }
     .modal-title {
-        h1 {
+        h2 {
             font-size: 40px;
             font-weight: bolder;
             margin: 24px 0;

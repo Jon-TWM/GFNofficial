@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,7 @@
     <!--google plus info-->
     <meta itemprop="name" content="Geforce NOW x 台灣大哥大 - 跳脫設備的束縛，盡情遊戲">
     <meta itemprop="image" content="[網頁縮圖_1200x628]">
-    <meta name="description" content="由台灣大哥大技術支持的 Geforce NOW，攜手引領5G新時代的來臨！" />
+    <meta name="description" content="台灣大哥大支持的 GeForce NOW，為您帶來極致雲端串流遊戲體驗！不需擁有高規格電腦、手機，即可在任何地方、任何裝置上暢玩最新、最熱門的遊戲，體驗未來的遊戲新世界" />
     <!--FB info-->
     <meta property="og:title" content="Geforce NOW x 台灣大哥大 - 跳脫設備的束縛，盡情遊戲" />
     <meta property="og:site_name" content="Geforce NOW x 台灣大哥大" />
@@ -18,7 +18,8 @@
     <meta property="og:description" content="由台灣大哥大技術支持的 Geforce NOW，攜手引領5G新時代的來臨！">
     <meta property="og:type" content="website" />
     <!--Favicon-->
-    <link rel="icon" href="https://www.taiwanmobile.com/bp-include/Y19/img/ico/favicon.ico?v=20190613"
+    <link rel="canonical" href="https://gfn.taiwanmobile.com/portal/[URL]" />
+<link rel="icon" href="https://www.taiwanmobile.com/bp-include/Y19/img/ico/favicon.ico?v=20190613"
         type="image/x-icon" />
     <!--CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
@@ -35,7 +36,7 @@
             <a href=""><i class="fas fa-chevron-up"></i></a>
         </div>
         <div class="wrapper">
-            <!-- 主選單 -->
+            <!-- 主選單 20220324_更新 -->
             <nav>
                 <!-- logo -->
                 <a href="index.html" class="logo-wrap">
@@ -44,102 +45,607 @@
                 <!-- nav-item -->
                 <div class="nav-items-wrap">
                     <ul class="web-menu">
-                        <a href="#">
-                            <li id="nav-icon2">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </li>
-                        </a>
-                        <a href="news-list.html">
-                            <li class="nav-item">最新消息</li>
-                        </a>
-                        <a href="games-list.html">
-                            <li class="nav-item active">遊戲列表</li>
-                        </a>
-                        <a href="pricing.html">
-                            <li class="nav-item">會員方案</li>
-                        </a>
-                        <a href="system-require.html">
-                            <li class="nav-item">系統需求</li>
-                        </a>
-                        <a href="qa.html">
-                            <li class="nav-item">常見問題</li>
-                        </a>
-                        <a href="quickstart.html">
-                            <li class="nav-item">快速入門</li>
-                        </a>
-                        <a href="download.html">
-                            <li class="nav-item">軟體下載</li>
-                        </a>
-                        <!-- 登入前 -->
-                        <!-- <a href="#!">
-                            <li class="primary-btn login-btn">
-                                <span>註冊｜登入</span>
-                            </li>
-                        </a> -->
+                        <div class="left-part">
+                            <!-- 20200716 -->
+                            <a href="news-list.html">
+                                <li class="nav-item">最新消息</li>
+                            </a>
+                            <!-- 20200716 -->
+                            <a href="games-list.html">
+                                <li class="nav-item">遊戲列表</li>
+                            </a>
+                            <div href="#!" class="hover-dropdown">
+                                <li class="nav-item">訂閱方案</li>
+                                <ul class="hover-dropdown-list-wrapper">
+                                    <li><a href="pricing.html"><span>方案介紹</span></a></li>
+                                    <li><a href="ex-serial-num.html"><span>優惠碼兌換</span></a></li>
+                                </ul>
+                            </div>
+                            <div href="#!" class="hover-dropdown">
+                                <li class="nav-item">快速入門</li>
+                                <ul class="hover-dropdown-list-wrapper">
+                                    <li><a href="download.html"><span>軟體下載</span></a></li>
+                                    <li><a href="quickstart.html"><span>步驟教學</span></a></li>
+                                    <li><a href="system-require.html"><span>系統需求</span></a></li>
+                                </ul>
+                            </div>
+                            <a href="qa.html">
+                                <li class="nav-item">常見問題</li>
+                            </a>
+                        </div>
+                        <div class="right-part">
+                            
+                            <div href="#!">
+                                <li id="notify">
+                                    <!-- <img src="img/notify-icon.svg" alt="" class="read"> -->
+                                    <img src="img/notify-icon-unread.svg" alt="" class="unread">
+                                </li>
+                                <!-- inbox item -->
+                                <div class="inbox-menu">
+                                    <div class="inbox-menu-wrap">
+                                        <div class="inbox-menu-title"><span>最新通知</span></div>
+                                        <div class="inbox-item-section">
+                                            <a href="admin-inbox.html" class="inbox-menu-item">
+                                            <div class="item-head">
+                                                <div class="ratio ratio__1-1">
+                                                    <img src="img/1200x628.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="item-body">
+                                                <div class="inbox-item-title">
+                                                    我是最近收到通知的標題
+                                                </div>
+                                                <div class="inbox-item-ctx">
+                                                    我是通知的內容說明，我是通知的內容說明，我是通知的內容說明，我是通知的內容說明
+                                                    我是通知的內容說明，我是通知的內容說明，我是通知的內容說明，我是通知的內容說明
+                                                    我是通知的內容說明，我是通知的內容說明，我是通知的內容說明，我是通知的內容說明
+                                                </div>
+                                                <div class="time">今天</div>
+                                            </div>
+                                        </a>
+                                        <a href="admin-inbox.html" class="inbox-menu-item">
+                                            <div class="item-head">
+                                                <div class="ratio ratio__1-1">
+                                                    <img src="img/1200x628.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="item-body">
+                                                <div class="inbox-item-title">
+                                                    我是最近收到通知的標題
+                                                </div>
+                                                <div class="inbox-item-ctx">
+                                                    我是通知的內容說明，我是通知的內容說明，我是通知的內容說明，我是通知的內容說明
+                                                    我是通知的內容說明，我是通知的內容說明，我是通知的內容說明，我是通知的內容說明
+                                                    我是通知的內容說明，我是通知的內容說明，我是通知的內容說明，我是通知的內容說明
+                                                </div>
+                                                <div class="time">今天</div>
+                                            </div>
+                                        </a>
+                                        <a href="admin-inbox.html" class="inbox-menu-item">
+                                            <div class="item-head">
+                                                <div class="ratio ratio__1-1">
+                                                    <img src="img/1200x628.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="item-body">
+                                                <div class="inbox-item-title">
+                                                    我是最近收到通知的標題
+                                                </div>
+                                                <div class="inbox-item-ctx">
+                                                    我是通知的內容說明，我是通知的內容說明，我是通知的內容說明，我是通知的內容說明
+                                                    我是通知的內容說明，我是通知的內容說明，我是通知的內容說明，我是通知的內容說明
+                                                    我是通知的內容說明，我是通知的內容說明，我是通知的內容說明，我是通知的內容說明
+                                                </div>
+                                                <div class="time">今天</div>
+                                            </div>
+                                        </a>
+                                        <a href="admin-inbox.html" class="inbox-menu-item">
+                                            <div class="item-head">
+                                                <div class="ratio ratio__1-1">
+                                                    <img src="img/1200x628.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="item-body">
+                                                <div class="inbox-item-title">
+                                                    我是最近收到通知的標題
+                                                </div>
+                                                <div class="inbox-item-ctx">
+                                                    我是通知的內容說明，我是通知的內容說明，我是通知的內容說明，我是通知的內容說明
+                                                    我是通知的內容說明，我是通知的內容說明，我是通知的內容說明，我是通知的內容說明
+                                                    我是通知的內容說明，我是通知的內容說明，我是通知的內容說明，我是通知的內容說明
+                                                </div>
+                                                <div class="time">今天</div>
+                                            </div>
+                                        </a>
+                                        <a href="admin-inbox.html" class="inbox-menu-item">
+                                            <div class="item-head">
+                                                <div class="ratio ratio__1-1">
+                                                    <img src="img/1200x628.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="item-body">
+                                                <div class="inbox-item-title">
+                                                    我是最近收到通知的標題
+                                                </div>
+                                                <div class="inbox-item-ctx">
+                                                    我是通知的內容說明，我是通知的內容說明，我是通知的內容說明，我是通知的內容說明
+                                                    我是通知的內容說明，我是通知的內容說明，我是通知的內容說明，我是通知的內容說明
+                                                    我是通知的內容說明，我是通知的內容說明，我是通知的內容說明，我是通知的內容說明
+                                                </div>
+                                                <div class="time">今天</div>
+                                            </div>
+                                        </a>
+                                        </div>
+                                        <a href="admin-inbox.html" class="inbox-more"><span>查看全部</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 登入前 -->
+                            <!-- <a href="#!">
+                                <li class="primary-btn login-btn">
+                                    <span>註冊｜登入</span>
+                                </li>
+                            </a> -->
+                            <!-- 登入後 -->
+                            <div class="ac-opener-main-btn">
+                                <div class="nav-item">
+                                    <img src="img/ic_account_white.svg" alt="" id="pIc">
+                                    <div class="ac-opener-body">
+                                        <span>UserName</span>
+                                    </div>
+                                </div>
+                                <div href="#" tt-to="" class="account-center-opener-wrap">
+                                    <div class="option-wrap">
+                                        <li class="primary-btn account-center-opener">
+                                            <div class="ic-wrap jc-sb">
+                                                <div class="left-part">
+                                                    <img src="img/ic_account_white.svg" alt="">
+                                                    <div class="ac-opener-body">
+                                                        <span>UserName</span>
+                                                        <a href="#!" class="edit-ac-info"><span>編輯帳戶資訊</span></a>
+                                                    </div>
+                                                </div>
+                                                <img src="img/icon_arrow.svg" alt="" class="ac-opener-arr">
+                                            </div>
+                                        </li>
+                                        <ul id="" class="ac-opt">
+                                            <a href="admin-account.html">
+                                                <li class="option-link nav-item cm">
+                                                    <img src="img/ic-order.svg" alt="">
+                                                    <span>交易紀錄</span>
+                                                </li>
+                                            </a>
+                                            <a href="admin-account.html">
+                                                <li class="option-link nav-item cm">
+                                                    <img src="img/ic-game.svg" alt="">
+                                                    <span>遊玩紀錄</span>
+                                                </li>
+                                            </a>
+                                            <a href="admin-account.html">
+                                                <li class="option-link nav-item cm">
+                                                    <img src="img/ic-qa.svg" alt="">
+                                                    <span>我要發問</span>
+                                                </li>
+                                            </a>
+                                            <a href="admin-account.html">
+                                                <li class="option-link nav-item cm">
+                                                    <img src="img/ic-inbox.svg" alt="">
+                                                    <span>訊息管理</span>
+                                                </li>
+                                            </a>
+                                            <a href="#" style="border-top: 1px solid #505050;">
+                                                <li class="option-link ic-wrap nav-item cm">
+                                                    <i class="fas fa-power-off"></i>
+                                                    <span>登出</span>
+                                                </li>
+                                            </a>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#">
+                                <li id="nav-icon2">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </li>
+                            </a>
+                        </div>
+                    </ul>
+                    <ul class="m-menu">
                         <!-- 登入後 -->
-                        <a href="#" tt-to="accountOption" class="account-center-opener-wrap">
+                        <div href="#" tt-to="" class="account-center-opener-wrap">
                             <div class="option-wrap">
                                 <li class="primary-btn account-center-opener">
-                                    <div class="ic-wrap">
-                                        <img src="img/ic_account_white.svg" alt="">
-                                        <span>UserName</span>
-                                        <i class="fas fa-chevron-down"></i>
+                                    <div class="ic-wrap jc-sb">
+                                        <div class="left-part">
+                                            <img src="img/ic_account_white.svg" alt="">
+                                            <div class="ac-opener-body">
+                                                <span>UserName</span>
+                                                <a href="#!" class="edit-ac-info"><span>編輯帳戶資訊</span></a>
+                                            </div>
+                                        </div>
+                                        <img src="img/icon_arrow.svg" alt="" class="ac-opener-arr">
                                     </div>
                                 </li>
-                                <ul id="accountOption">
+                                <ul id="" class="ac-opt">
                                     <a href="admin-account.html">
-                                        <li class="option-link nav-item">會員中心</li>
+                                        <li class="option-link nav-item cm">
+                                            <img src="img/ic-order.svg" alt="">
+                                            <span>交易紀錄</span>
+                                        </li>
+                                    </a>
+                                    <a href="admin-account.html">
+                                        <li class="option-link nav-item cm">
+                                            <img src="img/ic-game.svg" alt="">
+                                            <span>遊玩紀錄</span>
+                                        </li>
+                                    </a>
+                                    <a href="admin-account.html">
+                                        <li class="option-link nav-item cm">
+                                            <img src="img/ic-qa.svg" alt="">
+                                            <span>我要發問</span>
+                                        </li>
+                                    </a>
+                                    <a href="admin-account.html">
+                                        <li class="option-link nav-item cm">
+                                            <img src="img/ic-inbox.svg" alt="">
+                                            <span>訊息管理</span>
+                                        </li>
                                     </a>
                                     <a href="#">
-                                        <li class="option-link ic-wrap nav-item">
-                                            <i class="fas fa-power-off"></i>
+                                        <li class="option-link nav-item cm">
+                                            <i class="fas fa-power-off" style="margin: 0 5px;"></i>
                                             <span>登出</span>
                                         </li>
                                     </a>
                                 </ul>
                             </div>
-                        </a>
-                    </ul>
-                    <ul class="m-menu">
+                        </div>
                         <a href="news-list.html">
                             <li class="nav-item">最新消息</li>
                         </a>
                         <a href="games-list.html">
                             <li class="nav-item">遊戲列表</li>
                         </a>
-                        <a href="pricing.html">
-                            <li class="nav-item">會員方案</li>
-                        </a>
-                        <a href="system-require.html">
-                            <li class="nav-item">系統需求</li>
-                        </a>
+                        <div href="#!" class="hover-dropdown">
+                            <li class="nav-item">
+                                <span>訂閱方案</span>
+                                <img src="img/icon_arrow.svg" alt="" class="hdd-opener">
+                            </li>
+                            <ul class="hover-dropdown-list-wrapper">
+                                <li><a href="pricing.html"><span>方案介紹</span></a></li>
+                                <li><a href="ex-serial-num.html"><span>優惠碼兌換</span></a></li>
+                            </ul>
+                        </div>
+                        <div href="#!" class="hover-dropdown">
+                            <li class="nav-item">
+                                <span>快速入門</span>
+                                <img src="img/icon_arrow.svg" alt="" class="hdd-opener">
+                            </li>
+                            <ul class="hover-dropdown-list-wrapper">
+                                <li><a href="download.html"><span>軟體下載</span></a></li>
+                                <li><a href="quickstart.html"><span>步驟教學</span></a></li>
+                                <li><a href="system-require.html"><span>系統需求</span></a></li>
+                            </ul>
+                        </div>
                         <a href="qa.html">
                             <li class="nav-item">常見問題</li>
                         </a>
-                        <a href="quickstart.html">
-                            <li class="nav-item">快速入門</li>
-                        </a>
-                        <a href="download.html">
-                            <li class="nav-item">軟體下載</li>
-                        </a>
+                        
                     </ul>
                 </div>
             </nav>             <!-- 結帳方式 -->
             <section class="section" id="gameList">
-                <div class="section-title wow fadeInUp">
+                <h1 class="section-title wow fadeInUp">
                     <span class="en">遊戲列表</span>
-                </div>
+                </h1>
                 <div class="section-sub-title">
                     GeForce NOW目前已支援超過700款以上遊戲與多款3A 大作!
                 </div>
-                <div class="section-banner-img">
-                    <img src="img/game-list-banner.jpg" alt="">
+                <!-- 遊戲列表 -->
+            <section class="section3" id="gamesList">
+                <div class="container">
+                    <div class="game-card-wrapper">
+                        <!-- 遊戲列表推薦簡介 -->
+                        <div class="game-card-section-caption">
+                            <div class="caption-content-wrap">
+                                <div class="caption-content">
+                                    <div class="game-card-caption-title">GeForce NOW <br> 眾多遊戲免費暢玩</div>
+                                    <em>暢玩三步驟</em>
+                                    <div class="step-wrap">
+                                        <div class="number-tag">
+                                            <span>1</span>
+                                        </div>
+                                        <div class="step-txt">完成安裝並打開Geforce NOW</div>
+                                    </div>
+                                    <div class="step-wrap">
+                                        <div class="number-tag">
+                                            <span>2</span>
+                                        </div>
+                                        <div class="step-txt">選擇一款免費遊戲後，點擊「玩遊戲」</div>
+                                    </div>
+                                    <div class="step-wrap">
+                                        <div class="number-tag">
+                                            <span>3</span>
+                                        </div>
+                                        <div class="step-txt">進入遊戲中，創建該遊戲的會員後，即可開始玩遊戲</div>
+                                    </div>
+                                </div>
+                                <a href="#!" class="primary-btn full" target="_blank"><span>立即體驗</span></a>
+                            </div>
+                        </div>
+                        <div class="game-card-carousel-wrap">
+                            <div class="game-card-carousel owl-carousel owl-theme">
+                                <!-- 遊戲 1 : APEX - 小卡 -->
+                                <a href="#!" tt-to="apex-lg-card" class="sm-card-item modal-opener" game="apex" ct-font-color="bTxt">
+                                    <div class="type-tag" type-tag="free">
+                                        <span>免費遊戲推薦</span>
+                                    </div>
+                                    <div class="card-header">
+                                        <div class="card-img">
+                                            <img src="img/games-list-index-img/apex-legends-sm.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="txt">
+                                            <h2><span>APEX 英雄</span></h2>
+                                            <p>《Apex 英雄》為一款大逃殺類型的大型多人線上射擊遊戲。選擇你的角色、 召集你的小隊、展現你的實力。</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="game-card-more"><span>了解詳情</span><img src="img/arr-detail.svg" alt="" class="arr"></div>
+                                    </div>
+                                </a> 
+                                <!-- 遊戲 2 : Destiny2 - 小卡 -->
+                                <a href="#!" tt-to="destiny2-lg-card" class="sm-card-item modal-opener" game="destiny2" ct-font-color="wTxt">
+                                    <div class="type-tag" type-tag="free">
+                                        <span>免費遊戲推薦</span>
+                                    </div>
+                                    <div class="card-header">
+                                        <div class="card-img">
+                                            <img src="img/games-list-index-img/destiny2-sm.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="txt">
+                                            <h2><span>天命2</span></h2>
+                                            <p>《天命2》是一款純粹的動作大型多人線上遊戲。
+                                                加入其他數百萬玩家、創建自己的守護者，執行具有挑戰性的合作任務與競爭激烈的PvP模式。</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="game-card-more"><span>了解詳情</span><img src="img/arr-detail-w.svg" alt="" class="arr"></div>
+                                    </div>
+                                </a>
+                                <!-- 遊戲 3 : Warframe - 小卡 -->
+                                <a href="#!" tt-to="warframe-lg-card" class="sm-card-item modal-opener" game="warframe" ct-font-color="wTxt">
+                                    <div class="type-tag" type-tag="free">
+                                        <span>免費遊戲推薦</span>
+                                    </div>
+                                    <div class="card-header">
+                                        <div class="card-img">
+                                            <img src="img/games-list-index-img/warframe-sm.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="txt">
+                                            <h2><span>Warframe</span></h2>
+                                            <p>《Warframe》是一款快節奏的多人合作第三人稱射擊遊戲。</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="game-card-more"><span>了解詳情</span><img src="img/arr-detail-w.svg" alt="" class="arr"></div>
+                                    </div>
+                                </a>
+                                <!-- 遊戲 4 : Hyperscape - 小卡 -->
+                                <a href="#!" tt-to="hyperscape-lg-card" class="sm-card-item modal-opener" game="hyperscape" ct-font-color="wTxt">
+                                    <div class="type-tag" type-tag="free">
+                                        <span>免費遊戲推薦</span>
+                                    </div>
+                                    <div class="card-header">
+                                        <div class="card-img">
+                                            <img src="img/games-list-index-img/hyperscape-sm.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="txt">
+                                            <h2><span>超能競地</span></h2>
+                                            <p>《超能競地》是唯一一款以未來都市為題材的免費大逃殺遊戲，100 名參戰者將透過近距離第一人稱視角和快步調的比賽進行交戰，搖身一變成為下一位全球超級巨星。</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="game-card-more"><span>了解詳情</span><img src="img/arr-detail-w.svg" alt="" class="arr"></div>
+                                    </div>
+                                </a>
+                                <!-- 遊戲 5 : Immortals Fenyx Rising - 小卡 -->
+                                <a href="#!" tt-to="immortals-fenyx-rising-lg-card" class="sm-card-item modal-opener" game="immortals-fenyx-rising" ct-font-color="wTxt">
+                                    <div class="type-tag" type-tag="novice">
+                                        <span>新手入門推薦</span>
+                                    </div>
+                                    <div class="card-header">
+                                        <div class="card-img">
+                                            <img src="img/games-list-index-img/immortals-fenyx-rising-sm.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="txt">
+                                            <h2><span>芬尼克斯傳說</span></h2>
+                                            <p>在《芬尼克斯傳說》中玩家將扮演半翼神芬尼克斯，踏上拯救希臘眾神脫離黑暗詛咒的任務。</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="game-card-more"><span>了解詳情</span><img src="img/arr-detail-w.svg" alt="" class="arr"></div>
+                                    </div>
+                                </a>
+                                <!-- 遊戲 6 : Cuphead - 小卡 -->
+                                <a href="#!" tt-to="cuphead-lg-card" class="sm-card-item modal-opener" game="cuphead" ct-font-color="wTxt">
+                                    <div class="type-tag" type-tag="novice">
+                                        <span>新手入門推薦</span>
+                                    </div>
+                                    <div class="card-header">
+                                        <div class="card-img">
+                                            <img src="img/games-list-index-img/cuphead-sm.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="txt">
+                                            <h2><span>茶杯頭</span></h2>
+                                            <p>《茶杯頭》是一款跑動射擊類遊戲，支援單人與雙人模式遊玩。</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="game-card-more"><span>了解詳情</span><img src="img/arr-detail-w.svg" alt="" class="arr"></div>
+                                    </div>
+                                </a>
+                                <!-- 遊戲 7 : Assassins Creed Valhalla - 小卡 -->
+                                <a href="#!" tt-to="assassins-creed-valhalla-lg-card" class="sm-card-item modal-opener" game="assassins-creed-valhalla" ct-font-color="wTxt">
+                                    <div class="type-tag" type-tag="hot">
+                                        <span>熱門遊戲推薦</span>
+                                    </div>
+                                    <div class="card-header">
+                                        <div class="card-img">
+                                            <img src="img/games-list-index-img/assassins-creed-valhalla-sm.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="txt">
+                                            <h2><span>刺客教條：維京紀元</span></h2>
+                                            <p>在《刺客教條：維京紀元》，化身追求榮耀的傳奇維京英雄，劫掠敵人、發展聚落、培養政治權力。</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="game-card-more"><span>了解詳情</span><img src="img/arr-detail-w.svg" alt="" class="arr"></div>
+                                    </div>
+                                </a>
+                                <!-- 遊戲 8 : Cyberpunk 2077 - 小卡 -->
+                                <a href="#!" tt-to="cyberpunk2077-lg-card" class="sm-card-item modal-opener" game="cyberpunk2077" ct-font-color="bTxt">
+                                    <div class="type-tag" type-tag="hot">
+                                        <span>熱門遊戲推薦</span>
+                                    </div>
+                                    <div class="card-header">
+                                        <div class="card-img">
+                                            <img src="img/games-list-index-img/cyberpunk2077-sm.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="txt">
+                                            <h2><span>電馭叛客2077</span></h2>
+                                            <p>《電馭叛客 2077》是一款動作冒險開放世界的第一人稱視角角色扮演遊戲。</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="game-card-more"><span>了解詳情</span><img src="img/arr-detail.svg" alt="" class="arr"></div>
+                                    </div>
+                                </a>
+                                <!-- 遊戲 9 : Ark Survival Evolved - 小卡 -->
+                                <a href="#!" tt-to="ark-survival-evolved-lg-card" class="sm-card-item modal-opener" game="ark-survival-evolved" ct-font-color="wTxt">
+                                    <div class="type-tag" type-tag="act">
+                                        <span>動作遊戲推薦</span>
+                                    </div>
+                                    <div class="card-header">
+                                        <div class="card-img">
+                                            <img src="img/games-list-index-img/ark-survival-evolved-sm.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="txt">
+                                            <h2><span>方舟：生存進化</span></h2>
+                                            <p>《方舟：生存進化》是一款生存類沙盒動作冒險遊戲。</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="game-card-more"><span>了解詳情</span><img src="img/arr-detail-w.svg" alt="" class="arr"></div>
+                                    </div>
+                                </a>
+                                <!-- 遊戲 10 : Black Desert - 小卡 -->
+                                <a href="#!" tt-to="black-dessert-lg-card" class="sm-card-item modal-opener" game="black-dessert" ct-font-color="wTxt">
+                                    <div class="type-tag" type-tag="act">
+                                        <span>動作遊戲推薦</span>
+                                    </div>
+                                    <div class="card-header">
+                                        <div class="card-img">
+                                            <img src="img/games-list-index-img/black-dessert-sm.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="txt">
+                                            <h2><span>黑色沙漠</span></h2>
+                                            <p>橫掃全球大型多人線上MMORPG大作《黑色沙漠》</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="game-card-more"><span>了解詳情</span><img src="img/arr-detail-w.svg" alt="" class="arr"></div>
+                                    </div>
+                                </a>
+                                <!-- 遊戲 11 : Tom Clancy's The Division 2 - 小卡 -->
+                                <a href="#!" tt-to="tctd2-lg-card" class="sm-card-item modal-opener" game="tctd2" ct-font-color="bTxt">
+                                    <div class="type-tag" type-tag="hot">
+                                        <span>熱門遊戲推薦</span>
+                                    </div>
+                                    <div class="card-header">
+                                        <div class="card-img">
+                                            <img src="img/games-list-index-img/tctd2-sm.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="txt">
+                                            <h2><span>湯姆克蘭西：全境封鎖 2</span></h2>
+                                            <p>《湯姆克蘭西：全境封鎖2》是一款線上第三人稱射擊遊戲。</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="game-card-more"><span>了解詳情</span><img src="img/arr-detail.svg" alt="" class="arr"></div>
+                                    </div>
+                                </a>
+                                <!-- 遊戲 12 : Tom Clancy's Rainbow Six: Siege - 小卡 -->
+                                <a href="#!" tt-to="tcr6-lg-card" class="sm-card-item modal-opener" game="tcr6" ct-font-color="wTxt">
+                                    <div class="type-tag" type-tag="hot">
+                                        <span>熱門遊戲推薦</span>
+                                    </div>
+                                    <div class="card-header">
+                                        <div class="card-img">
+                                            <img src="img/games-list-index-img/tcr6-sm.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="txt">
+                                            <h2><span>虹彩六號：圍攻行動</span></h2>
+                                            <p>《湯姆克蘭西之虹彩六號：圍攻行動》是一款廣受好評的第一人稱射擊遊戲品牌最新系列作品。</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="game-card-more"><span>了解詳情</span><img src="img/arr-detail-w.svg" alt="" class="arr"></div>
+                                    </div>
+                                </a>
+                                <!-- 遊戲 13 : Assassin Creed: Odyssy - 小卡 -->
+                                <a href="#!" tt-to="assassins-creed-odyssy-lg-card" class="sm-card-item modal-opener" game="assassins-creed-odyssy" ct-font-color="wTxt">
+                                    <div class="type-tag" type-tag="act">
+                                        <span>動作遊戲推薦</span>
+                                    </div>
+                                    <div class="card-header">
+                                        <div class="card-img">
+                                            <img src="img/games-list-index-img/assassins-creed-odyssy-sm.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="txt">
+                                            <h2><span>刺客教條：奧德賽</span></h2>
+                                            <p>在《刺客教條：奧德賽》裡寫下屬於你的傳奇故事、成為傳奇希臘英雄。</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="game-card-more"><span>了解詳情</span><img src="img/arr-detail-w.svg" alt="" class="arr"></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </section>
                 <!-- <div class="section-banner">
                     <div class="section-banner-container owl-carousel owl-theme">
                         <div class="section-banner-img">
@@ -193,19 +699,32 @@
                                         <ul class="select_menu">
                                             <li>按照字母排序 A → Z</li>
                                             <li>按照字母排序 Z → A</li>
+                                            <li>遊戲上架新 → 舊</li>
                                         </ul>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="tag-selector">
+                                <span class="title sub">目前選取遊戲類別：</span>
+                                <a href="#!" class="tag-wrap"><span class="nv">Steam</span><img src="img/cancel.svg" alt="" class="cancel"></a>
+                                <a href="#!" class="tag-wrap"><span class="nv">動作</span><img src="img/cancel.svg" alt="" class="cancel"></a>
+                                <a href="#!" class="tag-wrap"><span class="nv">第一人稱遊戲</span><img src="img/cancel.svg" alt="" class="cancel"></a>
                             </div>
                             <p class="nt-game sub m">鼠標點擊遊戲名稱，可以看到支援該遊戲之遊戲庫平台</p>
                         </div>
                         <ul class="game-list-wrapper">
                             <li>
+                                <div class="game-plat">
+                                    <span>Steam / Epic / Ubisoft Connect</span>
+                                </div>
                                 <div class="name">
                                     <span>7 Days to Die</span>
                                     <span>《七日殺》</span>
                                 </div>
-                                <div class="tooltip-info">
+                                <div class="game-type">
+                                    <span>動作/冒險/獨立</span>
+                                </div>
+                                <!-- <div class="tooltip-info">
                                     <div class="wrap">
                                         <p> <span class="sub">出版商：</span> Bungie</p>
                                         <p><span class="sub">類型：</span>免費遊戲 / 開放世界/ 第一人稱射擊 / 大型多人連線</p>
@@ -214,14 +733,20 @@
                                             <i class="fas fa-minus"></i>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </li>
                             <li>
+                                <div class="game-plat">
+                                    <span>Steam / Epic / Ubisoft Connect</span>
+                                </div>
                                 <div class="name">
-                                    <span>A Plague Tale: Innocence</span>
-                                    <span>《瘟疫傳說：無罪》</span>
+                                    <span>7 Days to Die</span>
+                                    <span>《七日殺》</span>
                                 </div>
-                                <div class="tooltip-info">
+                                <div class="game-type">
+                                    <span>動作/冒險/獨立</span>
+                                </div>
+                                <!-- <div class="tooltip-info">
                                     <div class="wrap">
                                         <p> <span class="sub">出版商：</span> Bungie</p>
                                         <p><span class="sub">類型：</span>免費遊戲 / 開放世界/ 第一人稱射擊 / 大型多人連線</p>
@@ -230,14 +755,19 @@
                                             <i class="fas fa-minus"></i>
                                         </div>
                                     </div>
+                                </div> -->
+                            </li><li>
+                                <div class="game-plat">
+                                    <span>Steam / Epic / Ubisoft Connect</span>
                                 </div>
-                            </li>
-                            <li>
                                 <div class="name">
-                                    <span>A Plague Tale: Innocence</span>
-                                    <span>《瘟疫傳說：無罪》</span>
+                                    <span>7 Days to Die</span>
+                                    <span>《七日殺》</span>
                                 </div>
-                                <div class="tooltip-info">
+                                <div class="game-type">
+                                    <span>動作/冒險/獨立</span>
+                                </div>
+                                <!-- <div class="tooltip-info">
                                     <div class="wrap">
                                         <p> <span class="sub">出版商：</span> Bungie</p>
                                         <p><span class="sub">類型：</span>免費遊戲 / 開放世界/ 第一人稱射擊 / 大型多人連線</p>
@@ -246,360 +776,98 @@
                                             <i class="fas fa-minus"></i>
                                         </div>
                                     </div>
+                                </div> -->
+                            </li><li>
+                                <div class="game-plat">
+                                    <span>Steam / Epic / Ubisoft Connect</span>
                                 </div>
-                            </li>
-                            <!-- 更改格式，故舊版先隱藏 -->
-                            <!-- <li>
-                                <span>ACE COMBAT 7 : SKIES UNKNOWN</span>
-                                <span>《空戰奇兵7 未知天際》</span>
-                            </li>
-                            <li>
-                                <span>Age of Empires II: Definitive Edition</span>
-                                <span>《世紀帝國II：決定版》</span>
-                            </li>
-                            <li>
-                                <span>Age of Wonders: Planetfall</span>
-                                <span>《魔幻紀元: 行星登陸》</span>
-                            </li>
-                            <li>
-                                <span>American Truck Simulator</span>
-                                <span>《美國卡車模擬》</span>
-                            </li>
-                            <li>
-                                <span>Astroneer</span>
-                                <span>《異星探險家》</span>
+                                <div class="name">
+                                    <span>7 Days to Die</span>
+                                    <span>《七日殺》</span>
+                                </div>
+                                <div class="game-type">
+                                    <span>動作/冒險/獨立</span>
+                                </div>
+                                <!-- <div class="tooltip-info">
+                                    <div class="wrap">
+                                        <p> <span class="sub">出版商：</span> Bungie</p>
+                                        <p><span class="sub">類型：</span>免費遊戲 / 開放世界/ 第一人稱射擊 / 大型多人連線</p>
+                                        <p><span class="sub">支援平台：</span>STEAM</p>
+                                        <div class="tt-closer">
+                                            <i class="fas fa-minus"></i>
+                                        </div>
+                                    </div>
+                                </div> -->
                             </li>
                             <li>
-                                <span>Battlefleet Gothic: Armada 2</span>
-                                <span>《哥特艦隊：阿瑪達2》</span>
+                                <div class="game-plat">
+                                    <span>Steam / Epic / Ubisoft Connect</span>
+                                </div>
+                                <div class="name">
+                                    <span>7 Days to Die</span>
+                                    <span>《七日殺七日殺七日殺七日殺七日殺七日殺七日殺七日殺》</span>
+                                </div>
+                                <div class="game-type">
+                                    <span>動作/冒險/獨立</span>
+                                </div>
+                                <!-- <div class="tooltip-info">
+                                    <div class="wrap">
+                                        <p> <span class="sub">出版商：</span> Bungie</p>
+                                        <p><span class="sub">類型：</span>免費遊戲 / 開放世界/ 第一人稱射擊 / 大型多人連線</p>
+                                        <p><span class="sub">支援平台：</span>STEAM</p>
+                                        <div class="tt-closer">
+                                            <i class="fas fa-minus"></i>
+                                        </div>
+                                    </div>
+                                </div> -->
                             </li>
                             <li>
-                                <span>Battletech</span>
-                                <span>《戰鬥科技》</span>
+                                <div class="game-plat">
+                                    <span>Steam / Epic / Ubisoft Connect</span>
+                                </div>
+                                <div class="name">
+                                    <span>7 Days to Die</span>
+                                    <span>《七日殺七日殺七日殺七日殺七日殺七日殺七日殺七日殺》</span>
+                                </div>
+                                <div class="game-type">
+                                    <span>動作/冒險/獨立</span>
+                                </div>
+                                <!-- <div class="tooltip-info">
+                                    <div class="wrap">
+                                        <p> <span class="sub">出版商：</span> Bungie</p>
+                                        <p><span class="sub">類型：</span>免費遊戲 / 開放世界/ 第一人稱射擊 / 大型多人連線</p>
+                                        <p><span class="sub">支援平台：</span>STEAM</p>
+                                        <div class="tt-closer">
+                                            <i class="fas fa-minus"></i>
+                                        </div>
+                                    </div>
+                                </div> -->
                             </li>
-                            <li>
-                                <span>Cities: Skylines</span>
-                                <span>《大都會：天際》</span>
-                            </li>
-                            <li>
-                                <span>Closers</span>
-                                <span>《封印者：CLOSERS》</span>
-                            </li>
-                            <li>
-                                <span>Conan Exiles</span>
-                                <span>《科南的流亡》</span>
-                            </li>
-                            <li>
-                                <span>Crossout</span>
-                                <span>《創世戰車》</span>
-                            </li>
-                            <li>
-                                <span>Crusader Kings II</span>
-                                <span>《十字軍之王II》</span>
-                            </li>
-                            <li>
-                                <span>Cuphead</span>
-                                <span>《茶杯頭》</span>
-                            </li>
-                            <li>
-                                <span>Dark Souls II</span>
-                                <span>《黑暗靈魂II》</span>
-                            </li>
-                            <li>
-                                <span>Dark Souls III</span>
-                                <span>《黑暗靈魂III》</span>
-                            </li>
-                            <li>
-                                <span>Dark Souls Remastered</span>
-                                <span>《黑暗靈魂》Remastered</span>
-                            </li>
-                            <li>
-                                <span>Darksiders Genesis</span>
-                                <span>《暗黑血統：創世記》</span>
-                            </li>
-                            <li>
-                                <span>Darksiders III</span>
-                                <span>《末世騎士III》</span>
-                            </li>
-                            <li>
-                                <span>Dauntless</span>
-                                <span>《不屈不撓》</span>
-                            </li>
-                            <li>
-                                <span>Dead by Daylight</span>
-                                <span>《黎明死線》</span>
-                            </li>
-                            <li>
-                                <span>Deep Rock Galactic</span>
-                                <span>《銀河洞穴大冒險》</span>
-                            </li>
-                            <li>
-                                <span>Descenders</span>
-                                <span>《Descenders》</span>
-                            </li>
-                            <li>
-                                <span>Destiny 2</span>
-                                <span>《天命2》</span>
-                            </li>
-                            <li>
-                                <span>Dota2</span>
-                                <span>《Dota 2》</span>
-                            </li>
-                            <li>
-                                <span>Dying Light</span>
-                                <span>《垂死之光》</span>
-                            </li>
-                            <li>
-                                <span>Elite Dangerous</span>
-                                <span>《精英：危機四伏》</span>
-                            </li>
-                            <li>
-                                <span>Euro truck simulator 2</span>
-                                <span>《歐洲卡車模擬2》</span>
-                            </li>
-                            <li>
-                                <span>Europa Universalis IV</span>
-                                <span>《歐陸風雲IV》</span>
-                            </li>
-                            <li>
-                                <span>Farming Simulator 19</span>
-                                <span>《模擬農場19》</span>
-                            </li>
-                            <li>
-                                <span>Fate/EXTELLA LINK</span>
-                                <span>《Fate/EXTELLA LINK》</span>
-                            </li>
-                            <li>
-                                <span>Fortnite</span>
-                                <span>《要塞英雄》</span>
-                            </li>
-                            <li>
-                                <span>Friday the 13th: The Game</span>
-                                <span>《十三號星期五》</span>
-                            </li>
-                            <li>
-                                <span>FrostPunk</span>
-                                <span>《冰封龐克》</span>
-                            </li>
-                            <li>
-                                <span>Grim Dawn</span>
-                                <span>《恐怖黎明》</span>
-                            </li>
-                            <li>
-                                <span>GTFO</span>
-                                <span>《GTFO》</span>
-                            </li>
-                            <li>
-                                <span>Hearts of Iron IV</span>
-                                <span>《鋼鐵雄心IV》</span>
-                            </li>
-                            <li>
-                                <span>HITMAN</span>
-                                <span>《刺客任務》</span>
-                            </li>
-                            <li>
-                                <span>Homefront: The Revolution</span>
-                                <span>《烽火家園：革命再起》</span>
-                            </li>
-                            <li>
-                                <span>Human Fall Flat</span>
-                                <span>《人類：一敗塗地》</span>
-                            </li>
-                            <li>
-                                <span>Imperator: Rome</span>
-                                <span>《英白拉多：羅馬》</span>
-                            </li>
-                            <li>
-                                <span>Inside</span>
-                                <span>《Inside》</span>
-                            </li><li>
-                                <span>Insurgency</span>
-                                <span>《叛亂》</span>
-                            </li><li>
-                                <span>Insurgency Sandstorm</span>
-                                <span>《叛亂：沙漠風暴》</span>
-                            </li><li>
-                                <span>Jurassic World Evolution</span>
-                                <span>《侏羅紀世界：進化》</span>
-                            </li><li>
-                                <span>Kingdom Come: Deliverance</span>
-                                <span>《天國降臨：救贖》</span>
-                            </li><li>
-                                <span>KurtzPel</span>
-                                <span>《混沌之初》</span>
-                            </li><li>
-                                <span>League of Legends</span>
-                                <span>《英雄聯盟》</span>
-                            </li><li>
-                                <span>Legend of Runeterra</span>
-                                <span>《符文大地傳說》</span>
-                            </li><li>
-                                <span>Mechwarrior 5: Mercenaries</span>
-                                <span>《機甲爭霸戰5》</span>
-                            </li><li>
-                                <span>Metro Exodus</span>
-                                <span>《戰慄深隧：流亡》</span>
-                            </li><li>
-                                <span>Metro: Last Light Redux</span>
-                                <span>《戰慄深隧：最後曙光》</span>
-                            </li><li>
-                                <span>Metro: Redux</span>
-                                <span>《戰慄深隧》</span>
-                            </li><li>
-                                <span>Mordhau</span>
-                                <span>《雷擊劍鬥》</span>
-                            </li><li>
-                                <span>Mount & Blade: Warband</span>
-                                <span>《騎馬與砍殺：戰團》</span>
-                            </li><li>
-                                <span>Mutant Year Zero: Road to Eden</span>
-                                <span>《突變元年：伊甸園之路》</span>
-                            </li><li>
-                                <span>My Time At Portia</span>
-                                <span>《波西亞時光》</span>
-                            </li><li>
-                                <span>NIOH</span>
-                                <span>《仁王》</span>
-                            </li><li>
-                                <span>Outward</span>
-                                <span>《物質世界》</span>
-                            </li><li>
-                                <span>Paladins</span>
-                                <span>《聖騎士：英雄國度》</span>
-                            </li><li>
-                                <span>Path of Exile</span>
-                                <span>《流亡黯道》</span>
-                            </li><li>
-                                <span>Pathfinder: Kingmaker</span>
-                                <span>《開拓者：擁王者》</span>
-                            </li><li>
-                                <span>Payday 2</span>
-                                <span>《劫薪日2》</span>
-                            </li><li>
-                                <span>Planet Zoo</span>
-                                <span>《動物園之星》</span>
-                            </li><li>
-                                <span>Prison Architect</span>
-                                <span>《監獄建築師》</span>
-                            </li><li>
-                                <span>Realm Royale</span>
-                                <span>《聖騎士：大逃殺國度》</span>
-                            </li><li>
-                                <span>Remnant: From the Ashes</span>
-                                <span>《遺跡：來自灰燼》</span>
-                            </li><li>
-                                <span>RimWorld</span>
-                                <span>《邊緣世界》</span>
-                            </li><li>
-                                <span>Saints Row Episode 4</span>
-                                <span>《黑街聖徒 4》</span>
-                            </li><li>
-                                <span>SCP: Secret Laboratory</span>
-                                <span>《SCP:秘密實驗室》</span>
-                            </li><li>
-                                <span>SEKIRO: SHADOWS DIE TWICE</span>
-                                <span>《隻狼：暗影雙死》</span>
-                            </li><li>
-                                <span>Smite</span>
-                                <span>《神之浩劫》</span>
-                            </li><li>
-                                <span>SOMA</span>
-                                <span>《SOMA》</span>
-                            </li><li>
-                                <span>Soul Calibur 6</span>
-                                <span>《劍魂VI》</span>
-                            </li><li>
-                                <span>Space Engineers</span>
-                                <span>《太空工程師》</span>
-                            </li><li>
-                                <span>Stellaris</span>
-                                <span>《恆星戰役》</span>
-                            </li><li>
-                                <span>Subnautica</span>
-                                <span>《深海迷航》</span>
-                            </li><li>
-                                <span>Subnautica Below Zero</span>
-                                <span>《深海迷航：零度以下》</span>
-                            </li><li>
-                                <span>Surviving Mars</span>
-                                <span>《火星求生》</span>
-                            </li><li>
-                                <span>TERA</span>
-                                <span>《TERA》</span>
-                            </li><li>
-                                <span>Terraria</span>
-                                <span>《泰拉瑞亞》</span>
-                            </li><li>
-                                <span>The Surge 2</span>
-                                <span>《機甲狂潮2》</span>
-                            </li><li>
-                                <span>The Witcher 2: Assassins of Kings</span>
-                                <span>《巫師2：王國刺客》</span>
-                            </li><li>
-                                <span>The Witcher 3</span>
-                                <span>《巫師3》</span>
-                            </li><li>
-                                <span>They Are Billions</span>
-                                <span>《億萬殭屍》</span>
-                            </li><li>
-                                <span>Thief Simulator</span>
-                                <span>《小偷模擬器》</span>
-                            </li><li>
-                                <span>This War of Mine</span>
-                                <span>《屬於我的戰爭》</span>
-                            </li><li>
-                                <span>Thronebreaker: The Witcher Tales</span>
-                                <span>《王座的崩毀：巫師軼聞》</span>
-                            </li><li>
-                                <span>Transport Fever 2</span>
-                                <span>《運輸者大亨 2》</span>
-                            </li><li>
-                                <span>Trine 4: The Nightmare Prince</span>
-                                <span>《狩魔師4：惡夢王子》</span>
-                            </li><li>
-                                <span>Tropico 6</span>
-                                <span>《總統萬歲6》</span>
-                            </li><li>
-                                <span>Unturned</span>
-                                <span>《未轉變者》</span>
-                            </li><li>
-                                <span>Vampyr</span>
-                                <span>《吸血鬼》</span>
-                            </li><li>
-                                <span>War Thunder</span>
-                                <span>《戰爭雷霆》</span>
-                            </li><li>
-                                <span>Warframe</span>
-                                <span>《戰甲神兵》</span>
-                            </li><li>
-                                <span>Warhammer: Chaosbane</span>
-                                <span>《戰鎚：混沌禍源》</span>
-                            </li><li>
-                                <span>Warhammer: Vermintide 2</span>
-                                <span>《戰鎚：Vermintide 2》</span>
-                            </li><li>
-                                <span>World of Tanks</span>
-                                <span>《戰車世界》</span>
-                            </li><li>
-                                <span>World of Tanks: Blitz</span>
-                                <span>《戰車世界：閃擊戰 》</span>
-                            </li><li>
-                                <span>World of Warplanes</span>
-                                <span>《戰機世界》</span>
-                            </li><li>
-                                <span>World of Warships</span>
-                                <span>《戰艦世界》</span>
-                            </li><li>
-                                <span>World War Z</span>
-                                <span>《末日之戰》</span>
-                            </li>
-                            <li></li> -->
                         </ul>
                     </div>
                     <div class="game-filter-wrapper">
                         <div class="game-filter">
-                            <div class="filter-title sub"><span>篩選器</span><i class="fas fa-sliders-h" style="margin-left: 10px;"></i></div>
+                            <div class="filter-title sub"><span>透過以下分類篩選</span><a href="#!" class="filter-option-cleaner"><img src="img/cancel.svg" alt="">清除篩選</a></div>
                             <div class="filter-btn-sec">
+                                <br>
+                                <a href="#!" class="primary-btn full filter-option-apply"><span class="">套用篩選</span></a>
+                                <div class="filter-type c">
+                                    <div class="type-wrap open">
+                                        <span class="txt sub">平台</span>
+                                        <i class="fas fa-chevron-right type_i"></i>
+                                    </div>
+                                    <div class="filter-btn-wrap">
+                                        <div class="filter-btn">
+                                            Steam
+                                        </div>
+                                        <div class="filter-btn">
+                                            Epic
+                                        </div>
+                                        <div class="filter-btn">
+                                            Ubisoft Connect
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="filter-type a">
                                     <div class="type-wrap open">
                                         <span class="txt sub">類別</span>
@@ -615,21 +883,6 @@
                                         <div class="filter-btn">
                                             模組工作套件
                                         </div>
-                                        <div class="filter-btn">
-                                            休閒
-                                        </div>
-                                        <div class="filter-btn">
-                                            角色扮演
-                                        </div>
-                                        <div class="filter-btn">
-                                            射擊
-                                        </div>
-                                        <div class="filter-btn">
-                                            策略
-                                        </div>
-                                        <div class="filter-btn">
-                                            生存
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="filter-type b">
@@ -638,77 +891,75 @@
                                         <i class="fas fa-chevron-right type_i "></i>
                                     </div>
                                     <div class="filter-btn-wrap">
-                                        <div class="filter-btn multi check">
+                                        <div class="filter-btn">
                                             免費遊戲
-                                            <i class="fas fa-check"></i>
                                         </div>
-                                        <div class="filter-btn multi">
+                                        <div class="filter-btn">
                                             熱門遊戲
-                                            <i class="fas fa-check"></i>
                                         </div>
-                                        <div class="filter-btn multi">
+                                        <div class="filter-btn">
                                             推薦遊戲
-                                            <i class="fas fa-check"></i>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="game-filter m">
-                            <div class="filter-title sub"><span>篩選器</span><i class="fas fa-sliders-h" style="margin-left: 10px;"></i></div>
+                            <div class="filter-title sub filter-opener"><img src="img/filter.svg" alt=""></div>
                             <div class="filter-btn-sec">
-                                <div class="filter-type a">
-                                    <div class="type-wrap open">
-                                        <span class="txt sub">類別</span>
-                                        <i class="fas fa-chevron-right type_i"></i>
+                            <div class="filter-btn-sec-title-wrap"><span>透過以下分類篩選</span><a href="#!" class="filter-closer filter-option-cleaner"><img src="img/cancel.svg" alt="">清除篩選</a></div>
+                            <a href="#!" class="primary-btn full filter-option-apply"><span class="">套用篩選</span></a>
+                            <div class="filter-type c">
+                                <div class="type-wrap open">
+                                    <span class="txt sub">平台</span>
+                                    <i class="fas fa-chevron-right type_i"></i>
+                                </div>
+                                <div class="filter-btn-wrap">
+                                    <div class="filter-btn">
+                                        Steam
                                     </div>
-                                    <div class="filter-btn-wrap">
-                                        <div class="filter-btn">
-                                            動作
-                                        </div>
-                                        <div class="filter-btn">
-                                            特色
-                                        </div>
-                                        <div class="filter-btn">
-                                            模組工作套件
-                                        </div>
-                                        <div class="filter-btn">
-                                            休閒
-                                        </div>
-                                        <div class="filter-btn">
-                                            角色扮演
-                                        </div>
-                                        <div class="filter-btn">
-                                            射擊
-                                        </div>
-                                        <div class="filter-btn">
-                                            策略
-                                        </div>
-                                        <div class="filter-btn">
-                                            生存
-                                        </div>
+                                    <div class="filter-btn">
+                                        Epic
+                                    </div>
+                                    <div class="filter-btn">
+                                        Ubisoft Connect
                                     </div>
                                 </div>
-                                <div class="filter-type b">
-                                    <div class="type-wrap open">
-                                        <span class="txt sub">標籤</span>
-                                        <i class="fas fa-chevron-right type_i "></i>
+                            </div>
+                            <div class="filter-type a">
+                                <div class="type-wrap open">
+                                    <span class="txt sub">類別</span>
+                                    <i class="fas fa-chevron-right type_i"></i>
+                                </div>
+                                <div class="filter-btn-wrap">
+                                    <div class="filter-btn">
+                                        動作
                                     </div>
-                                    <div class="filter-btn-wrap">
-                                        <div class="filter-btn multi check">
-                                            免費遊戲
-                                            <i class="fas fa-check"></i>
-                                        </div>
-                                        <div class="filter-btn multi">
-                                            熱門遊戲
-                                            <i class="fas fa-check"></i>
-                                        </div>
-                                        <div class="filter-btn multi">
-                                            推薦遊戲
-                                            <i class="fas fa-check"></i>
-                                        </div>
+                                    <div class="filter-btn">
+                                        特色
+                                    </div>
+                                    <div class="filter-btn">
+                                        模組工作套件
                                     </div>
                                 </div>
+                            </div>
+                            <div class="filter-type b">
+                                <div class="type-wrap open">
+                                    <span class="txt sub">標籤</span>
+                                    <i class="fas fa-chevron-right type_i "></i>
+                                </div>
+                                <div class="filter-btn-wrap">
+                                    <div class="filter-btn">
+                                        免費遊戲
+                                    </div>
+                                    <div class="filter-btn">
+                                        熱門遊戲
+                                    </div>
+                                    <div class="filter-btn">
+                                        推薦遊戲
+                                    </div>
+                                </div>
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -756,36 +1007,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="divi-wide"></div>
-                <div class="multi-item-wrap">
-                    <div class="multi-item wow fadeInRight">
-                        <div class="title">關於 <span class="en">About</span></div>
-                        <div class="divi"></div>
-                        <div class="multi-link-wrap">
-                            <div class="col">
-                                <a href="privacy.html" target="_blank" class="multi-link">隱私權政策</a>
-                                <a href="termsofuse.html" class="multi-link">使用者條款</a>
-                                <a href="" class="multi-link">合作洽談</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="multi-item wow fadeInRight">
-                        <div class="title">客戶服務 <span class="en">Service</span></div>
-                        <div class="divi"></div>
-                        <div class="multi-link-wrap">
-                            <div class="col">
-                                <a href="qa.html" class="multi-link">常見問答</a>
-                                <a href="" class="multi-link">快速入門</a>
-                                <a href="download.html" class="multi-link">軟體下載</a>
-                            </div>
-                            <div class="col">
-                                <a href="system-require.html" class="multi-link">系統需求</a>
-                                <a href="admin-question.html" class="multi-link">我要發問</a>
-                                <a href="pricing.html" class="multi-link">會員方案</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
             </section>
             <!-- 頁尾 -->
             <footer>
@@ -793,45 +1015,604 @@
                     <div class="footer-nav">
                         <div class="logo-nav wow fadeInLeft">
                             <a href="index.html" class="logo">
-                                <img src="img/logo-white.svg" alt="">
+                                <img src="img/logo-gfn.svg" alt="">
                             </a>
-                            <a href="games-list.html" class="footer-link">遊戲列表</a>
-                            <a href="pricing.html" class="footer-link">會員方案</a>
-                            <a href="system-require.html" class="footer-link">系統需求</a>
-                            <a href="qa.html" class="footer-link">常見問題</a>
-                            <a href="#!" class="footer-link">快速入門</a>
-                            <a href="download.html" class="footer-link">軟體下載</a>
-                        </div>
-                        <div class="social-media wow fadeInRight">
-                            <a href="" class="social-ic">
-                                <img src="img/fb.svg" alt="">
-                            </a>
-                            <a href="" class="social-ic">
-                                <img src="img/twitch.svg" alt="">
-                            </a>
-                            <a href="" class="social-ic">
-                                <img src="img/twitter.svg" alt="">
-                            </a>
-                            <a href="" class="social-ic">
-                                <img src="img/youtube.svg" alt="">
-                            </a>
+                            <div class="link-wrap">
+                                <span  class="link-wrap-title">關於GeForce NOW</span>
+                                <div class="links">
+                                    <a href="" class="nv"><span>隱私權政策</span></a>
+                                    <a href="" class="nv"><span>使用者條款</span></a>
+                                    <a href="" class="nv"><span>合作洽談</span></a>
+                                </div>
+                            </div>
+                            <div class="link-wrap">
+                                <span  class="link-wrap-title">客戶服務</span>
+                                <div class="links">
+                                    <a href="" class="nv"><span>快速入門</span></a>
+                                    <a href="" class="nv"><span>常見問答</span></a>
+                                    <a href="" class="nv"><span>我要發問</span></a>
+                                </div>
+                            </div>
+                            <div class="link-wrap">
+                                <span  class="link-wrap-title">軟體下載</span>
+                                <div class="links">
+                                    <a href="" class="nv"><img src="img/icon_Download.png" alt=""></a>
+                                    <a href="" class="nv"><img src="img/icon_Download-1.png" alt=""></a>
+                                    <a href="" class="nv"><img src="img/icon_Download-2.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="social-media wow fadeInRight">
+                                <a href="" class="social-ic">
+                                    <img src="img/fb.svg" alt="">
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="divi-wide g60"></div>
+                    <div class="divi-wide g60 full"></div>
                     <div class="copy-right wow fadeInUp">
-                        <div class="line1">台灣大哥大版權所有© 2020 TaiwanMobile all rights reserved.</div>
-                        <div class="line2">© 2020 NVIDIA Corporation. All rights reserved.</div>
+                        <div><div class="line1">台灣大哥大版權所有© 2025 TaiwanMobile all rights reserved.</div>
+                        <div class="line2">© 2025 NVIDIA Corporation. All rights reserved.</div></div>
+                        <div class="corner">
+                        <img src="img/rank18+.png" alt="">
+
+                        </div>
                     </div>
                 </div>
             </footer>
+        </div>
+    </div>
+    <!-- 遊戲 1 : APEX - 大卡 -->
+    <div class="lg-card apex-lg-card modal">
+        <div class="modal-container">
+            <div class="modal-closer"></div>
+            <div class="modal-panel">
+                <a href="#!" class="modal-closer_btn">
+                    <img src="img/lg-card-closer.svg" alt="">
+                </a>
+                <div class="modal-bg" game="apex">
+                    <div class="mask"></div>
+                </div>
+                <div class="modal-game-detail-content">
+                    <div class="type-tag" type-tag="free">
+                        <span>免費遊戲推薦</span>
+                    </div>
+                    <div class="modal-title">
+                        <h2>Apex 英雄</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            在一些邊境遠方的偏僻星球群，邊疆並未遭戰火侵襲且充滿了資源與契機。但是危險也隱藏在各個角落。這裡的開拓者、探索者與匪徒們不停地爭鬥著，面對來自邊境各處的挑戰者，為了榮耀、名聲與財富而戰。
+                        </p>
+                        <div class="detail-list-wrap">
+                            <div class="innere-list-wrap">
+                                <span class="title-sub sub">出版商</span>
+                                <span class="list-content">Electronic Arts</span>
+                            </div>
+                            <div class="innere-list-wrap">
+                                <span class="title-sub sub">類型</span>
+                                <span class="list-content">免費遊戲 / 大逃殺 / 第一人稱射擊 / 大型多人連線</span>
+                            </div>
+                            <div class="innere-list-wrap">
+                                <span class="title-sub sub">支援存取遊戲的平台</span>
+                                <span class="list-content">Origin / STEAM</span>
+                            </div>
+                        </div>
+                        <a href="#!" class="primary-btn full" target="_blank"><span>立即體驗</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 遊戲 2 : Destiny2 - 大卡 -->
+    <div class="lg-card destiny2-lg-card modal">
+        <div class="modal-container">
+            <div class="modal-closer"></div>
+            <div class="modal-panel">
+                <a href="#!" class="modal-closer_btn">
+                    <img src="img/lg-card-closer.svg" alt="">
+                </a>
+                <div class="modal-bg" game="destiny2">
+                    <div class="mask"></div>
+                </div>
+                <div class="modal-game-detail-content">
+                    <div class="type-tag" type-tag="free">
+                        <span>免費遊戲推薦</span>
+                    </div>
+                    <div class="modal-title">
+                        <h2>天命2</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            進入《天命2》世界，探索被惡名昭彰的邪惡勢力壟罩著的太陽系的奧秘，化身守護者，守護星空、誓死抵禦黯黑力量，捍衛人類的最終城邦，你的傳奇就此展開。
+                        </p>
+                        <div class="detail-list-wrap">
+                            <div class="innere-list-wrap">
+                                <span class="title-sub sub">出版商</span>
+                                <span class="list-content">Bungie</span>
+                            </div>
+                            <div class="innere-list-wrap">
+                                <span class="title-sub sub">類型</span>
+                                <span class="list-content">免費遊戲 / 開放世界/ 第一人稱射擊 / 大型多人連線</span>
+                            </div>
+                            <div class="innere-list-wrap">
+                                <span class="title-sub sub">支援存取遊戲的平台</span>
+                                <span class="list-content">STEAM</span>
+                            </div>
+                        </div>
+                        <a href="#!" class="primary-btn full" target="_blank"><span>立即體驗</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 遊戲 3 : Warframe - 大卡 -->
+    <div class="lg-card warframe-lg-card modal">
+        <div class="modal-container">
+            <div class="modal-closer"></div>
+            <div class="modal-panel">
+                <a href="#!" class="modal-closer_btn">
+                    <img src="img/lg-card-closer.svg" alt="">
+                </a>
+                <div class="modal-bg" game="warframe">
+                    <div class="mask"></div>
+                </div>
+                <div class="modal-game-detail-content">
+                    <div class="type-tag" type-tag="free">
+                        <span>免費遊戲推薦</span>
+                    </div>
+                    <div class="modal-title">
+                        <h2>Warframe</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            選擇你自己的 Warframe，和你的同伴一起在無序蔓延擴展的始源星系中單獨作戰或者一起對抗威脅整個世界的敵人，並且開拓出屬於你自己的道路。
+                        </p>
+                        <div class="detail-list-wrap">
+                            <div class="innere-list-wrap">
+                                <span class="title-sub sub">出版商</span>
+                                <span class="list-content">Digital Extremes</span>
+                            </div>
+                            <div class="innere-list-wrap">
+                                <span class="title-sub sub">類型</span>
+                                <span class="list-content">免費遊戲 / 動作 / 第三人稱射擊 / 大型多人連線</span>
+                            </div>
+                            <div class="innere-list-wrap">
+                                <span class="title-sub sub">支援存取遊戲的平台</span>
+                                <span class="list-content">STEAM</span>
+                            </div>
+                        </div>
+                        <a href="#!" class="primary-btn full" target="_blank"><span>立即體驗</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 遊戲 4 : Hyperscape - 大卡 -->
+    <div class="lg-card hyperscape-lg-card modal">
+        <div class="modal-container">
+            <div class="modal-closer"></div>
+            <div class="modal-panel">
+                <a href="#!" class="modal-closer_btn">
+                    <img src="img/lg-card-closer.svg" alt="">
+                </a>
+                <div class="modal-bg" game="hyperscape">
+                    <div class="mask"></div>
+                </div>
+                <div class="modal-game-detail-content">
+                    <div class="type-tag" type-tag="free">
+                        <span>免費遊戲推薦</span>
+                    </div>
+                    <div class="modal-title">
+                        <h2>超能競地</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            2054 年，科技無孔不入。AI、網路擴增實境以及資安將隨手可得，但只適用於於負擔得起的人……對於底層 90% 的人而言，每天的日常生活都是個挑戰。要晉升上流階級並改變自身命運的唯一途徑就是在《超能競地》虛擬世界舉行的都市激烈大逃殺比賽中奮力一搏。
+                        </p>
+                        <div class="detail-list-wrap">
+                            <div class="innere-list-wrap">
+                                <span class="title-sub sub">出版商</span>
+                                <span class="list-content">Ubisoft</span>
+                            </div>
+                            <div class="innere-list-wrap">
+                                <span class="title-sub sub">類型</span>
+                                <span class="list-content">免費遊戲 / 大逃殺 / 第一人稱射擊 / 大型多人連線</span>
+                            </div>
+                            <div class="innere-list-wrap">
+                                <span class="title-sub sub">支援存取遊戲的平台</span>
+                                <span class="list-content">Ubisoft Connect</span>
+                            </div>
+                        </div>
+                        <a href="#!" class="primary-btn full" target="_blank"><span>立即體驗</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 遊戲 5 : Immortals Fenyx Rising - 大卡 -->
+    <div class="lg-card immortals-fenyx-rising-lg-card modal">
+        <div class="modal-container">
+            <div class="modal-closer"></div>
+            <div class="modal-panel">
+                <a href="#!" class="modal-closer_btn">
+                    <img src="img/lg-card-closer.svg" alt="">
+                </a>
+                <div class="modal-bg" game="immortals-fenyx-rising">
+                    <div class="mask"></div>
+                </div>
+                <div class="modal-game-detail-content">
+                    <div class="type-tag" type-tag="novice">
+                        <span>新手入門推薦</span>
+                    </div>
+                    <div class="modal-title">
+                        <h2>芬尼克斯傳說</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            與神話怪獸交手、精通眾神的傳奇力量，並在千古來最史詩級的戰鬥中，對抗希臘神話最致命的巨人「堤豐」。
+                        </p>
+                        <div class="detail-list-wrap">
+                            <div class="innere-list-wrap">
+                                <span class="title-sub sub">出版商</span>
+                                <span class="list-content">Ubisoft</span>
+                            </div>
+                            <div class="innere-list-wrap">
+                                <span class="title-sub sub">類型</span>
+                                <span class="list-content">動作 / 冒險</span>
+                            </div>
+                            <div class="innere-list-wrap">
+                                <span class="title-sub sub">支援存取遊戲的平台</span>
+                                <span class="list-content">Ubisoft Connect / EPIC</span>
+                            </div>
+                        </div>
+                        <a href="#!" class="primary-btn full" target="_blank"><span>立即體驗</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 遊戲 6 : Cuphead - 大卡 -->
+    <div class="lg-card cuphead-lg-card modal">
+        <div class="modal-container">
+            <div class="modal-closer"></div>
+            <div class="modal-panel">
+                <a href="#!" class="modal-closer_btn">
+                    <img src="img/lg-card-closer.svg" alt="">
+                </a>
+                <div class="modal-bg" game="cuphead">
+                    <div class="mask"></div>
+                </div>
+                <div class="modal-game-detail-content">
+                    <div class="type-tag" type-tag="novice">
+                        <span>新手入門推薦</span>
+                    </div>
+                    <div class="modal-title">
+                        <h2>茶杯頭</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            玩家將扮演遊戲同名角色茶杯頭，與弟弟馬克杯人踏上擊敗各式各樣的敵人完成討債任務冒險，從而償還與賭場惡魔老闆所欠下的賭債。
+                        </p>
+                        <div class="detail-list-wrap">
+                            <div class="innere-list-wrap">
+                                <span class="title-sub sub">出版商</span>
+                                <span class="list-content">Studio MDHR Entertainment Inc.</span>
+                            </div>
+                            <div class="innere-list-wrap">
+                                <span class="title-sub sub">類型</span>
+                                <span class="list-content">動作 / 橫向捲軸 / 單人 / 雙人單機合作</span>
+                            </div>
+                            <div class="innere-list-wrap">
+                                <span class="title-sub sub">支援存取遊戲的平台</span>
+                                <span class="list-content">STEAM</span>
+                            </div>
+                        </div>
+                        <a href="#!" class="primary-btn full" target="_blank"><span>立即體驗</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 遊戲 7 : Assassins Creed Valhalla - 大卡 -->
+    <div class="lg-card assassins-creed-valhalla-lg-card modal">
+        <div class="modal-container">
+            <div class="modal-closer"></div>
+            <div class="modal-panel">
+                <a href="#!" class="modal-closer_btn">
+                    <img src="img/lg-card-closer.svg" alt="">
+                </a>
+                <div class="modal-bg" game="assassins-creed-valhalla">
+                    <div class="mask"></div>
+                </div>
+                <div class="modal-game-detail-content">
+                    <div class="type-tag" type-tag="hot">
+                        <span>熱門遊戲推薦</span>
+                    </div>
+                    <div class="modal-title">
+                        <h2>刺客教條：維京紀元</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            探索在英格蘭黑暗時代殘酷背景之下，動盪卻又美麗動人的開放世界。劫掠敵人、發展聚落、培養政治權力，在英靈殿的諸神間爭取一席之地。
+                        </p>
+                        <div class="detail-list-wrap">
+                            <div class="innere-list-wrap">
+                                <span class="title-sub sub">出版商</span>
+                                <span class="list-content">Ubisoft</span>
+                            </div>
+                            <div class="innere-list-wrap">
+                                <span class="title-sub sub">類型</span>
+                                <span class="list-content">動作 / 冒險 / 開放世界 / 角色扮演</span>
+                            </div>
+                            <div class="innere-list-wrap">
+                                <span class="title-sub sub">支援存取遊戲的平台</span>
+                                <span class="list-content">Ubisoft Connect / EPIC</span>
+                            </div>
+                        </div>
+                        <a href="#!" class="primary-btn full" target="_blank"><span>立即體驗</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 遊戲 8 : Cyberpunk 2077 - 大卡 -->
+    <div class="lg-card cyberpunk2077-lg-card modal">
+        <div class="modal-container">
+            <div class="modal-closer"></div>
+            <div class="modal-panel">
+                <a href="#!" class="modal-closer_btn">
+                    <img src="img/lg-card-closer.svg" alt="">
+                </a>
+                <div class="modal-bg" game="cyberpunk2077">
+                    <div class="mask"></div>
+                </div>
+                <div class="modal-game-detail-content">
+                    <div class="type-tag" type-tag="hot">
+                        <span>熱門遊戲推薦</span>
+                    </div>
+                    <div class="modal-title">
+                        <h2>電馭叛客2077</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            化身非法傭兵V，尋找某種絕無僅有的植入物，掌握長生不死的關鍵。自由打造角色的生化改造裝置、技能及遊玩風格，並盡情探索一望無際的巨型城市，讓每一次抉擇逐步左右劇情與世界的走向。
+                        </p>
+                        <div class="detail-list-wrap">
+                            <div class="innere-list-wrap">
+                                <span class="title-sub sub">出版商</span>
+                                <span class="list-content">CD PROJEKT RED</span>
+                            </div>
+                            <div class="innere-list-wrap">
+                                <span class="title-sub sub">類型</span>
+                                <span class="list-content">動作 / 開放世界 / 角色扮演 / 第一人稱射擊</span>
+                            </div>
+                            <div class="innere-list-wrap">
+                                <span class="title-sub sub">支援存取遊戲的平台</span>
+                                <span class="list-content">GOG / STEAM / EPIC</span>
+                            </div>
+                        </div>
+                        <a href="#!" class="primary-btn full" target="_blank"><span>立即體驗</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 遊戲 9 : Ark Survival Evolved - 大卡 -->
+    <div class="lg-card ark-survival-evolved-lg-card modal">
+        <div class="modal-container">
+            <div class="modal-closer"></div>
+            <div class="modal-panel">
+                <a href="#!" class="modal-closer_btn">
+                    <img src="img/lg-card-closer.svg" alt="">
+                </a>
+                <div class="modal-bg" game="ark-survival-evolved">
+                    <div class="mask"></div>
+                </div>
+                <div class="modal-game-detail-content">
+                    <div class="type-tag" type-tag="act">
+                        <span>動作遊戲推薦</span>
+                    </div>
+                    <div class="modal-title">
+                        <h2>方舟：生存進化</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            在一個超高自由度的開放世界裡，可以體驗採集、製造、打獵、收穫、建造、研究以及馴服恐龍等超多自由內容，感受酷熱白晝、冰冷夜晚的動態天氣系統以及饑餓口渴等現實中的生存挑戰，還要面對其它生存者的威脅，合作生存還是競技廝殺，由你決定！
+                        </p>
+                        <div class="detail-list-wrap">
+                            <div class="innere-list-wrap">
+                                <span class="title-sub sub">出版商</span>
+                                <span class="list-content">Studio Wildcard</span>
+                            </div>
+                            <div class="innere-list-wrap">
+                                <span class="title-sub sub">類型</span>
+                                <span class="list-content">動作 / 開放世界 / 第一人稱視角 / 大型多人連線</span>
+                            </div>
+                            <div class="innere-list-wrap">
+                                <span class="title-sub sub">支援存取遊戲的平台</span>
+                                <span class="list-content">STEAM / EPIC</span>
+                            </div>
+                        </div>
+                        <a href="#!" class="primary-btn full" target="_blank"><span>立即體驗</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 遊戲 10 : Black Desert - 大卡 -->
+    <div class="lg-card black-dessert-lg-card modal">
+        <div class="modal-container">
+            <div class="modal-closer"></div>
+            <div class="modal-panel">
+                <a href="#!" class="modal-closer_btn">
+                    <img src="img/lg-card-closer.svg" alt="">
+                </a>
+                <div class="modal-bg" game="black-dessert">
+                    <div class="mask"></div>
+                </div>
+                <div class="modal-game-detail-content">
+                    <div class="type-tag" type-tag="act">
+                        <span>動作遊戲推薦</span>
+                    </div>
+                    <div class="modal-title">
+                        <h2>黑色沙漠</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            由珍艾碧絲(Pearl Abyss)自營的大型多人線上MMORPG大作《黑色沙漠》！ 對遊戲的堅持、最高規格的視覺效果、最高品質的遊戲配樂，身歷其境的真實體驗就在《黑色沙漠》。 一起加入史詩般壯闊的冒險！
+                        </p>
+                        <div class="detail-list-wrap">
+                            <div class="innere-list-wrap">
+                                <span class="title-sub sub">出版商</span>
+                                <span class="list-content">Pearl Abyss</span>
+                            </div>
+                            <div class="innere-list-wrap">
+                                <span class="title-sub sub">類型</span>
+                                <span class="list-content">冒險 / 開放世界 / 大型多人連線 / 角色扮演</span>
+                            </div>
+                            <div class="innere-list-wrap">
+                                <span class="title-sub sub">支援存取遊戲的平台</span>
+                                <span class="list-content">Pearl Abyss</span>
+                            </div>
+                        </div>
+                        <a href="#!" class="primary-btn full" target="_blank"><span>立即體驗</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 遊戲 11 : Tom Clancy's The Division 2 - 大卡 -->
+    <div class="lg-card tctd2-lg-card modal">
+        <div class="modal-container">
+            <div class="modal-closer"></div>
+            <div class="modal-panel">
+                <a href="#!" class="modal-closer_btn">
+                    <img src="img/lg-card-closer.svg" alt="">
+                </a>
+                <div class="modal-bg" game="tctd2">
+                    <div class="mask"></div>
+                </div>
+                <div class="modal-game-detail-content">
+                    <div class="type-tag" type-tag="hot">
+                        <span>熱門遊戲推薦</span>
+                    </div>
+                    <div class="modal-title">
+                        <h2>湯姆克蘭西：全境封鎖2</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            在致命病毒襲擊紐約市和世界各地後七個月，全球人口銳減。當病毒來襲時，由潛伏平民特工組成的國土戰略局，作為最後一道防線挺身而出。自此國土戰略局特工不眠不休地奮戰，企圖拯救人類僅存的一切。
+                        </p>
+                        <div class="detail-list-wrap">
+                            <div class="innere-list-wrap">
+                                <span class="title-sub sub">出版商</span>
+                                <span class="list-content">Ubisoft</span>
+                            </div>
+                            <div class="innere-list-wrap">
+                                <span class="title-sub sub">類型</span>
+                                <span class="list-content">開放世界 / 線上 / 第三人稱射擊 / 角色扮演</span>
+                            </div>
+                            <div class="innere-list-wrap">
+                                <span class="title-sub sub">支援存取遊戲的平台</span>
+                                <span class="list-content">Ubisoft Connect / EPIC</span>
+                            </div>
+                        </div>
+                        <a href="#!" class="primary-btn full" target="_blank"><span>立即體驗</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 遊戲 12 : Tom Clancy's Rainbow Six: Siege - 大卡 -->
+    <div class="lg-card tcr6-lg-card modal">
+        <div class="modal-container">
+            <div class="modal-closer"></div>
+            <div class="modal-panel">
+                <a href="#!" class="modal-closer_btn">
+                    <img src="img/lg-card-closer.svg" alt="">
+                </a>
+                <div class="modal-bg" game="tcr6">
+                    <div class="mask"></div>
+                </div>
+                <div class="modal-game-detail-content">
+                    <div class="type-tag" type-tag="hot">
+                        <span>熱門遊戲推薦</span>
+                    </div>
+                    <div class="modal-title">
+                        <h2>虹彩六號：圍攻行動</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            成群結隊，突破一觸即發的 5v5 PvP 行動。《虹彩六號：圍攻行動》擁有各種專業的特勤幹員，每名幹員都有著足以改變遊戲局勢的裝備，讓你帶領團隊走向勝利。
+                        </p>
+                        <div class="detail-list-wrap">
+                            <div class="innere-list-wrap">
+                                <span class="title-sub sub">出版商</span>
+                                <span class="list-content">Ubisoft</span>
+                            </div>
+                            <div class="innere-list-wrap">
+                                <span class="title-sub sub">類型</span>
+                                <span class="list-content">動作 / 第一人稱射擊 / 大型多人連線</span>
+                            </div>
+                            <div class="innere-list-wrap">
+                                <span class="title-sub sub">支援存取遊戲的平台</span>
+                                <span class="list-content">Ubisoft Connect / STEAM / EPIC</span>
+                            </div>
+                        </div>
+                        <a href="#!" class="primary-btn full" target="_blank"><span>立即體驗</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 遊戲 13 : Assassin Creed: Odyssy - 大卡 -->
+    <div class="lg-card assassins-creed-odyssy-lg-card modal">
+        <div class="modal-container">
+            <div class="modal-closer"></div>
+            <div class="modal-panel">
+                <a href="#!" class="modal-closer_btn">
+                    <img src="img/lg-card-closer.svg" alt="">
+                </a>
+                <div class="modal-bg" game="assassins-creed-odyssy">
+                    <div class="mask"></div>
+                </div>
+                <div class="modal-game-detail-content">
+                    <div class="type-tag" type-tag="act">
+                        <span>動作遊戲推薦</span>
+                    </div>
+                    <div class="modal-title">
+                        <h2>刺客教條：奧德賽</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            在這趟激勵人心的冒險旅程中，你必須決定自己的命運並走出屬於自己的路。你將遊歷一個豐富、不斷變化且受你抉擇影響的世界，並且決定歷史的走向。
+                        </p>
+                        <div class="detail-list-wrap">
+                            <div class="innere-list-wrap">
+                                <span class="title-sub sub">出版商</span>
+                                <span class="list-content">Ubisoft</span>
+                            </div>
+                            <div class="innere-list-wrap">
+                                <span class="title-sub sub">類型</span>
+                                <span class="list-content">動作 / 冒險 / 開放世界 / 角色扮演</span>
+                            </div>
+                            <div class="innere-list-wrap">
+                                <span class="title-sub sub">支援存取遊戲的平台</span>
+                                <span class="list-content">Ubisoft Connect / STEAM / EPIC</span>
+                            </div>
+                        </div>
+                        <a href="#!" class="primary-btn full" target="_blank"><span>立即體驗</span></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!--script-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
     <!-- simplebar -->
-    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
-    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@6.2.1/dist/simplebar.css" />
+    <script src="https://unpkg.com/simplebar@6.2.1/dist/simplebar.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="js/custom.js"></script>
@@ -839,6 +1620,7 @@
     <!-- JQ 掛載點 -->
     <script>
         $(document).ready(function () {
+            navUpdate();
             wow = new WOW({
                 boxClass: 'wow', // default
                 animateClass: 'fadeInLeftShort', // default
@@ -866,6 +1648,12 @@
                     $('nav .primary-btn').removeClass('open');
                     $('#nav-icon2').removeClass('open');
                 }
+                if ($(this).width() >= 1366) {
+                    $('.filter-btn-sec').show();
+                }
+                if ($(this).width() < 1366) {
+                    $('.filter-btn-sec').hide();
+                }
             })
             var scrollTop = $(".scrollTop");
 
@@ -890,6 +1678,19 @@
             });
 
             //owl
+            $('.game-card-carousel').owlCarousel({
+                center: false,
+                items: 2.5,
+                margin: 24,
+                autoWidth: true,
+                autoHeight: false,
+                nav: true,
+                navText: ["<img src='img/nav-prev.png'>","<img src='img/nav-next.png'>"],
+                dots: false,
+                autoplay:true,
+                autoplayHoverPause:true,
+                loop: true,
+            })
             $('.section-banner-container').owlCarousel({
                 center: true,
                 loop: true,
@@ -937,7 +1738,7 @@
                 $(this).siblings('.filter-btn-wrap').slideToggle(250);
                 $(this).toggleClass('open');
             })
-            $('.filter-btn.multi').click(function(){
+            $('.filter-btn').click(function(){
                 $(this).toggleClass('check');
             })
             $('.game-list-wrapper li .name').click(function(){
@@ -949,6 +1750,21 @@
             })
             $('.game-filter.m .filter-title').click(function(){
                 $('.filter-btn-sec').toggle();
+                $('.wrapper').css({
+                    'height': "100vh",
+                    'overflow': 'hidden'
+                })
+            })
+            $('.filter-closer').click(function(){
+                $('.filter-btn-sec').hide();
+                $('.wrapper').css({
+                    'height': "auto",
+                    'overflow': 'auto'
+                })
+                $('.filter-btn').removeClass('check')
+            })
+            $('.filter-option-cleaner').click(function(){
+                $(".filter-btn").removeClass('check')
             })
         });
     </script>

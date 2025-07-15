@@ -3,11 +3,7 @@
 RWD
 -----
 */
-@media (max-width: 2560px) and (min-width: 1441px) {
-    #pricingCarousel {
-        justify-content: center;
-    }
-}
+
 @media (max-width: 1440px) {
     #gamesList .caption p {
         font-size: 16px;
@@ -278,9 +274,9 @@ RWD
         padding: 40px 0;
     }
     .pricing-panel-wrap .panel-item {
-        width: 300px;
-        transform: scale(0.85);
-        transform-origin: left top;
+        // width: 300px;
+        // transform: scale(0.85);
+        // transform-origin: left top;
         // margin: 0 15px;
     }
     .logo-nav {
@@ -299,7 +295,7 @@ RWD
     .option-item-wrap .tt,
     #downloadPath .title,
     .title.styled {
-        font-size: 24px;
+        font-size: 16px;
         line-height: 1.5;
     }
     .download-item-wrap {
@@ -323,20 +319,26 @@ RWD
     .pricing-title {
         margin-bottom: 40px;
     }
-    #pricingCarousel {
+    .web-plan, .pricing-panel-wrap.web-plan#wpricingCarousel {
         display: none;
         
     }
-    #mpricingCarousel {
+    #pricingCarousel {
+        display: none;
+    }
+    #mpricingCarousel, #mtimeCarousel {
         display: block;
         max-width: 100%;
-        padding-left: 32px;
+        // padding-left: 32px;
         .crown {
             position: absolute;
             top:10px;
             left: calc(50% - 12px);
             height: 24px;
             width: 24px;
+        }
+        .panel-item {
+            margin: 0;
         }
     }
     .admin-slide-menu-item {
@@ -566,7 +568,7 @@ RWD
     }
 }
 @media (max-width: 350px) {
-    #mpricingCarousel {
+    #mpricingCarousel, #mtimeCarousel {
         padding-left: 24px
     }
 }

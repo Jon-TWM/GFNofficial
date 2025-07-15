@@ -34,14 +34,13 @@
     background: #fff;
 }
 
-#littlemy_ChatBox.opened .chatbox_body.down{
+#littlemy_ChatBox.opened .chatbox_body.down {
     bottom: 80px;
 }
 
 #littlemy_ChatBox.opened {
     position: relative;
 }
-
 
 #littlemy_ChatBox.opened .chatbox_body {
     opacity: 1;
@@ -66,18 +65,25 @@
     color: #ff6100;
 }
 
+.v2-a-bot-chat__bubble::after {
+    box-sizing: border-box;
+}
+
 @media (max-width: 1440px) {
     #littlemy_ChatBox .chatbox_body {
         height: calc(100vh - 180px);
     }
 }
+
 @media (min-width: 769px) {
     #temRenderHeaderVersionRoot a.v2-a-bot-chat {
         display: none !important;
     }
 }
+
 @media (max-width: 768px) {
-    #littlemyBtn.v2-a-bot-chat,#littlemy_ChatBox {
+    #littlemyBtn.v2-a-bot-chat,
+    #littlemy_ChatBox {
         display: none !important;
     }
 }

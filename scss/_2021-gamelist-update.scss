@@ -151,7 +151,7 @@
     list-style: none;
 }
 
-.select_menu>li {
+.select_menu > li {
     padding: 1rem;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
@@ -160,11 +160,11 @@
     white-space: nowrap;
 }
 
-.select_menu>li:hover {
+.select_menu > li:hover {
     background-color: $gray80;
 }
 
-.select_menu>li:active {
+.select_menu > li:active {
     background-color: $gray80;
 }
 .game-list-wrapper {
@@ -184,9 +184,9 @@
             left: 0;
             top: calc(100% + 5px);
             background-color: $gray87;
-            padding: .8rem 1rem;
+            padding: 0.8rem 1rem;
             color: $white;
-            
+
             z-index: 1;
             font-size: 12px;
             font-weight: 300;
@@ -212,7 +212,7 @@
             .tooltip-info {
                 display: block;
             }
-        } 
+        }
     }
 }
 .game-list-container {
@@ -226,7 +226,7 @@
 }
 .game-filter-wrapper {
     width: 30%;
-    padding:1rem;
+    padding: 1rem;
     padding-top: 2.5rem;
 }
 .game-filter {
@@ -241,6 +241,9 @@
     text-align: left;
     padding-bottom: 1rem;
     border-bottom: 1px solid $gray87;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .filter-type {
     font-size: 14px;
@@ -251,21 +254,21 @@
     align-items: center;
     cursor: pointer;
     padding: 1rem;
-    padding-left: 0;;
+    padding-left: 0;
 }
 .type-wrap .type_i {
     transform: rotate(0deg);
     transition: all 0.1s ease-in-out;
 }
 .type-wrap.open .type_i {
-        transform: rotate(90deg);
-        transition: all 0.1s ease-in-out;
+    transform: rotate(90deg);
+    transition: all 0.1s ease-in-out;
 }
 .filter-btn {
     position: relative;
     cursor: pointer;
     text-align: left;
-    padding: .5rem;
+    padding: 0.5rem;
     margin-left: 2rem;
     white-space: nowrap;
 
@@ -274,7 +277,7 @@
     justify-content: space-between;
     svg.fa-check {
         display: none;
-        margin-right: .3rem;
+        margin-right: 0.3rem;
     }
     &.check {
         background-color: $gray87;
@@ -283,7 +286,10 @@
         }
     }
 }
-@media(max-width: 1366px) {
+section.bk.game {
+    z-index: 9;
+}
+@media (max-width: 1366px) {
     .game-list-container {
         flex-direction: column-reverse;
         position: relative;
@@ -333,15 +339,18 @@
     }
     .filter-btn-sec {
         position: absolute;
-        right: -.5rem;
+        right: -0.5rem;
         top: 100%;
         z-index: 1;
         width: calc(50vw);
         min-width: 300px;
         padding-top: 0;
     }
+    section.bk.game {
+        z-index: 11;
+    }
 }
-@media(max-width: 375px) {
+@media (max-width: 375px) {
     .filter-title {
         span {
             display: none;
