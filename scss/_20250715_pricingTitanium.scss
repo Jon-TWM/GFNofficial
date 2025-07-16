@@ -86,11 +86,13 @@
 }
 
 .pricing-panel-wrap {
-    display: block;
+    display: grid;
+    gap: 8px;
+    justify-content: center;
     padding: 24px;
     @include xl {
         display: grid;
-        grid-template-columns: 1fr .25fr 3fr;
+        grid-template-columns: 1fr auto 3fr;
         align-items: center;
     }
     .panel-wrap {
@@ -104,7 +106,7 @@
             display: grid;
             gap: 56px;
             @include md {
-                grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+                grid-template-columns: 1fr 1fr 1fr;
                 gap: 16px;
             }
         }
@@ -118,6 +120,7 @@
             background: #3A402D;
             padding: 24px;
             position: relative;
+            max-width: 80%;
             &::after {
                 content: "";
                 display: block;
@@ -169,6 +172,11 @@
             width: 100%;
             margin: 0;
             border-radius: 16px;
+            &[disabled] {
+                pointer-events: none;
+                opacity: .4;
+                color: #FFF;
+            }
         }
     }
     .icon-plus {
