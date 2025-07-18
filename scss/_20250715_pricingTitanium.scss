@@ -102,6 +102,15 @@
         backdrop-filter: blur(8px);
         width: 100%;
         padding: 24px;
+        &.plan-basic {
+            .primary-btn {
+                &[disabled] {
+                    background: transparent;
+                    opacity: 1;
+                    color: #76B900;
+                }
+            }
+        }
         &.plan-plus {
             display: grid;
             gap: 56px;

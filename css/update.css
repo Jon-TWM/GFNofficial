@@ -4070,6 +4070,11 @@ a.momo:visited, a.momo:active, a.momo:hover, a.momo:focus {
   width: 100%;
   padding: 24px;
 }
+.pricing-panel-wrap .panel-wrap.plan-basic .primary-btn[disabled] {
+  background: transparent;
+  opacity: 1;
+  color: #76B900;
+}
 .pricing-panel-wrap .panel-wrap.plan-plus {
   display: grid;
   gap: 56px;
