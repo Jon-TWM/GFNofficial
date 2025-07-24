@@ -1003,7 +1003,6 @@ nav {
   top: 88px;
   left: 87px;
   opacity: 1;
-  -webkit-clip-path: polygon(204px 18.22px, 68px 18.22px, 0px 136px, 68px 253.78px, 204px 253.78px, 272px 136px, 204px 18.22px);
   clip-path: polygon(204px 18.22px, 68px 18.22px, 0px 136px, 68px 253.78px, 204px 253.78px, 272px 136px, 204px 18.22px);
   /* clip-path: url(#gfn-video-msk-1-LDU); */
   margin: 0;
@@ -1089,7 +1088,6 @@ nav {
   top: 82px;
   left: 82px;
   opacity: 1;
-  -webkit-clip-path: polygon(393.8px 35.2px, 131.2px 35.2px, 0px 262.5px, 131.2px 489.8px, 393.8px 489.8px, 525px 262.5px, 393.8px 35.2px);
   clip-path: url(#gfn-video-msk-2-LDU);
   margin: 0;
   pointer-events: none;
@@ -1164,7 +1162,6 @@ nav {
   top: 88px;
   left: 88px;
   opacity: 1;
-  -webkit-clip-path: polygon(132px 11px, 44px 11px, 0px 88px, 44px 166px, 132px 166px, 178px 88px, 132px 11px);
   clip-path: polygon(132px 11px, 44px 11px, 0px 88px, 44px 166px, 132px 166px, 178px 88px, 132px 11px);
   /* clip-path: url(#gfn-video-msk-3-LDU); */
   margin: 0;
@@ -1242,7 +1239,6 @@ nav {
   top: 87px;
   left: 87px;
   opacity: 1;
-  -webkit-clip-path: polygon(205.5px 18.36px, 68.5px 18.36px, 0px 137px, 68.5px 255.65px, 205.5px 255.65px, 274px 137px, 205.5px 18.36px);
   clip-path: polygon(205.5px 18.36px, 68.5px 18.36px, 0px 137px, 68.5px 255.65px, 205.5px 255.65px, 274px 137px, 205.5px 18.36px);
   /* clip-path: url(#gfn-video-msk-4-LDU); */
   margin: 0;
@@ -2347,10 +2343,10 @@ Custom Select
   right: 10px;
 }
 .select-styled:hover {
-  background-color: #3f3f3f;
+  background-color: rgb(62.9, 62.9, 62.9);
 }
 .select-styled:active, .select-styled.active {
-  background-color: #373737;
+  background-color: rgb(55.25, 55.25, 55.25);
 }
 .select-styled:active:after, .select-styled.active:after {
   top: 13px;
@@ -2367,13 +2363,13 @@ Custom Select
   margin: 0;
   padding: 0;
   list-style: none;
-  background-color: #373737;
+  background-color: rgb(55.25, 55.25, 55.25);
 }
 .select-options li {
   margin: 0;
   padding: 12px 0;
   text-indent: 15px;
-  border-top: 1px solid #2b2b2b;
+  border-top: 1px solid rgb(42.5, 42.5, 42.5);
 }
 .select-options li:hover {
   color: #444;
@@ -2817,8 +2813,7 @@ a.at-backer.ic-wrap {
 }
 
 .chart-item {
-  -webkit-clip-path: polygon(0% 0%, 75% 0%, 84% 50%, 75% 100%, 0% 100%);
-          clip-path: polygon(0% 0%, 75% 0%, 84% 50%, 75% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 75% 0%, 84% 50%, 75% 100%, 0% 100%);
   width: auto;
   display: inline-block;
   padding: 24px 60px 24px 24px;
@@ -2829,8 +2824,7 @@ a.at-backer.ic-wrap {
   background: #444;
 }
 .chart-item.result {
-  -webkit-clip-path: none;
-          clip-path: none;
+  clip-path: none;
   padding: 24px;
 }
 .chart-item.twm-bg {

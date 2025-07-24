@@ -76,11 +76,13 @@
 
 .plan-pricingTitanium {
     padding: 5rem 0;
-    background: url("../img/gfn-pricing-titanium-bg.jpg");
-    background-size: 200%;
-    background-position: center bottom;
-    background-repeat: no-repeat;
+    background: url("../img/gfn-pricing-titanium-bg.jpg"), url("../img/gfn-pricing-titanium-bg_m.jpg");
+    background-size: 200%, 200%;
+    background-position: center bottom, center center;
+    background-repeat: no-repeat, no-repeat;
     @include md {
+        background: url("../img/gfn-pricing-titanium-bg.jpg");
+        background-position: center bottom;
         background-size: cover;
     }
 }
@@ -149,6 +151,14 @@
             width: 100%;
             display: grid;
             gap: 32px;
+            .price-wrap {
+                margin: 8px;
+                padding: 8px;
+                border: 1px solid #76B900;
+                border-radius: 8px;
+                color: #76B900;
+                font-weight: 700;
+            }
             .content-wrap {
                 display: grid;
                 gap: 12px;
