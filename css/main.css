@@ -1,8 +1,14 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto&display=swap");
 .nv {
-  color: #76B900 !important;
+  color: #76b900 !important;
   font-weight: 500;
+}
+
+.yellow {
+  color: #ffc107 !important;
+  font-weight: 500;
+  text-decoration: underline;
 }
 
 @keyframes fadeInLeftShort {
@@ -57,7 +63,7 @@ a:focus span {
 }
 
 .twm {
-  color: #F68428;
+  color: #f68428;
 }
 
 .logo-wrap img {
@@ -109,8 +115,8 @@ a:focus span {
   font-size: 30px;
   padding: 22px 90px;
   background: #222;
-  border-left: 5px solid #76B900;
-  border-right: 5px solid #76B900;
+  border-left: 5px solid #76b900;
+  border-right: 5px solid #76b900;
   margin-bottom: 2vw;
 }
 .title.styled.long {
@@ -150,17 +156,17 @@ a:focus span {
   width: 50px;
 }
 .state.new {
-  color: #76B900;
+  color: #76b900;
 }
 .state.hot {
-  color: #FF0000;
+  color: #ff0000;
 }
 .state.na {
   color: rgba(0, 0, 0, 0);
 }
 
 .failed {
-  color: #FF0000;
+  color: #ff0000;
 }
 
 .scrollTop {
@@ -168,7 +174,7 @@ a:focus span {
   z-index: 10;
   right: 15px;
   bottom: 15px;
-  background-color: #76B900;
+  background-color: #76b900;
   padding: 12px 15px;
   opacity: 0;
   transition: all 0.4s ease-in-out 0s;
@@ -223,7 +229,7 @@ a:focus span {
 }
 .primary-block:focus,
 .secondary-block:focus {
-  border: 1px solid #76B900;
+  border: 1px solid #76b900;
   outline: none;
 }
 
@@ -241,7 +247,7 @@ a:focus span {
 .secondary-btn,
 .twm-btn,
 .third-btn {
-  background: #76B900;
+  background: #76b900;
   padding: 0.8rem 1.3rem;
   text-align: center;
   margin: 0 15px;
@@ -316,7 +322,7 @@ a:focus span {
 }
 
 .secondary-btn {
-  border: 1px solid #76B900;
+  border: 1px solid #76b900;
   background-color: rgba(0, 0, 0, 0);
   transition: 0.2s;
 }
@@ -339,7 +345,7 @@ a:focus span {
 }
 
 .twm-btn {
-  background-color: #F68428;
+  background-color: #f68428;
   border: none;
 }
 .twm-btn::before {
@@ -420,7 +426,7 @@ nav {
   line-height: 80px;
 }
 .nav-items-wrap ul li.nav-item.active, .nav-items-wrap ul li.nav-item:hover {
-  background: #76B900;
+  background: #76b900;
 }
 .nav-items-wrap ul li.primary-btn {
   margin-right: 0;
@@ -658,7 +664,7 @@ nav {
   width: 100%;
 }
 .section-inner.article em {
-  color: #76B900;
+  color: #76b900;
   font-size: 20px;
   font-weight: 500;
   font-style: italic;
@@ -678,7 +684,7 @@ nav {
   border: 1px solid #222;
 }
 .section-inner.article th {
-  background-color: #76B900;
+  background-color: #76b900;
   font-weight: 600;
 }
 .section-inner.article td:first-child {
@@ -773,7 +779,7 @@ nav {
   z-index: 10;
   background-color: #333;
   text-align: left;
-  border-right: 5px solid #76B900;
+  border-right: 5px solid #76b900;
   display: none;
 }
 .tooltip p:not(:last-child) {
@@ -797,7 +803,7 @@ nav {
   border-color: rgba(0, 0, 0, 0) #333 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
 }
 .tooltip-container .em {
-  color: #76B900;
+  color: #76b900;
   font-weight: 700;
 }
 
@@ -1003,6 +1009,7 @@ nav {
   top: 88px;
   left: 87px;
   opacity: 1;
+  -webkit-clip-path: polygon(204px 18.22px, 68px 18.22px, 0px 136px, 68px 253.78px, 204px 253.78px, 272px 136px, 204px 18.22px);
   clip-path: polygon(204px 18.22px, 68px 18.22px, 0px 136px, 68px 253.78px, 204px 253.78px, 272px 136px, 204px 18.22px);
   /* clip-path: url(#gfn-video-msk-1-LDU); */
   margin: 0;
@@ -1088,6 +1095,7 @@ nav {
   top: 82px;
   left: 82px;
   opacity: 1;
+  -webkit-clip-path: polygon(393.8px 35.2px, 131.2px 35.2px, 0px 262.5px, 131.2px 489.8px, 393.8px 489.8px, 525px 262.5px, 393.8px 35.2px);
   clip-path: url(#gfn-video-msk-2-LDU);
   margin: 0;
   pointer-events: none;
@@ -1162,6 +1170,7 @@ nav {
   top: 88px;
   left: 88px;
   opacity: 1;
+  -webkit-clip-path: polygon(132px 11px, 44px 11px, 0px 88px, 44px 166px, 132px 166px, 178px 88px, 132px 11px);
   clip-path: polygon(132px 11px, 44px 11px, 0px 88px, 44px 166px, 132px 166px, 178px 88px, 132px 11px);
   /* clip-path: url(#gfn-video-msk-3-LDU); */
   margin: 0;
@@ -1239,6 +1248,7 @@ nav {
   top: 87px;
   left: 87px;
   opacity: 1;
+  -webkit-clip-path: polygon(205.5px 18.36px, 68.5px 18.36px, 0px 137px, 68.5px 255.65px, 205.5px 255.65px, 274px 137px, 205.5px 18.36px);
   clip-path: polygon(205.5px 18.36px, 68.5px 18.36px, 0px 137px, 68.5px 255.65px, 205.5px 255.65px, 274px 137px, 205.5px 18.36px);
   /* clip-path: url(#gfn-video-msk-4-LDU); */
   margin: 0;
@@ -1300,8 +1310,8 @@ nav {
 
 #news-carousel {
   background: #222;
-  border-left: 5px solid #76B900;
-  border-right: 5px solid #76B900;
+  border-left: 5px solid #76b900;
+  border-right: 5px solid #76b900;
   width: 95%;
   max-width: 800px;
   height: 80px;
@@ -1323,7 +1333,7 @@ nav {
 }
 #news-carousel .tt .zh {
   font-weight: 700;
-  color: #76B900;
+  color: #76b900;
   margin: 0 5px;
 }
 #news-carousel .divi {
@@ -1370,7 +1380,7 @@ nav {
   margin: 0 10px;
 }
 #captionForGFN .more {
-  color: #76B900;
+  color: #76b900;
 }
 #captionForGFN .more .en {
   font-weight: 700;
@@ -1401,7 +1411,7 @@ nav {
   height: 100%;
   width: 100%;
   padding: 4.7vw 5vw;
-  color: #76B900;
+  color: #76b900;
 }
 #gamesList .game-wrap {
   position: absolute;
@@ -1528,7 +1538,7 @@ nav {
 .pricing-title .zh,
 .section-title .zh {
   font-weight: 600;
-  color: #76B900;
+  color: #76b900;
 }
 
 .pricing-title {
@@ -1561,7 +1571,7 @@ nav {
   pointer-events: none;
 }
 .pricing-panel-wrap .panel-item:hover {
-  border-color: #76B900;
+  border-color: #76b900;
 }
 .pricing-panel-wrap .panel-item .wrapper {
   position: absolute;
@@ -1587,7 +1597,7 @@ nav {
   margin: 24px auto;
 }
 .pricing-panel-wrap .panel-item .cost {
-  color: #76B900;
+  color: #76b900;
 }
 .pricing-panel-wrap .panel-item .cost .sub {
   margin: 8px;
@@ -1613,7 +1623,7 @@ nav {
 }
 .pricing-panel-wrap .panel-item .ic-wrap svg {
   margin: 0 8px;
-  color: #76B900;
+  color: #76b900;
 }
 .pricing-panel-wrap .panel-item .sub {
   color: #999;
@@ -1785,7 +1795,7 @@ nav {
   font-size: 32px;
   font-weight: 700;
   font-family: "GeForce";
-  color: #76B900;
+  color: #76b900;
   margin-bottom: 50px;
   filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.5));
 }
@@ -1890,7 +1900,7 @@ nav {
   margin-bottom: 10px;
 }
 .option-item-wrap .more {
-  color: #76B900;
+  color: #76b900;
 }
 .option-item-wrap .more .txt {
   margin-bottom: 5px;
@@ -1939,7 +1949,7 @@ nav {
   flex-direction: column;
 }
 .multi-item-wrap .multi-item .multi-link-wrap .col .multi-link {
-  color: #76B900;
+  color: #76b900;
   font-weight: 300;
   margin: 15px 0;
 }
@@ -2089,7 +2099,7 @@ Admin Deck
 }
 .admin-showing-panel-title div {
   position: relative;
-  background-color: #76B900;
+  background-color: #76b900;
   height: 60px;
   width: 9vw;
   min-width: 150px;
@@ -2105,7 +2115,7 @@ Admin Deck
   top: 0;
   width: 0;
   height: 0;
-  border-top: 60px solid #76B900;
+  border-top: 60px solid #76b900;
   border-right: 40px solid rgba(0, 0, 0, 0);
 }
 
@@ -2130,7 +2140,7 @@ Admin Deck
   background-color: #222;
 }
 .admin-slide-menu-item.active {
-  border-left: 5px solid #76B900;
+  border-left: 5px solid #76b900;
 }
 .admin-slide-menu-item svg {
   margin-right: 5px;
@@ -2225,7 +2235,7 @@ Admin Deck
   transition: 0.2s;
 }
 .admin-showing-panel_content-navtab.active {
-  border-bottom-color: #76B900;
+  border-bottom-color: #76b900;
 }
 .admin-showing-panel_content-navtab.active:hover {
   border-bottom-color: rgb(105, 166, 12);
@@ -2247,7 +2257,7 @@ Admin Deck
 
 .edit-btn,
 a.receipt-link {
-  color: #76B900;
+  color: #76b900;
   margin-left: 5px;
 }
 .edit-btn:hover,
@@ -2274,7 +2284,7 @@ a.receipt-link {
   justify-content: center;
 }
 .navigation a.active {
-  background-color: #76B900;
+  background-color: #76b900;
 }
 .navigation a.disabled {
   color: #999;
@@ -2337,20 +2347,20 @@ Custom Select
   width: 0;
   height: 0;
   border: 7px solid transparent;
-  border-color: #76B900 transparent transparent transparent;
+  border-color: #76b900 transparent transparent transparent;
   position: absolute;
   top: 20px;
   right: 10px;
 }
 .select-styled:hover {
-  background-color: rgb(62.9, 62.9, 62.9);
+  background-color: #3f3f3f;
 }
 .select-styled:active, .select-styled.active {
-  background-color: rgb(55.25, 55.25, 55.25);
+  background-color: #373737;
 }
 .select-styled:active:after, .select-styled.active:after {
   top: 13px;
-  border-color: transparent transparent #76B900 transparent;
+  border-color: transparent transparent #76b900 transparent;
 }
 
 .select-options {
@@ -2363,13 +2373,13 @@ Custom Select
   margin: 0;
   padding: 0;
   list-style: none;
-  background-color: rgb(55.25, 55.25, 55.25);
+  background-color: #373737;
 }
 .select-options li {
   margin: 0;
   padding: 12px 0;
   text-indent: 15px;
-  border-top: 1px solid rgb(42.5, 42.5, 42.5);
+  border-top: 1px solid #2b2b2b;
 }
 .select-options li:hover {
   color: #444;
@@ -2409,7 +2419,7 @@ Custom Checkbox
   box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
 }
 .styled-checkbox:checked + label:before {
-  background: #76B900;
+  background: #76b900;
 }
 .styled-checkbox:disabled + label {
   color: #999;
@@ -2450,7 +2460,7 @@ textarea:focus {
   vertical-align: top;
 }
 .primary_input-wrap .comfirm-pic {
-  background-color: #76B900;
+  background-color: #76b900;
   height: 50px;
   width: 150px;
   margin: 0 20px;
@@ -2470,10 +2480,10 @@ textarea:focus {
   transition: 0.3s;
 }
 .primary_input-wrap input:focus {
-  border-color: #76B900;
+  border-color: #76b900;
 }
 .primary_input-wrap input.err {
-  border-color: #FF0000;
+  border-color: #ff0000;
 }
 .primary_input-wrap .fa-redo {
   font-size: 32px;
@@ -2485,7 +2495,7 @@ textarea:focus {
 }
 
 .err-txt {
-  color: #FF0000;
+  color: #ff0000;
   text-align: right;
   float: right;
   padding: 5px 0;
@@ -2528,7 +2538,7 @@ textarea:focus {
   height: 12px;
   width: 12px;
   border-radius: 100%;
-  background-color: #FF0000;
+  background-color: #ff0000;
 }
 
 .answer-opener-a {
@@ -2623,7 +2633,7 @@ textarea:focus {
   background-color: #222;
 }
 .section-panel-nav-tab.active {
-  border-bottom: 3px solid #76B900;
+  border-bottom: 3px solid #76b900;
 }
 
 .section-panel-title {
@@ -2666,7 +2676,7 @@ textarea:focus {
   margin: 15px 0;
 }
 .qa-item .q {
-  color: #76B900;
+  color: #76b900;
   font-weight: 500;
 }
 .qa-item .a {
@@ -2678,7 +2688,7 @@ textarea:focus {
   max-width: 1000px;
   margin: 0 auto;
   background-color: #222;
-  border: 1px solid #76B900;
+  border: 1px solid #76b900;
   padding: 32px 16px;
 }
 .display-section.news-list .ic-wrap {
@@ -2707,7 +2717,7 @@ textarea:focus {
 }
 
 .section-anchor-nav-tab {
-  color: #76B900;
+  color: #76b900;
   font-weight: 500;
   font-size: 18px;
   margin: 20px;
@@ -2774,14 +2784,15 @@ textarea:focus {
 
 .modal-body {
   width: 100%;
+  line-height: 1.5em;
 }
 
 .modal-footer {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 24px;
 }
-.modal-footer .primary-btn {
-  margin: 0;
+.modal-footer .btn {
+  margin: 4px 0;
 }
 
 a.at-backer.ic-wrap {
@@ -2791,7 +2802,7 @@ a.at-backer.ic-wrap {
   justify-content: flex-start;
   width: 100%;
   font-weight: 500;
-  color: #76B900;
+  color: #76b900;
   margin: 24px 0;
 }
 
@@ -2813,7 +2824,8 @@ a.at-backer.ic-wrap {
 }
 
 .chart-item {
-  clip-path: polygon(0% 0%, 75% 0%, 84% 50%, 75% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0% 0%, 75% 0%, 84% 50%, 75% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 75% 0%, 84% 50%, 75% 100%, 0% 100%);
   width: auto;
   display: inline-block;
   padding: 24px 60px 24px 24px;
@@ -2824,17 +2836,18 @@ a.at-backer.ic-wrap {
   background: #444;
 }
 .chart-item.result {
-  clip-path: none;
+  -webkit-clip-path: none;
+          clip-path: none;
   padding: 24px;
 }
 .chart-item.twm-bg {
-  background: #F68428;
+  background: #f68428;
 }
 .chart-item.twm-bg:hover {
   pointer-events: none;
 }
 .chart-item:first-child {
-  background-color: #76B900;
+  background-color: #76b900;
   opacity: 1;
 }
 .chart-item:first-child:hover {
@@ -2990,7 +3003,7 @@ ol {
   background-color: #555555;
 }
 .section-inner.article table.sp th.twm-bg {
-  background-color: #F68428;
+  background-color: #f68428;
 }
 .section-inner.article table.sp td:first-child {
   background-color: #333;
@@ -3034,7 +3047,7 @@ RWD
     width: 100%;
     max-width: unset;
     border-right: 0px;
-    border-bottom: 5px solid #76B900;
+    border-bottom: 5px solid #76b900;
     filter: drop-shadow(0 0px 15px rgba(0, 0, 0, 0.5));
   }
   .tooltip-container::before {

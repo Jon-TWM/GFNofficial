@@ -1,0 +1,18 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# 適用於所有檔案類型
+[*]
+charset = utf-8
+indent_style = space    # 縮排風格：使用空格 (space)
+indent_size = 4         # 縮排大小：4 個字元
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# [可選] 如果 Docker Compose 檔案需要 2 個字元縮排，請保留以下設定
+[docker-compose.yml]
+indent_size = 2
+
+# HTML 檔案設定：屬性不換行
+[*.html]
+max_line_length = off

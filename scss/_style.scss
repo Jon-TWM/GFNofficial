@@ -378,7 +378,6 @@ nav {
     }
 }
 
-
 /* Icon 2 */
 
 #nav-icon2 {
@@ -511,7 +510,6 @@ nav {
     }
 }
 
-
 /*
 -----
 舞台區
@@ -605,7 +603,11 @@ nav {
     left: 0;
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0));
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 1) 50%,
+        rgba(0, 0, 0, 0)
+    );
     z-index: -1;
 }
 
@@ -858,7 +860,6 @@ nav {
     left: 0px;
 }
 
-
 /*
 -----
 首頻Slogan
@@ -918,7 +919,6 @@ nav {
     text-align: center;
     font-size: 36px;
 }
-
 
 /*
 ------
@@ -981,8 +981,24 @@ nav {
     top: 88px;
     left: 87px;
     opacity: 1;
-    -webkit-clip-path: polygon( 204px 18.22px, 68px 18.22px, 0px 136px, 68px 253.78px, 204px 253.78px, 272px 136px, 204px 18.22px);
-    clip-path: polygon( 204px 18.22px, 68px 18.22px, 0px 136px, 68px 253.78px, 204px 253.78px, 272px 136px, 204px 18.22px);
+    -webkit-clip-path: polygon(
+        204px 18.22px,
+        68px 18.22px,
+        0px 136px,
+        68px 253.78px,
+        204px 253.78px,
+        272px 136px,
+        204px 18.22px
+    );
+    clip-path: polygon(
+        204px 18.22px,
+        68px 18.22px,
+        0px 136px,
+        68px 253.78px,
+        204px 253.78px,
+        272px 136px,
+        204px 18.22px
+    );
     /* clip-path: url(#gfn-video-msk-1-LDU); */
     margin: 0;
     pointer-events: none;
@@ -1066,7 +1082,15 @@ nav {
     top: 82px;
     left: 82px;
     opacity: 1;
-    -webkit-clip-path: polygon( 393.8px 35.2px, 131.2px 35.2px, 0px 262.5px, 131.2px 489.8px, 393.8px 489.8px, 525px 262.5px, 393.8px 35.2px);
+    -webkit-clip-path: polygon(
+        393.8px 35.2px,
+        131.2px 35.2px,
+        0px 262.5px,
+        131.2px 489.8px,
+        393.8px 489.8px,
+        525px 262.5px,
+        393.8px 35.2px
+    );
     clip-path: url(#gfn-video-msk-2-LDU);
     margin: 0;
     pointer-events: none;
@@ -1140,8 +1164,24 @@ nav {
     top: 88px;
     left: 88px;
     opacity: 1;
-    -webkit-clip-path: polygon(132px 11px, 44px 11px, 0px 88px, 44px 166px, 132px 166px, 178px 88px, 132px 11px);
-    clip-path: polygon(132px 11px, 44px 11px, 0px 88px, 44px 166px, 132px 166px, 178px 88px, 132px 11px);
+    -webkit-clip-path: polygon(
+        132px 11px,
+        44px 11px,
+        0px 88px,
+        44px 166px,
+        132px 166px,
+        178px 88px,
+        132px 11px
+    );
+    clip-path: polygon(
+        132px 11px,
+        44px 11px,
+        0px 88px,
+        44px 166px,
+        132px 166px,
+        178px 88px,
+        132px 11px
+    );
     /* clip-path: url(#gfn-video-msk-3-LDU); */
     margin: 0;
     pointer-events: none;
@@ -1217,8 +1257,24 @@ nav {
     top: 87px;
     left: 87px;
     opacity: 1;
-    -webkit-clip-path: polygon( 205.5px 18.36px, 68.5px 18.36px, 0px 137px, 68.5px 255.65px, 205.5px 255.65px, 274px 137px, 205.5px 18.36px);
-    clip-path: polygon( 205.5px 18.36px, 68.5px 18.36px, 0px 137px, 68.5px 255.65px, 205.5px 255.65px, 274px 137px, 205.5px 18.36px);
+    -webkit-clip-path: polygon(
+        205.5px 18.36px,
+        68.5px 18.36px,
+        0px 137px,
+        68.5px 255.65px,
+        205.5px 255.65px,
+        274px 137px,
+        205.5px 18.36px
+    );
+    clip-path: polygon(
+        205.5px 18.36px,
+        68.5px 18.36px,
+        0px 137px,
+        68.5px 255.65px,
+        205.5px 255.65px,
+        274px 137px,
+        205.5px 18.36px
+    );
     /* clip-path: url(#gfn-video-msk-4-LDU); */
     margin: 0;
     pointer-events: none;
@@ -1255,7 +1311,6 @@ nav {
     background-position: center center;
     background-size: cover;
 }
-
 
 /*
 -----
@@ -1326,7 +1381,6 @@ nav {
     }
 }
 
-
 /*
 ------
 技術支持敘述
@@ -1358,7 +1412,6 @@ nav {
         }
     }
 }
-
 
 /*
 ------
@@ -1477,7 +1530,6 @@ nav {
         }
     }
 }
-
 
 /*
 -----
@@ -1634,7 +1686,6 @@ nav {
     padding: 32px 0;
 }
 
-
 /*
 -----
 公開橫幅
@@ -1677,7 +1728,6 @@ nav {
         }
     }
 }
-
 
 /*
 -----
@@ -1748,7 +1798,6 @@ nav {
         margin: 20px 0;
     }
 }
-
 
 /*
 -----
@@ -1821,7 +1870,6 @@ nav {
     bottom: -30px;
     filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.5));
 }
-
 
 /*
 -----
@@ -1944,7 +1992,6 @@ nav {
     }
 }
 
-
 /*
 -----
 Footer
@@ -2010,7 +2057,6 @@ a.footer-link {
         filter: brightness(1.1);
     }
 }
-
 
 /*
 --------------
@@ -2290,7 +2336,6 @@ a.receipt-link {
     }
 }
 
-
 /*
 ------
 404
@@ -2311,7 +2356,6 @@ a.receipt-link {
 .notfound-kv-txt {
     margin: 32px 0;
 }
-
 
 /*
 ------
@@ -2399,7 +2443,6 @@ $select-height: 48px;
     }
 }
 
-
 /*
 --------
 Custom Checkbox
@@ -2409,13 +2452,13 @@ Custom Checkbox
 .styled-checkbox {
     position: absolute; // take it out of document flow
     opacity: 0; // hide it
-    &+label {
+    & + label {
         position: relative;
         cursor: pointer;
         padding: 0;
     }
     // Box.
-    &+label:before {
+    & + label:before {
         content: "";
         margin-right: 10px;
         display: inline-block;
@@ -2425,24 +2468,24 @@ Custom Checkbox
         background: $gray87;
     }
     // Box hover
-    &:hover+label:before {
+    &:hover + label:before {
         background: $black;
     }
     // Box focus
-    &:focus+label:before {
+    &:focus + label:before {
         box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
     }
     // Box checked
-    &:checked+label:before {
+    &:checked + label:before {
         background: $nv;
     }
     // Disabled state label.
-    &:disabled+label {
+    &:disabled + label {
         color: $gray40;
         cursor: auto;
     }
     // Disabled box.
-    &:disabled+label:before {
+    &:disabled + label:before {
         box-shadow: none;
         background: $gray40;
     }
@@ -2826,13 +2869,14 @@ textarea {
 
 .modal-body {
     width: 100%;
+    line-height: 1.5em;
 }
 
 .modal-footer {
     text-align: center;
-    margin-top: 10px;
-    .primary-btn {
-        margin: 0;
+    margin-top: 24px;
+    .btn {
+        margin: 4px 0;
     }
 }
 
@@ -2892,7 +2936,6 @@ a.at-backer.ic-wrap {
         }
     }
 }
-
 
 /*
 ----------

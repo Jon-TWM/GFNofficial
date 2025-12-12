@@ -1,5 +1,5 @@
 //All UI Kits Settings
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto&display=swap");
 
 $white: #fff;
 $ef: #efefef;
@@ -12,35 +12,42 @@ $gray80: #333;
 $gray87: #222;
 $dark: #1a1a1a;
 $black: #000;
-$nv: #76B900;
+$nv: #76b900;
 $nv-hover: rgb(105, 166, 12);
-$twm: #F68428;
+$twm: #f68428;
 $twm-hover: rgb(214, 117, 37);
 $blue: #28c6f6;
 $pink: #f6286d;
-$zh: 'Noto Sans TC';
-$en: 'GeForce';
-$red:#FF0000;
-$trans: rgba(0,0,0,0);
+$yellow: #ffc107;
+$zh: "Noto Sans TC";
+$en: "GeForce";
+$red: #ff0000;
+$trans: rgba(0, 0, 0, 0);
 $half: rgba(0, 0, 0, 0.5);
 
-.nv{
+.nv {
     color: $nv !important;
     font-weight: 500;
 }
 
+.yellow {
+    color: $yellow !important;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
 @keyframes fadeInLeftShort {
     from {
-      opacity: 0;
-      transform: translateX(-5px);
+        opacity: 0;
+        transform: translateX(-5px);
     }
-  
-    to {
-      opacity: 1;
-      transform: none;
-    }
-  }
 
-  .fadeInLeftShort {
-      animation-name: fadeInLeftShort;
-  }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeInLeftShort {
+    animation-name: fadeInLeftShort;
+}
