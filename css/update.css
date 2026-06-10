@@ -78,8 +78,7 @@
 .sm-card-item .card-img img {
   max-width: 360px;
   width: 100%;
-  -o-object-position: center;
-     object-position: center;
+  object-position: center;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
@@ -1475,9 +1474,7 @@ RWD
   padding: 0;
   padding-top: 108px;
   padding-bottom: 30px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 
 #key-visual-text .button {
@@ -1568,10 +1565,8 @@ RWD
   position: absolute;
   width: 272px;
   height: 272px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -o-object-position: center bottom;
-     object-position: center bottom;
+  object-fit: contain;
+  object-position: center bottom;
   top: 88px;
   left: 87px;
   opacity: 1;
@@ -1655,10 +1650,8 @@ RWD
   position: absolute;
   width: 525px;
   height: 525px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center center;
-     object-position: center center;
+  object-fit: cover;
+  object-position: center center;
   top: 82px;
   left: 82px;
   opacity: 1;
@@ -1730,10 +1723,8 @@ RWD
   position: absolute;
   width: 178px;
   height: 178px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -o-object-position: center bottom;
-     object-position: center bottom;
+  object-fit: contain;
+  object-position: center bottom;
   top: 88px;
   left: 88px;
   opacity: 1;
@@ -1808,10 +1799,8 @@ RWD
   position: absolute;
   width: 274px;
   height: 274px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: cover;
+  object-position: center;
   top: 87px;
   left: 87px;
   opacity: 1;
@@ -2129,16 +2118,24 @@ RWD
 }
 
 .tag-selector {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: 14px;
   width: 100%;
   padding-bottom: 1rem;
   padding-top: 0.5rem;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 .tag-selector .tag-wrap {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   margin-right: 1rem;
 }
@@ -2172,6 +2169,8 @@ RWD
 }
 
 .game-filter .filter-type .filter-btn {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
@@ -2193,7 +2192,11 @@ RWD
 }
 
 .game-filter.m .filter-btn-sec-title-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 1.6rem 0;
 }
@@ -3073,6 +3076,7 @@ footer .links {
 }
 @media (max-width: 915px) {
   .section-nav-tab-wrap .fa-chevron-right {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   .section-nav-tab-wrap.inner .section-nav-tab.round {
@@ -3865,7 +3869,6 @@ p.txt-left {
 
 .section2__storageLeft {
   background-color: var(--color5);
-  width: -moz-fit-content;
   width: fit-content;
   padding: 20px;
   border-radius: 8px 8px 0px;
@@ -4081,8 +4084,7 @@ a.momo:visited, a.momo:active, a.momo:hover, a.momo:focus {
   border-radius: 48px;
   border: 2px solid rgba(93, 104, 74, 0.5);
   background: rgba(30, 33, 24, 0.5);
-  -webkit-backdrop-filter: blur(8px);
-          backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
   width: 100%;
   padding: 24px;
 }
@@ -4189,6 +4191,436 @@ a.momo:visited, a.momo:active, a.momo:hover, a.momo:focus {
   overflow-y: hidden;
 }
 
+#pricingTitanium2026 {
+  background: #000;
+  padding: 80px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+}
+#pricingTitanium2026 .pricing-title-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+#pricingTitanium2026 .pricing-title-wrap h2 {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44.8px;
+  color: #fff;
+}
+#pricingTitanium2026 .pricing-title-wrap .sub {
+  font-weight: 400;
+  font-size: 16px;
+  color: #999;
+}
+#pricingTitanium2026 .plan-cards-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 32px;
+  width: 100%;
+  max-width: 1232px;
+}
+@media (max-width: 1280px) {
+  #pricingTitanium2026 .plan-cards-wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+#pricingTitanium2026 .plan-card {
+  width: 600px;
+  max-width: 100%;
+  border-radius: 36px;
+  border: 2px solid;
+  backdrop-filter: blur(100px);
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+#pricingTitanium2026 .plan-card.titanium {
+  border-color: #e8e889;
+  background: linear-gradient(180deg, rgba(58, 64, 45, 0.1) 0%, rgb(109, 111, 50) 55%);
+}
+#pricingTitanium2026 .plan-card.titanium .plan-tag {
+  background: #dcdf32;
+  color: #222;
+}
+#pricingTitanium2026 .plan-card.titanium .info-box .num,
+#pricingTitanium2026 .plan-card.titanium .info-box .num-unit,
+#pricingTitanium2026 .plan-card.titanium .info-box .info-title {
+  color: #dcdf32;
+}
+#pricingTitanium2026 .plan-card.offpeak {
+  border-color: #86a8d4;
+  background: linear-gradient(180deg, rgba(110, 136, 168, 0.1) 0%, rgba(42, 67, 94, 0.8) 60%);
+}
+#pricingTitanium2026 .plan-card.offpeak .plan-tag {
+  background: #8fc5ff;
+  color: #222;
+}
+#pricingTitanium2026 .plan-card.offpeak .info-box .num,
+#pricingTitanium2026 .plan-card.offpeak .info-box .num-unit,
+#pricingTitanium2026 .plan-card.offpeak .info-box .info-title {
+  color: #8fc5ff;
+}
+#pricingTitanium2026 .plan-card .plan-card-header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+#pricingTitanium2026 .plan-card .plan-card-header .plan-name-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+#pricingTitanium2026 .plan-card .plan-card-header .plan-name-wrap .plan-name {
+  font-weight: 700;
+  font-size: 28px;
+  color: #fff;
+}
+#pricingTitanium2026 .plan-card .plan-card-header .plan-name-wrap .plan-tag {
+  border-radius: 8px;
+  padding: 4px 12px;
+  font-weight: 700;
+  font-size: 14px;
+}
+#pricingTitanium2026 .plan-card .plan-card-header .plan-desc {
+  font-weight: 400;
+  font-size: 15px;
+  color: #c7c7c7;
+}
+#pricingTitanium2026 .plan-card .plan-card-header .plan-price {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+#pricingTitanium2026 .plan-card .plan-card-header .plan-price .price {
+  font-weight: 700;
+  font-size: 40px;
+  color: #fff;
+}
+#pricingTitanium2026 .plan-card .plan-card-header .plan-price .price-old {
+  font-weight: 400;
+  font-size: 14px;
+  color: #c7c7c7;
+  text-decoration: line-through;
+}
+#pricingTitanium2026 .plan-card .plan-card-header .plan-price .price-unit,
+#pricingTitanium2026 .plan-card .plan-card-header .plan-price .price-month {
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+}
+#pricingTitanium2026 .plan-card .plan-card-header .plan-price .promo-tag {
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffd60b;
+  margin-right: 4px;
+}
+#pricingTitanium2026 .plan-card .plan-card-header .plan-price.promo .price {
+  color: #ffd60b;
+}
+#pricingTitanium2026 .plan-card .info-box-wrap {
+  display: flex;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 12px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+}
+#pricingTitanium2026 .plan-card .info-box-wrap .info-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  justify-content: center;
+}
+#pricingTitanium2026 .plan-card .info-box-wrap .info-item img {
+  width: 32px;
+  height: 32px;
+}
+#pricingTitanium2026 .plan-card .info-box-wrap .info-item .info-text {
+  display: flex;
+  flex-direction: column;
+}
+#pricingTitanium2026 .plan-card .info-box-wrap .info-item .num-wrap {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+#pricingTitanium2026 .plan-card .info-box-wrap .info-item .num-wrap .num {
+  font-weight: 700;
+  font-size: 32px;
+}
+#pricingTitanium2026 .plan-card .info-box-wrap .info-item .num-wrap .num-unit {
+  font-weight: 700;
+  font-size: 20px;
+}
+#pricingTitanium2026 .plan-card .info-box-wrap .info-item .info-title {
+  font-weight: 400;
+  font-size: 16px;
+  color: #efefef;
+}
+#pricingTitanium2026 .plan-card .info-box-wrap .info-divider {
+  width: 1px;
+  align-self: stretch;
+  background: rgba(255, 255, 255, 0.2);
+}
+#pricingTitanium2026 .plan-card .plan-spec-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+#pricingTitanium2026 .plan-card .plan-spec-wrap .spec-title {
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+}
+#pricingTitanium2026 .plan-card .plan-spec-wrap .spec-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+#pricingTitanium2026 .plan-card .plan-spec-wrap .spec-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #efefef;
+}
+#pricingTitanium2026 .plan-card .plan-spec-wrap .spec-list li img {
+  width: 16px;
+  height: 16px;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+#pricingTitanium2026 .plan-card .plan-btn {
+  width: 200px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #76b900;
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+}
+#pricingTitanium2026 .plan-card .plan-btn.disabled, #pricingTitanium2026 .plan-card .plan-btn[disabled] {
+  background: transparent;
+  border: 1px solid #76b900;
+  color: #76b900;
+  pointer-events: none;
+}
+#pricingTitanium2026 .plan-card .plan-divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+}
+#pricingTitanium2026 .plan-card .addon-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+#pricingTitanium2026 .plan-card .addon-section .addon-title-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+#pricingTitanium2026 .plan-card .addon-section .addon-title-wrap .addon-title {
+  font-weight: 700;
+  font-size: 28px;
+  color: #fff;
+}
+#pricingTitanium2026 .plan-card .addon-section .addon-title-wrap img {
+  width: 20px;
+  height: 20px;
+}
+#pricingTitanium2026 .plan-card .addon-section .addon-title-wrap .addon-desc {
+  font-weight: 400;
+  font-size: 15px;
+  color: #efefef;
+}
+#pricingTitanium2026 .plan-card .sub-card-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+#pricingTitanium2026 .plan-card .sub-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 12px 16px;
+  gap: 12px;
+}
+#pricingTitanium2026 .plan-card .sub-card .sub-card-left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+#pricingTitanium2026 .plan-card .sub-card .sub-card-left .sub-card-name {
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+}
+#pricingTitanium2026 .plan-card .sub-card .sub-card-left .sub-card-bonus {
+  font-weight: 700;
+  font-size: 16px;
+  color: #76b900;
+}
+#pricingTitanium2026 .plan-card .sub-card .sub-card-left .sub-card-promo {
+  font-weight: 400;
+  font-size: 14px;
+  color: #9aa978;
+}
+#pricingTitanium2026 .plan-card .sub-card .sub-card-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: right;
+}
+#pricingTitanium2026 .plan-card .sub-card .sub-card-right .sub-card-price-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+#pricingTitanium2026 .plan-card .sub-card .sub-card-right .sub-card-price-wrap .price-old {
+  font-weight: 400;
+  font-size: 14px;
+  color: #c7c7c7;
+  text-decoration: line-through;
+}
+#pricingTitanium2026 .plan-card .sub-card .sub-card-right .sub-card-price-wrap .price-discount-label {
+  font-weight: 700;
+  font-size: 13px;
+  color: #ffd60b;
+}
+#pricingTitanium2026 .plan-card .sub-card .sub-card-right .sub-card-price-wrap .sub-card-price {
+  font-weight: 700;
+  font-size: 28px;
+  color: #76b900;
+}
+#pricingTitanium2026 .plan-card .sub-card .sub-card-right .sub-card-price-wrap .sub-card-price.promo {
+  color: #ffd60b;
+}
+#pricingTitanium2026 .plan-card .sub-card .sub-card-right .addon-btn {
+  background: #76b900;
+  border-radius: 8px;
+  padding: 4px 16px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+  white-space: nowrap;
+}
+#pricingTitanium2026 .plan-card .benefit-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+#pricingTitanium2026 .plan-card .benefit-section .benefit-title-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#pricingTitanium2026 .plan-card .benefit-section .benefit-title-wrap .benefit-title {
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+}
+#pricingTitanium2026 .plan-card .benefit-section .benefit-title-wrap .benefit-more {
+  font-size: 13px;
+  color: #efefef;
+}
+#pricingTitanium2026 .plan-card .benefit-section .benefit-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+#pricingTitanium2026 .plan-card .benefit-section .benefit-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #efefef;
+}
+#pricingTitanium2026 .plan-card .benefit-section .benefit-list li img {
+  width: 16px;
+  height: 16px;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+#pricingTitanium2026 .plan-card .promo-code-tip {
+  font-weight: 700;
+  font-size: 15px;
+  color: #ffd60b;
+  text-align: center;
+}
+#pricingTitanium2026 .plan-card .member-tip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #c7c7c7;
+  text-align: center;
+}
+#pricingTitanium2026 .plan-card .member-tip img {
+  width: 20px;
+  height: 20px;
+}
+@media (max-width: 768px) {
+  #pricingTitanium2026 {
+    padding: 56px 16px;
+  }
+  #pricingTitanium2026 .pricing-title-wrap h2 {
+    font-size: 24px;
+    line-height: 33.6px;
+  }
+  #pricingTitanium2026 .plan-card {
+    padding: 24px 16px;
+    gap: 32px;
+    border-radius: 24px;
+  }
+  #pricingTitanium2026 .info-box-wrap {
+    flex-direction: column;
+    gap: 16px;
+  }
+  #pricingTitanium2026 .info-box-wrap .info-divider {
+    width: 100%;
+    height: 1px;
+    align-self: stretch;
+  }
+  #pricingTitanium2026 .info-box-wrap .info-item {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  #pricingTitanium2026 .sub-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #pricingTitanium2026 .sub-card .sub-card-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
 section#videoPromo {
   background-color: #000;
   text-align: center;
@@ -4225,10 +4657,8 @@ video {
   height: 100%;
   width: 100%;
   border-radius: 10px;
-  -o-object-fit: unset;
-     object-fit: unset;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: unset;
+  object-position: center;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -4239,14 +4669,12 @@ video {
   top: 0;
   height: 100%;
   width: 100%;
-  -o-object-position: center;
-     object-position: center;
+  object-position: center;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
-  -o-object-fit: unset;
-     object-fit: unset;
+  object-fit: unset;
   object-position: center;
   border-radius: 10px;
   overflow: hidden;
@@ -4287,4 +4715,6 @@ video {
 .pagination-wrap a:visited span,
 .pagination-wrap a:focus span {
   white-space: unset;
-}/*# sourceMappingURL=update.css.map */
+}
+
+/*# sourceMappingURL=update.css.map */

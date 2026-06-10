@@ -1,0 +1,476 @@
+// 2026/5_新增離峰方案、方案頁優化
+#pricingTitanium2026 {
+    background: #000;
+    padding: 80px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 56px;
+
+    .pricing-title-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        text-align: center;
+
+        h2 {
+            font-family: "Noto Sans TC", sans-serif;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 44.8px;
+            color: #fff;
+        }
+
+        .sub {
+            font-weight: 400;
+            font-size: 16px;
+            color: #999;
+        }
+    }
+
+    .plan-cards-wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 32px;
+        width: 100%;
+        max-width: 1232px;
+
+        @media (max-width: 1280px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .plan-card {
+        width: 600px;
+        max-width: 100%;
+        border-radius: 36px;
+        border: 2px solid;
+        backdrop-filter: blur(100px);
+        padding: 32px 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        &.titanium {
+            border-color: #e8e889;
+            background: linear-gradient(180deg, rgba(58, 64, 45, .1) 0%, rgba(109, 111, 50, 1) 55%);
+
+            .plan-tag { background: #dcdf32; color: #222; }
+            .info-box .num,
+            .info-box .num-unit,
+            .info-box .info-title { color: #dcdf32; }
+        }
+
+        &.offpeak {
+            border-color: #86a8d4;
+            background: linear-gradient(180deg, rgba(110, 136, 168, .1) 0%, rgba(42, 67, 94, .8) 60%);
+
+            .plan-tag { background: #8fc5ff; color: #222; }
+            .info-box .num,
+            .info-box .num-unit,
+            .info-box .info-title { color: #8fc5ff; }
+        }
+
+        .plan-card-header {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            .plan-name-wrap {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+
+                .plan-name {
+                    font-weight: 700;
+                    font-size: 28px;
+                    color: #fff;
+                }
+
+                .plan-tag {
+                    border-radius: 8px;
+                    padding: 4px 12px;
+                    font-weight: 700;
+                    font-size: 14px;
+                }
+            }
+
+            .plan-desc {
+                font-weight: 400;
+                font-size: 15px;
+                color: #c7c7c7;
+            }
+
+            .plan-price {
+                display: flex;
+                align-items: baseline;
+                gap: 4px;
+
+                .price {
+                    font-weight: 700;
+                    font-size: 40px;
+                    color: #fff;
+                }
+
+                .price-old {
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: #c7c7c7;
+                    text-decoration: line-through;
+                }
+
+                .price-unit,
+                .price-month {
+                    font-weight: 700;
+                    font-size: 14px;
+                    color: #fff;
+                }
+
+                .promo-tag {
+                    font-weight: 700;
+                    font-size: 14px;
+                    color: #ffd60b;
+                    margin-right: 4px;
+                }
+
+                &.promo {
+                    .price { color: #ffd60b; }
+                }
+            }
+        }
+
+        .info-box-wrap {
+            display: flex;
+            background: rgba(255, 255, 255, .1);
+            border-radius: 12px;
+            padding: 12px 16px;
+            justify-content: center;
+            align-items: center;
+            gap: 28px;
+
+            .info-item {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                flex: 1;
+                justify-content: center;
+
+                img {
+                    width: 32px;
+                    height: 32px;
+                }
+
+                .info-text {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .num-wrap {
+                    display: flex;
+                    align-items: baseline;
+                    gap: 4px;
+
+                    .num { font-weight: 700; font-size: 32px; }
+                    .num-unit { font-weight: 700; font-size: 20px; }
+                }
+
+                .info-title {
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: #efefef;
+                }
+            }
+
+            .info-divider {
+                width: 1px;
+                align-self: stretch;
+                background: rgba(255, 255, 255, .2);
+            }
+        }
+
+        .plan-spec-wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            .spec-title {
+                font-weight: 700;
+                font-size: 16px;
+                color: #fff;
+            }
+
+            .spec-list {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+
+                li {
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 12px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: #efefef;
+
+                    img {
+                        width: 16px;
+                        height: 16px;
+                        margin-top: 4px;
+                        flex-shrink: 0;
+                    }
+                }
+            }
+        }
+
+        .plan-btn {
+            width: 200px;
+            max-width: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #76b900;
+            border-radius: 12px;
+            padding: 12px 24px;
+            font-weight: 700;
+            font-size: 20px;
+            color: #fff;
+            text-align: center;
+
+            &.disabled,
+            &[disabled] {
+                background: transparent;
+                border: 1px solid #76b900;
+                color: #76b900;
+                pointer-events: none;
+            }
+        }
+
+        .plan-divider {
+            height: 1px;
+            background: rgba(255, 255, 255, .1);
+        }
+
+        .addon-section {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            .addon-title-wrap {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 8px;
+
+                .addon-title {
+                    font-weight: 700;
+                    font-size: 28px;
+                    color: #fff;
+                }
+
+                img { width: 20px; height: 20px; }
+
+                .addon-desc {
+                    font-weight: 400;
+                    font-size: 15px;
+                    color: #efefef;
+                }
+            }
+        }
+
+        .sub-card-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .sub-card {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, .3);
+            border: 1px solid rgba(255, 255, 255, .1);
+            border-radius: 12px;
+            padding: 12px 16px;
+            gap: 12px;
+
+            .sub-card-left {
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+
+                .sub-card-name {
+                    font-weight: 700;
+                    font-size: 20px;
+                    color: #fff;
+                }
+
+                .sub-card-bonus {
+                    font-weight: 700;
+                    font-size: 16px;
+                    color: #76b900;
+                }
+
+                .sub-card-promo {
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: #9aa978;
+                }
+            }
+
+            .sub-card-right {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                text-align: right;
+
+                .sub-card-price-wrap {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    gap: 4px;
+
+                    .price-old {
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: #c7c7c7;
+                        text-decoration: line-through;
+                    }
+
+                    .price-discount-label {
+                        font-weight: 700;
+                        font-size: 13px;
+                        color: #ffd60b;
+                    }
+
+                    .sub-card-price {
+                        font-weight: 700;
+                        font-size: 28px;
+                        color: #76b900;
+
+                        &.promo { color: #ffd60b; }
+                    }
+                }
+
+                .addon-btn {
+                    background: #76b900;
+                    border-radius: 8px;
+                    padding: 4px 16px;
+                    font-weight: 700;
+                    font-size: 14px;
+                    color: #fff;
+                    white-space: nowrap;
+                }
+            }
+        }
+
+        .benefit-section {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            .benefit-title-wrap {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .benefit-title {
+                    font-weight: 700;
+                    font-size: 16px;
+                    color: #fff;
+                }
+
+                .benefit-more {
+                    font-size: 13px;
+                    color: #efefef;
+                }
+            }
+
+            .benefit-list {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+
+                li {
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 12px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: #efefef;
+
+                    img {
+                        width: 16px;
+                        height: 16px;
+                        margin-top: 4px;
+                        flex-shrink: 0;
+                    }
+                }
+            }
+        }
+
+        .promo-code-tip {
+            font-weight: 700;
+            font-size: 15px;
+            color: #ffd60b;
+            text-align: center;
+        }
+
+        .member-tip {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-weight: 400;
+            font-size: 14px;
+            color: #c7c7c7;
+            text-align: center;
+
+            img { width: 20px; height: 20px; }
+        }
+    }
+
+    @media (max-width: 768px) {
+        padding: 56px 16px;
+
+        .pricing-title-wrap h2 {
+            font-size: 24px;
+            line-height: 33.6px;
+        }
+
+        .plan-card {
+            padding: 24px 16px;
+            gap: 32px;
+            border-radius: 24px;
+        }
+
+        .info-box-wrap {
+            flex-direction: column;
+            gap: 16px;
+
+            .info-divider {
+                width: 100%;
+                height: 1px;
+                align-self: stretch;
+            }
+
+            .info-item {
+                width: 100%;
+                justify-content: flex-start;
+            }
+        }
+
+        .sub-card {
+            flex-direction: column;
+            align-items: flex-start;
+
+            .sub-card-right {
+                width: 100%;
+                justify-content: space-between;
+            }
+        }
+    }
+}
