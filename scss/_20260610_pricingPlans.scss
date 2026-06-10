@@ -59,9 +59,8 @@
             background: linear-gradient(180deg, rgba(58, 64, 45, .1) 0%, rgba(109, 111, 50, 1) 55%);
 
             .plan-tag { background: #dcdf32; color: #222; }
-            .info-box .num,
-            .info-box .num-unit,
-            .info-box .info-title { color: #dcdf32; }
+            .info-item .num,
+            .info-item .num-unit { color: #dcdf32; }
         }
 
         &.offpeak {
@@ -69,9 +68,8 @@
             background: linear-gradient(180deg, rgba(110, 136, 168, .1) 0%, rgba(42, 67, 94, .8) 60%);
 
             .plan-tag { background: #8fc5ff; color: #222; }
-            .info-box .num,
-            .info-box .num-unit,
-            .info-box .info-title { color: #8fc5ff; }
+            .info-item .num,
+            .info-item .num-unit { color: #8fc5ff; }
         }
 
         .plan-card-header {

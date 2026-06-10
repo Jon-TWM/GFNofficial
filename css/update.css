@@ -4251,9 +4251,8 @@ a.momo:visited, a.momo:active, a.momo:hover, a.momo:focus {
   background: #dcdf32;
   color: #222;
 }
-#pricingTitanium2026 .plan-card.titanium .info-box .num,
-#pricingTitanium2026 .plan-card.titanium .info-box .num-unit,
-#pricingTitanium2026 .plan-card.titanium .info-box .info-title {
+#pricingTitanium2026 .plan-card.titanium .info-item .num,
+#pricingTitanium2026 .plan-card.titanium .info-item .num-unit {
   color: #dcdf32;
 }
 #pricingTitanium2026 .plan-card.offpeak {
@@ -4264,9 +4263,8 @@ a.momo:visited, a.momo:active, a.momo:hover, a.momo:focus {
   background: #8fc5ff;
   color: #222;
 }
-#pricingTitanium2026 .plan-card.offpeak .info-box .num,
-#pricingTitanium2026 .plan-card.offpeak .info-box .num-unit,
-#pricingTitanium2026 .plan-card.offpeak .info-box .info-title {
+#pricingTitanium2026 .plan-card.offpeak .info-item .num,
+#pricingTitanium2026 .plan-card.offpeak .info-item .num-unit {
   color: #8fc5ff;
 }
 #pricingTitanium2026 .plan-card .plan-card-header {
